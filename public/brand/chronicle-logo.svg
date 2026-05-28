@@ -1,0 +1,8 @@
+<svg width="720" height="180" viewBox="0 0 720 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="180" fill="#050505"/>
+  <rect x="28" y="28" width="124" height="124" stroke="#C9A24A" stroke-width="4"/>
+  <path d="M90 46V134" stroke="#C9A24A" stroke-width="5"/>
+  <path d="M58 90H122" stroke="#F7F0DF" stroke-width="4"/>
+  <text x="190" y="84" fill="#F7F0DF" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="4">CHRONICLE</text>
+  <text x="192" y="122" fill="#C9A24A" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="6">MUSIC PUBLISHING</text>
+</svg>

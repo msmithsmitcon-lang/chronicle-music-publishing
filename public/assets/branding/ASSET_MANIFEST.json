@@ -1,0 +1,102 @@
+{
+  "brand": "Chronicle Music Publishing",
+  "created_for": "Next.js/Tailwind public assets",
+  "folders": {
+    "branding": "public/assets/branding",
+    "hero": "public/assets/hero",
+    "catalogue": "public/assets/catalogue",
+    "icons": "public/assets/icons",
+    "textures": "public/assets/textures"
+  },
+  "brand_colors": {
+    "gold": "#D4AF37",
+    "dark_gold": "#B8860B",
+    "premium_gold": "#C8A96B",
+    "black": "#0A0A0A",
+    "charcoal": "#121212",
+    "ivory": "#F5F3EA",
+    "muted": "#B3B3B3"
+  },
+  "assets": [
+    {
+      "file": "public/assets/branding/chronicle-favicon-512.png",
+      "intended_use": "Logo, mark, favicon, navbar/hero branding"
+    },
+    {
+      "file": "public/assets/branding/chronicle-logo-gold-transparent.png",
+      "intended_use": "Logo, mark, favicon, navbar/hero branding"
+    },
+    {
+      "file": "public/assets/branding/chronicle-logo-horizontal-transparent.png",
+      "intended_use": "Logo, mark, favicon, navbar/hero branding"
+    },
+    {
+      "file": "public/assets/branding/chronicle-logo-horizontal-transparent.svg",
+      "intended_use": "Logo, mark, favicon, navbar/hero branding"
+    },
+    {
+      "file": "public/assets/branding/chronicle-mark-gold-transparent.png",
+      "intended_use": "Logo, mark, favicon, navbar/hero branding"
+    },
+    {
+      "file": "public/assets/branding/chronicle-mark-gold-transparent.svg",
+      "intended_use": "Logo, mark, favicon, navbar/hero branding"
+    },
+    {
+      "file": "public/assets/catalogue/catalogue-dit-is-tyd-cover.jpg",
+      "intended_use": "Catalogue artwork and placeholders"
+    },
+    {
+      "file": "public/assets/catalogue/catalogue-placeholder-01.jpg",
+      "intended_use": "Catalogue artwork and placeholders"
+    },
+    {
+      "file": "public/assets/catalogue/catalogue-placeholder-02.jpg",
+      "intended_use": "Catalogue artwork and placeholders"
+    },
+    {
+      "file": "public/assets/hero/hero-studio-dark-gold.jpg",
+      "intended_use": "Hero section imagery and overlay"
+    },
+    {
+      "file": "public/assets/hero/hero-symbol-glow.png",
+      "intended_use": "Hero section imagery and overlay"
+    },
+    {
+      "file": "public/assets/icons/icon-catalogue.svg",
+      "intended_use": "Feature cards, service icons"
+    },
+    {
+      "file": "public/assets/icons/icon-licensing.svg",
+      "intended_use": "Feature cards, service icons"
+    },
+    {
+      "file": "public/assets/icons/icon-metadata.svg",
+      "intended_use": "Feature cards, service icons"
+    },
+    {
+      "file": "public/assets/icons/icon-protection.svg",
+      "intended_use": "Feature cards, service icons"
+    },
+    {
+      "file": "public/assets/icons/icon-rights.svg",
+      "intended_use": "Feature cards, service icons"
+    },
+    {
+      "file": "public/assets/icons/icon-royalties.svg",
+      "intended_use": "Feature cards, service icons"
+    },
+    {
+      "file": "public/assets/textures/black-charcoal-gradient.jpg",
+      "intended_use": "Background overlays and premium texture"
+    },
+    {
+      "file": "public/assets/textures/dark-gold-grain-texture.jpg",
+      "intended_use": "Background overlays and premium texture"
+    },
+    {
+      "file": "public/assets/textures/subtle-paper-rights-document-texture.jpg",
+      "intended_use": "Background overlays and premium texture"
+    }
+  ]
+}

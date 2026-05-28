@@ -1,0 +1,11 @@
+<svg width="760" height="190" viewBox="0 0 760 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="190" fill="#0A0A0A"/>
+  <circle cx="92" cy="95" r="63" stroke="#C8A96B" stroke-width="5"/>
+  <path d="M92 53V137" stroke="#D4AF37" stroke-width="5"/>
+  <path d="M60 95H124" stroke="#F5F5F5" stroke-width="4"/>
+  <text x="184" y="82" fill="#F5F5F5" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="500" letter-spacing="5">CHRONICLE</text>
+  <text x="188" y="121" fill="#C8A96B" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="7">MUSIC PUBLISHING</text>
+  <path d="M188 142H270" stroke="#D4AF37" stroke-width="2"/>
+  <text x="292" y="149" fill="#C8A96B" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="6">M-WIS</text>
+  <path d="M372 142H454" stroke="#D4AF37" stroke-width="2"/>
+</svg>
