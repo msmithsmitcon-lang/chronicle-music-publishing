@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { CatalogueList } from "@/components/CatalogueList";
+
+export const metadata: Metadata = {
+  title: "Catalogue",
+  description:
+    "Represented catalogue records for publishing, composition metadata, ownership status, administration notes, and licensing enquiries.",
+};
 
 export default function CataloguePage() {
   return (

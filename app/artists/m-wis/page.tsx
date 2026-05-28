@@ -1,10 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getArtistCatalogue, getArtistProfile } from "@/lib/artists";
 import { brand } from "@/lib/brand";
 
 const artist = getArtistProfile("m-wis");
+
+export const metadata: Metadata = {
+  title: "M-WIS",
+  description:
+    "M-WIS is a represented artist and catalogue example within Chronicle Music Publishing.",
+};
 
 export default function MWisArtistPage() {
   if (!artist) {

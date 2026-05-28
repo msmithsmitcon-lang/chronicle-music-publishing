@@ -1,9 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { SectionCard } from "@/components/SectionCard";
 import { brand } from "@/lib/brand";
 import { catalogueItems } from "@/lib/catalogue";
+
+export const metadata: Metadata = {
+  title: "Independent Music Publishing",
+  description:
+    "Chronicle Music Publishing represents and administers musical works, catalogues, songwriters, artists, producers, and rights owners.",
+};
 
 const focusAreas = [
   {

@@ -1,4 +1,11 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Resources",
+  description:
+    "Publishing knowledge and ecosystem resources connected to Chronicle Music Publishing's rights and catalogue administration layer.",
+};
 
 const guideCards = [
   "What is Music Publishing?",

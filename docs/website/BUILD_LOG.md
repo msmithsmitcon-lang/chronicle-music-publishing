@@ -197,3 +197,19 @@ Added static frontend architecture for represented artist and catalogue profiles
 ### Verification
 
 - `npm.cmd run build` passed after artist profile architecture and logo integration.
+
+## V1 Stabilization Pass
+
+Reviewed the live-route surface for the V1 stabilization phase and kept changes limited to static website hardening.
+
+### Updates
+
+- Added `.gitignore` coverage for `node_modules/`, `.next/`, `.vscode/`, `.env*`, and local log files.
+- Added canonical production metadata base and OpenGraph metadata for Chronicle Music Publishing.
+- Added page-specific titles and descriptions for Home, Artists, M-WIS, Catalogue, Resources, and Contact.
+- Adjusted the header so primary navigation remains available and wraps cleanly on mobile instead of disappearing.
+- Confirmed Chronicle positioning remains independent publishing-house focused, with M-WIS as a represented artist/catalogue example and Sentry Sound limited to ecosystem/resource context.
+
+### Verification
+
+- `npm.cmd run build` passed after the V1 stabilization pass.

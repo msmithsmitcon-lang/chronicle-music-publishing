@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { brand } from "@/lib/brand";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contact Chronicle Music Publishing for licensing, catalogue, publishing, sync, royalty/admin readiness, and rights documentation enquiries.",
+};
 
 export default function ContactPage() {
   return (

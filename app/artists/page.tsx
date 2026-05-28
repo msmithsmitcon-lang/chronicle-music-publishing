@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { artistProfiles } from "@/lib/artists";
 import { brand } from "@/lib/brand";
+
+export const metadata: Metadata = {
+  title: "Artists",
+  description:
+    "Represented artists and catalogues within Chronicle Music Publishing, including M-WIS as an early catalogue example.",
+};
 
 export default function ArtistsPage() {
   return (

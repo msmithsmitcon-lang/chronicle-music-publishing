@@ -13,7 +13,7 @@ const navItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[color:var(--line)] bg-[#0A0A0A]/92 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 md:py-5">
+      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 md:flex-row md:items-center md:justify-between md:py-5">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <Image
             src={brand.logoFull}
@@ -25,7 +25,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[color:var(--text-secondary)] lg:flex">
+        <nav className="flex w-full flex-wrap items-center gap-x-5 gap-y-3 text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[color:var(--text-secondary)] md:w-auto lg:gap-7 lg:text-[0.68rem] lg:tracking-[0.22em]">
           {navItems.map((item) => (
             <Link
               key={item.href}
