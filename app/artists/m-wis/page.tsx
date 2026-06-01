@@ -10,7 +10,7 @@ const artist = getArtistProfile("m-wis");
 export const metadata: Metadata = {
   title: "M-WIS",
   description:
-    "M-WIS is a represented artist and catalogue example within Chronicle Music Publishing.",
+    "M-WIS is a represented artist and development catalogue example within Chronicle Music Publishing.",
 };
 
 export default function MWisArtistPage() {
@@ -124,7 +124,7 @@ export default function MWisArtistPage() {
             <section className="cinematic-panel p-6">
               <p className="eyebrow">Publishing Representation</p>
               <h2 className="brand-heading mt-3 text-3xl text-ivory">
-                Rights-aware profile infrastructure
+                Representation and rights context
               </h2>
               <div className="mt-5 grid gap-3 text-sm leading-7 text-[color:var(--text-secondary)]">
                 {artist.publishingFocus.map((item) => (
@@ -134,7 +134,7 @@ export default function MWisArtistPage() {
             </section>
 
             <section className="premium-panel p-6">
-              <p className="eyebrow">Rights Metadata</p>
+              <p className="eyebrow">Rights Notes</p>
               <div className="mt-5 grid gap-3 text-sm text-[color:var(--text-secondary)]">
                 {Object.entries(artist.metadata).map(([key, value]) => (
                   <div
@@ -154,7 +154,7 @@ export default function MWisArtistPage() {
               href="/contact"
               className="border border-[color:var(--gold)] bg-[linear-gradient(135deg,var(--gold-accent),var(--gold))] px-6 py-4 text-center text-xs font-semibold uppercase tracking-[0.16em] text-black shadow-[0_18px_55px_var(--glow)] transition hover:-translate-y-0.5"
             >
-              Licensing / Publishing Enquiry
+              Publishing / Licensing Discussion
             </Link>
           </aside>
         </div>

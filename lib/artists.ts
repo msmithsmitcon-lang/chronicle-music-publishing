@@ -12,7 +12,7 @@ export type ArtistProfile = {
     role: string;
     catalogueStatus: string;
     territory: string;
-    publishingOwner: string;
+    publishingContext: string;
   };
   streamingLinks: {
     label: string;
@@ -25,27 +25,27 @@ export const artistProfiles: ArtistProfile[] = [
     slug: "m-wis",
     name: "M-WIS",
     descriptor:
-      "Writer, recording artist, and represented catalogue within Chronicle Music Publishing.",
+      "Writer, recording artist, and represented artist within Chronicle Music Publishing.",
     biography:
-      "M-WIS is a represented artist and catalogue within Chronicle Music Publishing. The profile is structured around rights-aware presentation, selected works, publishing metadata, and licensing readiness rather than social or fan-led promotion.",
+      "M-WIS is a represented artist and development catalogue example within Chronicle Music Publishing. The profile is structured around rights-aware presentation, selected works, publishing details in preparation, and licensing discussion where applicable rather than social or fan-led promotion.",
     image: null,
     representedBy: "Chronicle Music Publishing",
     publishingFocus: [
       "Catalogue stewardship",
       "Composition rights documentation",
-      "Licensing readiness",
+      "Licensing suitability review",
       "Metadata and ownership records",
     ],
     metadata: {
       role: "Writer / Recording Artist",
-      catalogueStatus: "Represented catalogue",
+      catalogueStatus: "Development catalogue example",
       territory: "South Africa and international enquiries",
-      publishingOwner: "Chronicle Music Publishing",
+      publishingContext: "Represented by Chronicle Music Publishing",
     },
     streamingLinks: [
-      { label: "Spotify", href: null },
-      { label: "Apple Music", href: null },
-      { label: "YouTube Music", href: null },
+      { label: "Spotify TBC", href: null },
+      { label: "Apple Music TBC", href: null },
+      { label: "YouTube Music TBC", href: null },
     ],
   },
 ];
