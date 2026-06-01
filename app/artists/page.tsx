@@ -7,7 +7,7 @@ import { brand } from "@/lib/brand";
 export const metadata: Metadata = {
   title: "Artists",
   description:
-    "Represented artists and catalogues within Chronicle Music Publishing, including M-WIS as an early catalogue example.",
+    "Selected artist profiles and development-stage representation within Chronicle Music Publishing, with M-WIS as an early represented artist and catalogue example.",
 };
 
 export default function ArtistsPage() {
@@ -17,13 +17,13 @@ export default function ArtistsPage() {
         <div className="mx-auto max-w-7xl">
           <p className="eyebrow">Representation</p>
           <h1 className="brand-heading mt-4 max-w-4xl text-4xl leading-tight text-ivory md:text-6xl">
-            Represented Artists & Catalogues
+            Selected Artist Profiles
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[color:var(--text-secondary)]">
-            A rights-aware view of artists, catalogues, and publishing
-            representation within {brand.name}. Profiles are structured for
-            catalogue stewardship, licensing readiness, and future metadata
-            integration.
+            A rights-aware view of selected artist representation within{" "}
+            {brand.name}. This area is developing around represented artist
+            examples, publishing details, ownership notes, and rights context in
+            preparation.
           </p>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function ArtistsPage() {
                 )}
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.1),rgba(10,10,10,0.84))]" />
                 <div className="absolute inset-x-0 bottom-0 p-6">
-                  <p className="eyebrow">Represented Catalogue</p>
+                  <p className="eyebrow">Represented Artist</p>
                   <h2 className="brand-heading mt-3 text-4xl text-ivory">
                     {artist.name}
                   </h2>
