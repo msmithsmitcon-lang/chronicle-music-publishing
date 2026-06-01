@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Resources",
   description:
-    "Publishing knowledge and ecosystem resources connected to Chronicle Music Publishing's rights and catalogue administration layer.",
+    "Publishing knowledge, rights awareness, catalogue preparation, and licensing reference material from Chronicle Music Publishing.",
 };
 
 const guideCards = [
@@ -14,24 +14,24 @@ const guideCards = [
   "Metadata, Splits & Catalogue Records",
 ];
 
-const ecosystemCards = [
+const supportCards = [
   {
-    title: "Sentry Sound Platform",
+    title: "Sentry Sound",
     logo: "/assets/chronicle-sections/sentrysound-logo.png",
-    text: "Operational rights-management infrastructure supporting publishing administration, catalogue workflows, metadata organization, royalty readiness, and music industry execution systems.",
-    button: "Explore Platform",
+    text: "A related music rights and administration initiative that may support future catalogue organization, metadata preparation, and rights-aware publishing work.",
+    button: "Reference Note",
   },
   {
     title: "Sentry Sound Academy",
     logo: "/assets/chronicle-sections/sentrysound-academy-logo.png",
-    text: "Education and industry development systems focused on music publishing, rights awareness, metadata readiness, and creator business knowledge.",
-    button: "Visit Academy",
+    text: "A related education context for music publishing awareness, rights literacy, metadata preparation, and creator business learning.",
+    button: "Education Note",
   },
   {
     title: "StudyEdge",
     logo: "/assets/chronicle-sections/studyedge-logo.png",
-    text: "Learning and structured development technology designed to support scalable education, guided learning systems, and intelligent training experiences.",
-    button: "Learn More",
+    text: "A separate learning project referenced only as part of broader education and creator development context.",
+    button: "Context Note",
   },
 ];
 
@@ -42,11 +42,12 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-7xl">
           <p className="eyebrow">Resources</p>
           <h1 className="brand-heading mt-4 max-w-4xl text-4xl leading-tight text-ivory md:text-6xl">
-            Resources & Infrastructure
+            Publishing Resources & Rights Guidance
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[color:var(--text-secondary)]">
-            Publishing knowledge, operational systems, and creator development
-            resources connected to the Chronicle ecosystem.
+            Reference material for songs, rights, ownership preparation,
+            catalogue development, licensing awareness, and creator support
+            within Chronicle Music Publishing.
           </p>
         </div>
       </section>
@@ -64,7 +65,8 @@ export default function ResourcesPage() {
             </div>
             <p className="max-w-xl text-sm leading-7 text-[color:var(--text-secondary)]">
               Compact reference material for creators, catalogue owners, and
-              rights holders preparing for professional publishing workflows.
+              rights holders preparing songs and ownership details for
+              publishing conversations.
             </p>
           </div>
 
@@ -76,7 +78,7 @@ export default function ResourcesPage() {
                   {title}
                 </h3>
                 <span className="mt-6 inline-flex border border-[color:var(--line)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)]">
-                  Coming Soon
+                  In Preparation
                 </span>
               </article>
             ))}
@@ -87,14 +89,14 @@ export default function ResourcesPage() {
       <section className="section-shell pb-16 md:pb-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-8">
-            <p className="eyebrow">Ecosystem Links</p>
+            <p className="eyebrow">Related Context</p>
             <h2 className="brand-heading mt-3 text-3xl text-ivory md:text-4xl">
-              Infrastructure around the publishing layer
+              Supporting references around publishing education
             </h2>
           </div>
 
           <div className="grid gap-5 lg:grid-cols-3">
-            {ecosystemCards.map((card) => (
+            {supportCards.map((card) => (
               <article key={card.title} className="cinematic-panel p-6">
                 <div className="mb-6 flex h-14 items-center">
                   <Image
