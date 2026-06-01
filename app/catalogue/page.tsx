@@ -4,7 +4,7 @@ import { CatalogueList } from "@/components/CatalogueList";
 export const metadata: Metadata = {
   title: "Catalogue",
   description:
-    "Represented catalogue records for publishing, composition metadata, ownership status, administration notes, and licensing enquiries.",
+    "Selected catalogue works, represented songs, rights-aware notes, and licensing discussion where applicable.",
 };
 
 export default function CataloguePage() {
@@ -14,13 +14,13 @@ export default function CataloguePage() {
         <div className="mx-auto max-w-7xl">
           <p className="eyebrow">Catalogue</p>
           <h1 className="brand-heading mt-4 max-w-4xl text-4xl leading-tight text-ivory md:text-6xl">
-            Represented catalogue records for rights, publishing, and licensing
-            review.
+            Selected catalogue works for rights-aware publishing review.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--text-secondary)]">
-            A professional catalogue view for composition metadata, ownership
-            status, administration notes, and direct licensing enquiries. M-WIS
-            is shown here as an early represented catalogue example.
+            A developing catalogue view for selected works, ownership context,
+            publishing details in preparation, and licensing discussion where
+            applicable. M-WIS is shown here as an early represented artist and
+            catalogue example.
           </p>
         </div>
       </section>

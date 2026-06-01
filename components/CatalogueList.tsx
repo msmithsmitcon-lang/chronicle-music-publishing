@@ -19,11 +19,11 @@ export function CatalogueList() {
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.1),rgba(10,10,10,0.82)),radial-gradient(circle_at_50%_20%,rgba(212,175,55,0.16),transparent_18rem)]" />
             <div className="relative z-10 flex h-full min-h-56 flex-col justify-between p-6">
-              <p className="eyebrow">Publishing Work</p>
+              <p className="eyebrow">Selected Work</p>
               <div>
                 <div className="mb-5 h-px w-20 bg-[linear-gradient(90deg,var(--gold-accent),transparent)]" />
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">
-                  Rights Record
+                  Rights Review
                 </p>
               </div>
             </div>
@@ -63,10 +63,10 @@ export function CatalogueList() {
               </div>
               <div className="border border-[color:var(--line)] bg-black/30 p-4 transition group-hover:border-white/15">
                 <span className="block text-xs uppercase tracking-[0.16em] text-stone-500">
-                  Publishing Owner
+                  Publishing Context
                 </span>
                 <span className="mt-2 block text-ivory">
-                  {item.publishingOwner}
+                  {item.publishingContext}
                 </span>
               </div>
             </div>
