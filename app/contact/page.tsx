@@ -5,7 +5,7 @@ import { brand } from "@/lib/brand";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Chronicle Music Publishing for licensing, catalogue, publishing, sync, royalty/admin readiness, and rights documentation enquiries.",
+    "Contact Chronicle Music Publishing for publishing, selected works, represented artist, catalogue, and licensing discussion enquiries.",
 };
 
 export default function ContactPage() {
@@ -16,13 +16,13 @@ export default function ContactPage() {
           <div>
             <p className="eyebrow">Contact</p>
             <h1 className="brand-heading mt-4 text-4xl leading-tight text-ivory md:text-6xl">
-              Licensing, catalogue, and publishing enquiries.
+              Publishing, catalogue, and licensing discussions.
             </h1>
             <p className="mt-6 text-lg leading-8 text-[color:var(--text-secondary)]">
-              Reach {brand.name} for music publishing conversations connected to
-              catalogue access, publishing administration, songwriter and artist
-              representation, synchronization, licensing, royalty/admin
-              readiness, and rights documentation.
+              Reach {brand.name} through the listed email addresses for
+              publishing conversations, selected works and catalogue context,
+              represented artist enquiries, rights documentation, and licensing
+              discussion where applicable.
             </p>
             <div className="mt-10 grid gap-3 text-sm text-[color:var(--text-secondary)]">
               <p>{brand.emails.info}</p>
@@ -34,8 +34,8 @@ export default function ContactPage() {
               <div className="relative z-10 flex h-full min-h-60 flex-col justify-between">
                 <p className="eyebrow">Publishing Desk</p>
                 <p className="max-w-sm text-sm leading-7 text-[color:var(--text-secondary)]">
-                  Licensing, publishing, sync, catalogue, and royalty/admin
-                  enquiries are routed through a dedicated rights conversation.
+                  Publishing, selected works, catalogue, and licensing
+                  enquiries can begin through the listed email addresses.
                 </p>
               </div>
             </div>
