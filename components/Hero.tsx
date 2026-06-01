@@ -3,9 +3,9 @@ import Link from "next/link";
 import { brand } from "@/lib/brand";
 
 const heroFeatures = [
-  "Rights Management",
-  "Catalogue Administration",
-  "Royalty Readiness",
+  "Rights Support",
+  "Selected Works",
+  "Royalty Preparation",
   "Sync Licensing",
   "Creator First",
 ];
@@ -29,13 +29,14 @@ export function Hero() {
           <div className="max-w-3xl">
             <p className="eyebrow">Own the story. Protect the sound.</p>
             <h1 className="brand-heading mt-5 max-w-4xl text-5xl leading-[0.98] text-ivory md:text-7xl lg:text-8xl">
-              We Build Legacies. <span className="gold-text">You Make History.</span>
+              Where Songs Become Rights.{" "}
+              <span className="gold-text">Where Works Carry Memory.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--text-secondary)] md:text-xl">
-              Chronicle Music Publishing represents and administers musical
-              works, catalogues, songwriters, artists, producers, and rights
-              owners through professional rights management, licensing, metadata,
-              and publishing administration.
+              Chronicle Music Publishing is a developing independent publishing
+              and rights-focused brand supporting selected songs, represented
+              works, artists, producers, and rights owners through grounded
+              administration, licensing discussion, and publishing preparation.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
@@ -48,7 +49,7 @@ export function Hero() {
                 href="/catalogue"
                 className="border border-[color:var(--line)] bg-white/[0.03] px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-ivory transition duration-300 hover:-translate-y-0.5 hover:border-[color:var(--gold)] hover:text-[color:var(--gold-accent)]"
               >
-                Browse Catalogue
+                View Selected Works
               </Link>
             </div>
           </div>
@@ -71,8 +72,8 @@ export function Hero() {
                 {feature}
               </p>
               <p className="mt-2 text-sm leading-6 text-[color:var(--text-secondary)]">
-                Built for professional rights conversations and catalogue
-                stewardship.
+                Clear language for publishing support, licensing discussions,
+                and long-term catalogue value.
               </p>
             </div>
           ))}

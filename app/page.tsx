@@ -9,44 +9,44 @@ import { catalogueItems } from "@/lib/catalogue";
 export const metadata: Metadata = {
   title: "Independent Music Publishing",
   description:
-    "Chronicle Music Publishing represents and administers musical works, catalogues, songwriters, artists, producers, and rights owners.",
+    "Chronicle Music Publishing supports selected songs, works, artists, producers, and rights owners through publishing representation, rights administration, and licensing discussions.",
 };
 
 const focusAreas = [
   {
     title: "Publishing Rights",
     description:
-      "Composition rights management for musical works, catalogues, songwriters, artists, producers, and rights owners.",
+      "Rights-aware publishing support for songs, compositions, writers, artists, producers, and ownership records.",
     icon: "/assets/icons/icon-rights.svg",
   },
   {
     title: "Catalogue Management",
     description:
-      "A professional catalogue framework for works, ownership status, licensing notes, and administration readiness.",
+      "A curated development catalogue for selected works, ownership details, licensing notes, and administration preparation.",
     icon: "/assets/icons/icon-catalogue.svg",
   },
   {
     title: "Royalty Administration",
     description:
-      "Royalty registration readiness prepared for cleaner collection pathways, reporting, and partner conversations.",
+      "Preparation of royalty and registration information for cleaner collection discussions and future administration.",
     icon: "/assets/icons/icon-royalties.svg",
   },
   {
     title: "Licensing & Sync",
     description:
-      "A direct enquiry path for supervised music use across film, television, brand, digital, and commercial projects.",
+      "A direct enquiry path for applicable music use across film, television, brand, digital, and commercial projects.",
     icon: "/assets/icons/icon-licensing.svg",
   },
   {
     title: "Publishing Representation",
     description:
-      "Professional songwriter, artist, producer, and rights-owner representation for works that require structured publishing support.",
+      "Professional representation for writers, artists, producers, and rights owners preparing works for long-term publishing value.",
     icon: "/assets/icons/icon-protection.svg",
   },
   {
     title: "Metadata Documentation",
     description:
-      "Rights documentation, metadata preparation, ownership records, and catalogue information designed for licensing and administration.",
+      "Practical documentation for ownership, splits, catalogue details, and licensing conversations where works are eligible.",
     icon: "/assets/icons/icon-metadata.svg",
   },
 ];
@@ -66,31 +66,27 @@ export default function HomePage() {
           <div className="cinematic-panel p-6 md:p-7">
             <p className="eyebrow">Publishing House</p>
             <h2 className="brand-heading mt-4 text-3xl leading-tight text-ivory md:text-4xl">
-              More Than Publishing. Built for Music Legacy.
+              Publishing Support for Songs Built to Last.
             </h2>
             <div className="mt-5 grid gap-4 text-sm leading-7 text-[color:var(--text-secondary)]">
               <p>
-                Chronicle Music Publishing is a modern music publishing house
-                focused on protecting, organizing, and growing the long-term
-                value of musical works.
+                Chronicle Music Publishing is a developing independent music
+                publishing and rights-focused brand for selected songs, works,
+                artists, producers, and rights owners.
               </p>
               <p>
-                We work with artists, composers, writers, producers, and rights
-                holders to manage publishing administration, catalogue
-                ownership, licensing readiness, royalty participation, and
-                intellectual property stewardship across evolving music markets.
+                We support publishing preparation, representation, ownership
+                documentation, catalogue organization, and licensing
+                conversations where the work and rights position allow it.
               </p>
               <p>
-                Our approach combines professional publishing standards with
-                modern operational infrastructure, allowing creators to focus on
-                the music while Chronicle manages the rights layer behind the
-                work.
+                Our catalogue is being developed as a curated showcase of
+                selected and represented works.
               </p>
               <p>
-                From catalogue management and publishing compliance to
-                synchronization opportunities and long-term legacy positioning,
-                Chronicle exists to help music endure beyond release cycles and
-                become sustainable intellectual property.
+                Chronicle exists to help songs become better organized,
+                represented, and prepared for long-term value beyond release
+                cycles.
               </p>
             </div>
             <Link
@@ -105,14 +101,14 @@ export default function HomePage() {
             <div className="relative aspect-[16/10] overflow-hidden bg-black">
               <Image
                 src="/assets/chronicle-sections/studio-control-room.png"
-                alt="Premium studio control room representing Chronicle publishing operations"
+                alt="Premium studio control room representing Chronicle publishing work"
                 fill
                 sizes="(min-width: 1024px) 38vw, 100vw"
                 className="object-cover transition duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.05),rgba(10,10,10,0.82)),radial-gradient(circle_at_72%_18%,rgba(212,175,55,0.24),transparent_17rem)]" />
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <p className="eyebrow">Chronicle Operations</p>
+                <p className="eyebrow">Chronicle Practice</p>
                 <h3 className="brand-heading mt-3 text-2xl leading-tight text-ivory">
                   Studio culture. Publishing discipline.
                 </h3>
@@ -125,12 +121,12 @@ export default function HomePage() {
             className="cinematic-panel p-6 md:p-7"
           >
             <div className="mb-5 flex items-center justify-between gap-4">
-              <p className="eyebrow">Featured Catalogue</p>
+              <p className="eyebrow">Featured Works</p>
               <Link
                 href="/catalogue"
                 className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)]"
               >
-                View All
+                View Catalogue
               </Link>
             </div>
             <div className="grid gap-3">
@@ -162,8 +158,9 @@ export default function HomePage() {
               ))}
             </div>
             <p className="mt-5 text-xs leading-6 text-[color:var(--text-secondary)]">
-              Static preview now; structured for future catalogue feeds from
-              rights-management infrastructure.
+              A curated preview of selected and represented works. Additional
+              songs may be added as rights, publishing details, and licensing
+              suitability are confirmed.
             </p>
           </article>
         </div>
@@ -173,10 +170,10 @@ export default function HomePage() {
 
       <section id="rights" className="section-shell py-16 md:py-20">
         <div className="mx-auto mb-8 max-w-7xl">
-          <p className="eyebrow">Rights Infrastructure</p>
+          <p className="eyebrow">Rights & Publishing Support</p>
           <h2 className="brand-heading mt-4 max-w-3xl text-3xl leading-tight text-ivory md:text-5xl">
-            A premium operating layer for catalogue ownership and publishing
-            administration.
+            Grounded support for ownership clarity, selected works, and
+            publishing administration.
           </h2>
         </div>
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -194,7 +191,7 @@ export default function HomePage() {
       <section className="section-shell pb-12">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[color:var(--gold-accent)]">
-            Rights Workflow Network
+            Rights-Aware Catalogue View
           </p>
           <div className="cinematic-panel group relative h-24 overflow-hidden md:h-28">
             <Image
