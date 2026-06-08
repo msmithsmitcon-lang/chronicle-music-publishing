@@ -56,19 +56,21 @@ completed
 | doctrine.doctrine-operational-boundary.v1 | Relevant later | Helps prevent doctrine/state confusion | Medium | Defer targeted read until needed |
 | template.* initialization records | Relevant | Required to initialize local docs | Low | Adopt by use |
 | governance.operator-command-aliases.v1 | Relevant | Operator-command aliases reconcile Core/consumer interaction commands; map to local workflows (see notes) | Low | Record mapping locally; human review recommended |
+| governance.operator-command-aliases.v1 | Accepted | Operator-command aliases mapping confirmed by human owner | Low | Accepted locally 2026-06-08 |
 
 ## 5. Human Decisions
 
 | item_id | decision | decision_owner | date | required_action |
 | --- | --- | --- | --- | --- |
 | Initial Core references | pending_human_review | Human owner | 2026-06-07 | Review generated records and accept, revise, or redirect. |
+| governance.operator-command-aliases.v1 | accepted | Human owner | 2026-06-08 | Mappings recorded in `docs/adoption/update-check-initial.md` and `docs/adoption/CHRONICLE-MUSIC-PLEXICON-ADOPTION-STATUS.md`; no runtime changes made. |
 
 ## 6. Next Action
 
 ```text
 next_allowed_action: Human review of the generated Plexicon-consuming system records, then resume Chronicle website work only through Open The Door.
-blocked_reason: None for initialization; authority-bearing acceptance remains pending human review.
-update_note: Plexicon Core commit `f3c6656` added governed operator-command aliases. Chronicle has recorded a New Invite / update check for these aliases and must map them locally as noted in adoption records. Human review required before acceptance.
+blocked_reason: None for initialization; authority-bearing acceptance remains pending for records other than the operator-command aliases.
+update_note: Plexicon Core commit `f3c6656` added governed operator-command aliases. Chronicle recorded and accepted the alias mappings locally on 2026-06-08. Human review of remaining records recommended.
 forbidden_actions: website code changes, UI redesign, dependency install, Supabase/Next/Tailwind/Clerk/deployment changes, API/SDK/CLI logic, local Plexicon doctrine redefinition.
 
 ## 11. Operator-Command Alias Mapping (recorded)
