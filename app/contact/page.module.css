@@ -1,0 +1,470 @@
+.page {
+  background:
+    radial-gradient(circle at 78% 8%, rgba(212, 175, 55, 0.12), transparent 24rem),
+    radial-gradient(circle at 18% 40%, rgba(212, 175, 55, 0.08), transparent 20rem),
+    #050505;
+}
+
+.shell {
+  width: min(100% - 6rem, 76rem);
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 40rem;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(200, 169, 107, 0.22);
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 58% center;
+  opacity: 0.72;
+  filter: saturate(0.92) contrast(1.12) brightness(0.72);
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.72) 30%, rgba(5, 5, 5, 0.18) 58%, rgba(5, 5, 5, 0.72) 100%),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.34) 0%, rgba(5, 5, 5, 0.16) 48%, #050505 100%);
+}
+
+.heroCopy {
+  position: relative;
+  z-index: 1;
+  max-width: 29rem;
+  padding: 5.4rem 0 9.5rem;
+}
+
+.eyebrow {
+  color: var(--gold-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.heroCopy h1 {
+  margin: 1.25rem 0 0;
+  color: var(--ivory);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(3.5rem, 7vw, 5.6rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.94;
+}
+
+.heroCopy h1 span {
+  color: var(--gold-accent);
+}
+
+.signalLine {
+  width: 15rem;
+  height: 1.4rem;
+  margin: 1.45rem 0 1.25rem;
+  background:
+    linear-gradient(90deg, var(--gold-accent), transparent 18%),
+    repeating-linear-gradient(90deg, transparent 0 0.44rem, rgba(212, 175, 55, 0.75) 0.44rem 0.48rem, transparent 0.48rem 0.54rem);
+  mask-image: radial-gradient(ellipse at center, #000 42%, transparent 75%);
+  opacity: 0.82;
+}
+
+.heroCopy > p:not(.eyebrow) {
+  max-width: 25rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.contentSection {
+  margin-top: -7.5rem;
+  padding: 0 0 4.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 2.4rem;
+  align-items: end;
+}
+
+.leftColumn {
+  display: grid;
+  gap: 2.2rem;
+}
+
+.detailList {
+  display: grid;
+  gap: 1.55rem;
+}
+
+.detailItem {
+  display: grid;
+  grid-template-columns: 3.3rem 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detailIcon {
+  display: grid;
+  width: 3.1rem;
+  height: 3.1rem;
+  place-items: center;
+  border: 1px solid rgba(212, 175, 55, 0.72);
+  border-radius: 999px;
+  color: var(--gold-accent);
+  background: rgba(0, 0, 0, 0.34);
+  box-shadow: inset 0 0 18px rgba(212, 175, 55, 0.08);
+}
+
+.detailItem p {
+  margin: 0 0 0.2rem;
+  color: var(--gold-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.detailItem span:last-child {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.audienceCard,
+.formCard,
+.catalogueCta {
+  border: 1px solid rgba(200, 169, 107, 0.42);
+  border-radius: 0.55rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(12, 12, 12, 0.9);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.5), 0 0 70px rgba(212, 175, 55, 0.08);
+}
+
+.audienceCard {
+  position: relative;
+  min-height: 27rem;
+  overflow: hidden;
+}
+
+.audienceImage {
+  object-fit: cover;
+  object-position: 22% center;
+  opacity: 0.74;
+  filter: saturate(0.92) contrast(1.15) brightness(0.7);
+}
+
+.audienceOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.44) 42%, rgba(5, 5, 5, 0.92) 76%),
+    radial-gradient(circle at 35% 48%, rgba(212, 175, 55, 0.18), transparent 13rem);
+}
+
+.audienceCopy {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  width: 52%;
+  padding: 4.1rem 2rem 7rem 0;
+}
+
+.audienceCopy h2 {
+  margin: 0.75rem 0 1.2rem;
+  color: var(--ivory);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 3.3vw, 3rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.audienceCopy p:not(.eyebrow) {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.supportStrip {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(200, 169, 107, 0.2);
+  background: rgba(5, 5, 5, 0.74);
+  backdrop-filter: blur(10px);
+}
+
+.supportStrip div {
+  display: grid;
+  min-height: 5.5rem;
+  place-items: center;
+  padding: 0.85rem 0.8rem;
+  text-align: center;
+}
+
+.supportStrip div + div {
+  border-left: 1px solid rgba(200, 169, 107, 0.32);
+}
+
+.supportStrip span {
+  color: var(--gold-accent);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.supportStrip p,
+.supportStrip small {
+  margin: 0;
+  color: var(--ivory);
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.formCard {
+  padding: 2.55rem;
+}
+
+.formCard h2 {
+  margin: 0.85rem 0 0;
+  color: var(--ivory);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(2rem, 3vw, 3.3rem);
+  font-weight: 500;
+}
+
+.formIntro {
+  margin: 0.75rem 0 1.7rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.fields {
+  display: grid;
+  gap: 1.05rem;
+}
+
+.fields label {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.fields span {
+  color: var(--gold-accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.fields input,
+.fields select,
+.fields textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.18rem;
+  background: rgba(0, 0, 0, 0.42);
+  color: var(--ivory);
+  outline: none;
+  padding: 0.92rem 1rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.fields textarea {
+  resize: none;
+}
+
+.fields input:focus,
+.fields select:focus,
+.fields textarea:focus {
+  border-color: rgba(212, 175, 55, 0.86);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.16);
+}
+
+.formCard button,
+.catalogueButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid rgba(212, 175, 55, 0.8);
+  border-radius: 0.18rem;
+  background: linear-gradient(135deg, var(--gold-accent), var(--gold));
+  color: #090909;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.formCard button {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 1rem 1.2rem;
+}
+
+.formCard button:hover,
+.catalogueButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 48px rgba(212, 175, 55, 0.18);
+}
+
+.formNote {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.05rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}
+
+.formNote span {
+  color: var(--gold-accent);
+}
+
+.catalogueCta {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  min-height: 9.4rem;
+  margin-top: 2.1rem;
+  overflow: hidden;
+  padding: 1.6rem 2.4rem;
+}
+
+.catalogueImage {
+  object-fit: cover;
+  object-position: 66% center;
+  opacity: 0.58;
+  filter: saturate(0.9) contrast(1.12) brightness(0.62);
+}
+
+.catalogueOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.44), rgba(5, 5, 5, 0.9)),
+    radial-gradient(circle at 22% 50%, rgba(212, 175, 55, 0.16), transparent 12rem);
+}
+
+.catalogueIcon,
+.catalogueCopy,
+.catalogueButton {
+  position: relative;
+  z-index: 1;
+}
+
+.catalogueIcon {
+  display: grid;
+  width: 4.7rem;
+  height: 4.7rem;
+  place-items: center;
+  border: 1px solid rgba(212, 175, 55, 0.7);
+  border-radius: 999px;
+  color: var(--gold-accent);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.catalogueCopy h2 {
+  margin: 0.4rem 0 0.35rem;
+  color: var(--ivory);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 500;
+}
+
+.catalogueCopy p:not(.eyebrow) {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.catalogueButton {
+  min-width: 13rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.26);
+  color: var(--gold-accent);
+  padding: 0.95rem 1.3rem;
+}
+
+@media (max-width: 1024px) {
+  .shell {
+    width: min(100% - 2rem, 46rem);
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .heroCopy {
+    padding: 4.5rem 0 8.5rem;
+  }
+
+  .contentSection {
+    margin-top: -5.5rem;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formCard {
+    order: -1;
+  }
+
+  .catalogueCta {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: min(100% - 1.25rem, 40rem);
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(3rem, 15vw, 4.4rem);
+  }
+
+  .audienceCopy {
+    width: 100%;
+    padding: 2rem 1.25rem 7rem;
+  }
+
+  .audienceOverlay {
+    background:
+      linear-gradient(180deg, rgba(5, 5, 5, 0.24), rgba(5, 5, 5, 0.92)),
+      radial-gradient(circle at 36% 42%, rgba(212, 175, 55, 0.18), transparent 12rem);
+  }
+
+  .formCard {
+    padding: 1.35rem;
+  }
+
+  .detailItem {
+    grid-template-columns: 2.8rem 1fr;
+  }
+
+  .detailIcon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .supportStrip p,
+  .supportStrip small {
+    font-size: 0.66rem;
+  }
+}

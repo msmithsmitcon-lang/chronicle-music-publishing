@@ -10,5 +10,6 @@ export const brand = {
   },
   location: "South Africa and international publishing enquiries",
   logoMark: "/assets/branding/chronicle-mark-gold-transparent.svg",
-  logoFull: "/assets/branding/chronicle-logo-horizontal-transparent.svg",
+  logoFull: "/assets/branding/chronicle-logo-horizontal-transparent.png",
 };
+

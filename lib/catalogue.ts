@@ -1,46 +1,61 @@
+import { assets } from "@/lib/assets";
+
 export type CatalogueItem = {
   title: string;
   artist: string;
   genre: string;
-  duration: string;
   status: string;
   publishingContext: string;
   notes: string;
   artwork: string;
+  coverImage?: string;
+  previewAudioPath?: string;
+  previewDurationLimit?: number;
+  previewLabel?: string;
 };
 
 export const catalogueItems: CatalogueItem[] = [
   {
-    title: "Dit Is Tyd",
+    title: "As Ek Vannag Kon Uitvee",
     artist: "M-WIS",
-    genre: "Contemporary / Afrikaans",
-    duration: "TBC",
-    status: "Publishing details in preparation",
+    genre: "Afrikaanse Adult Contemporary",
+    status: "Selected represented work",
     publishingContext: "Represented by Chronicle Music Publishing",
     notes:
-      "Selected work for rights review, catalogue presentation, and licensing discussion where applicable.",
-    artwork: "/assets/catalogue/catalogue-dit-is-tyd-cover.jpg",
+      "Selected work for catalogue presentation, publishing context, and licensing discussion where applicable.",
+    artwork: assets.catalogue.asEkVannagKonUitveeCover,
+    coverImage: assets.catalogue.asEkVannagKonUitveeCover,
+    previewAudioPath:
+      "/catalogue/audio/As ek vannag kon uitvee.mp3",
+    previewDurationLimit: 60,
+    previewLabel: "60-second preview",
   },
   {
-    title: "Represented Catalogue Work 02",
+    title: "Its Time to Move On",
     artist: "M-WIS",
-    genre: "Contemporary",
-    duration: "TBC",
-    status: "Development catalogue entry",
+    genre: "Adult Contemporary",
+    status: "Selected represented work",
     publishingContext: "Represented by Chronicle Music Publishing",
     notes:
-      "Reserved entry for a represented song as ownership details, splits, and publishing information are prepared.",
-    artwork: "/assets/catalogue/catalogue-placeholder-01.jpg",
+      "Selected M-WIS work included for catalogue presentation, publishing notes, and licensing discussion where applicable.",
+    artwork: assets.catalogue.itsTimeToMoveOnCover,
+    coverImage: assets.catalogue.itsTimeToMoveOnCover,
+    previewAudioPath: "/catalogue/audio/Its Time to Move On.mp3",
+    previewDurationLimit: 60,
+    previewLabel: "60-second preview",
   },
   {
-    title: "Represented Catalogue Work 03",
+    title: "Vier goue sterre",
     artist: "M-WIS",
-    genre: "Contemporary",
-    duration: "TBC",
-    status: "Development catalogue entry",
+    genre: "Afrikaans Pop",
+    status: "Selected represented work",
     publishingContext: "Represented by Chronicle Music Publishing",
     notes:
-      "Early-stage represented work for catalogue organization, rights notes, and future licensing suitability review.",
-    artwork: "/assets/catalogue/catalogue-placeholder-02.jpg",
+      "Selected M-WIS work included for catalogue presentation, metadata notes, and publishing context.",
+    artwork: assets.catalogue.vierGoueSterreCover,
+    coverImage: assets.catalogue.vierGoueSterreCover,
+    previewAudioPath: "/catalogue/audio/Vier goue sterre.mp3",
+    previewDurationLimit: 60,
+    previewLabel: "60-second preview",
   },
 ];
