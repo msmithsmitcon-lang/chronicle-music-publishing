@@ -26,6 +26,7 @@ export const assets = {
   },
   catalogue: {
     mWisSharedCover: "/catalogue/covers/m-wis-shared-cover.png",
+    mWisCreativeArchive: "/assets/branding/m-wis-creative-archive.png",
     asEkVannagKonUitveeCover:
       "/catalogue/covers/As ek vannag kon uitvee Cover.jpeg",
     itsTimeToMoveOnCover: "/catalogue/covers/Its Time to Move On.jpg",
@@ -38,3 +39,4 @@ export const assets = {
     defaultCoverAlt: "/assets/shared/chronicle-placeholder-cover-alt.png",
   },
 } as const;
+
