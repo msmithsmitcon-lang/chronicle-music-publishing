@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:catalogue": "node scripts/generate-catalogue-browse.cjs"
   },
   "dependencies": {
     "next": "^16.2.6",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "22.15.21",

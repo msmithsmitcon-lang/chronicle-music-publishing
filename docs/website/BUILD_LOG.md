@@ -225,3 +225,15 @@ Reviewed the live-route surface for the V1 stabilization phase and kept changes 
 - Created /about page with cinematic Chronicle publishing-house sections.
 - Added About images from /assets/ecosystem.
 - Preserved rule against fake achievements, fake awards, fake streams, or inflated claims.
+
+## 2026-06-10-2351 — Catalogue Excel Pipeline and Browse Page Update
+
+- Moved catalogue management to Excel master file.
+- Added generator script to create lib/catalogueBrowse.ts from Excel.
+- Added npm command: npm run generate:catalogue.
+- Confirmed 41 catalogue works generated from spreadsheet.
+- Added multi-artist filtering.
+- Repositioned catalogue page from M-WIS-specific to Chronicle Music Publishing catalogue.
+- Updated hero image to /assets/ecosystem/chronicle-catalouge-hero.png.
+- Removed hero stats block.
+- Added code-side genre ordering so Adult Contemporary appears first.
