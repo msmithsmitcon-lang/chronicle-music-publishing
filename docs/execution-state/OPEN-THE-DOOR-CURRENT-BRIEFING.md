@@ -164,3 +164,38 @@ Plexicon doctrine owns:
 - Supersedes: no prior Chronicle Open The Door briefing found
 - Next review trigger: human acceptance/revision, active workstream change, next allowed action change, Core manifest update, or major blocker change
 
+
+## Checkpoint Update — 2026-06-10-1959
+
+### Current return point
+Chronicle website has a stable checkpoint after:
+- M-WIS artist page refinement.
+- Huey-D artist page refinement.
+- Catalogue routing moved from /catalogue to /catalogue/browse for live navigation/buttons.
+- /about page created with Chronicle-only positioning and cinematic sections.
+
+### Current approved direction
+Chronicle Music remains the public website’s primary brand.
+The website should focus on:
+- artists,
+- represented works,
+- catalogue discovery,
+- publishing identity,
+- company story,
+- rights/legacy value,
+- Chronicle capabilities.
+
+### Brand boundary
+Do not turn the Chronicle About page into a Sentry Sound / StudyEdge ecosystem page.
+Sentry Sound and StudyEdge may appear only when relevant to an individual artist story.
+
+### Next likely work
+Review /about visually and perform small polish only.
+Then continue catalogue page refinement or contact/capabilities cleanup.
+
+### Rollback
+Backup folder:
+.\docs\backups\checkpoint-about-page-2026-06-10-1959
+
+Git commit target:
+Checkpoint Chronicle artist pages catalogue routing and About page

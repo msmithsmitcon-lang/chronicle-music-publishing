@@ -35,7 +35,7 @@ export function Footer() {
               Artists
             </Link>
             <Link
-              href="/catalogue"
+              href="/catalogue/browse"
               className="transition hover:text-[color:var(--gold-accent)]"
             >
               Catalogue
@@ -74,7 +74,7 @@ export function Footer() {
               Artists
             </Link>
             <Link
-              href="/catalogue"
+              href="/catalogue/browse"
               className="transition hover:text-[color:var(--gold-accent)]"
             >
               Catalogue

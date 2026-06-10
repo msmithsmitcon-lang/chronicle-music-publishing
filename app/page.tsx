@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
@@ -147,7 +147,7 @@ export default function HomePage() {
             <div className="mb-5 flex items-center justify-between gap-4">
               <p className="eyebrow">Featured Works</p>
               <Link
-                href="/catalogue"
+                href="/catalogue/browse"
                 className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)]"
               >
                 View Catalogue
@@ -156,7 +156,7 @@ export default function HomePage() {
             <div className="grid gap-3">
               {featuredCatalogue.map((item) => (
                 <Link
-                  href="/catalogue"
+                  href="/catalogue/browse"
                   key={item.title}
                   className="group/item grid grid-cols-[4rem_1fr_auto] items-center gap-4 border border-[color:var(--line)] bg-black/25 p-3 transition hover:border-[color:var(--gold)]"
                 >

@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const heroFeatures = [
@@ -66,7 +66,7 @@ export function Hero() {
               </Link>
 
               <Link
-                href="/catalogue"
+                href="/catalogue/browse"
                 className="border border-[color:var(--line)] bg-white/[0.04] px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-ivory transition duration-300 hover:-translate-y-0.5 hover:border-[color:var(--gold)] hover:text-[color:var(--gold-accent)]"
               >
                 Discover The Music

@@ -213,3 +213,15 @@ Reviewed the live-route surface for the V1 stabilization phase and kept changes 
 ### Verification
 
 - `npm.cmd run build` passed after the V1 stabilization pass.
+
+## 2026-06-10-1959 — Checkpoint: Artist pages, catalogue routing, and About page
+
+- Created rollback backup at $backupDir.
+- Confirmed Chronicle Music remains the main brand and About page remains Chronicle-only.
+- Completed M-WIS creative archive / publishing dossier direction.
+- Completed Huey-D producer profile and individual StudyEdge ambassador positioning.
+- Added Huey-D Music / Technology / Legacy showcase.
+- Updated live catalogue navigation to route directly to /catalogue/browse.
+- Created /about page with cinematic Chronicle publishing-house sections.
+- Added About images from /assets/ecosystem.
+- Preserved rule against fake achievements, fake awards, fake streams, or inflated claims.
