@@ -40,7 +40,7 @@ export function Hero() {
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
 
       <div className="section-shell relative">
-        <div className="mx-auto flex min-h-[calc(100svh-5.5rem)] max-w-7xl items-center py-12 sm:py-14 lg:py-16">
+        <div className="mx-auto flex min-h-[calc(88svh-5rem)] max-w-7xl items-center py-10 sm:min-h-[calc(100svh-5.5rem)] sm:py-14 lg:py-16">
           <div className="max-w-4xl">
             <p className="eyebrow text-[0.72rem] tracking-[0.26em]">
               Independent music company
@@ -51,7 +51,7 @@ export function Hero() {
               <span className="block gold-text">That Lasts.</span>
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-[color:var(--text-secondary)] md:text-[1.35rem] md:leading-9">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-[color:var(--text-secondary)] sm:text-lg sm:leading-8 md:mt-7 md:text-[1.35rem] md:leading-9">
               Chronicle Music is an independent music company developing
               artists, releasing original music, and growing a catalogue for the
               future.

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CatalogueBrowsePage() {
   return (
     <main>
-      <section className="section-shell py-16 md:py-20">
+      <section className="section-shell py-8 sm:py-12 md:py-20">
         <CatalogueBrowse />
       </section>
     </main>

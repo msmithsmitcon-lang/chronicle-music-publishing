@@ -5,14 +5,14 @@ import { brand } from "@/lib/brand";
 export function Footer() {
   return (
     <footer className="border-t border-[color:var(--line)] bg-[#0A0A0A]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 text-sm text-stone-400 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 text-sm text-stone-400 sm:px-5 md:grid-cols-[1.2fr_0.8fr_0.8fr] md:gap-10 md:py-12">
         <div>
           <Image
             src={brand.logoFull}
             alt=""
             width={340}
             height={86}
-            className="h-14 w-auto object-contain"
+            className="h-12 w-auto max-w-[14rem] object-contain sm:h-14 sm:max-w-none"
           />
           <p className="brand-heading text-xl text-ivory">{brand.name}</p>
           <p className="mt-2 max-w-xl text-[color:var(--text-secondary)]">
@@ -64,9 +64,9 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-[color:var(--line)]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-5 text-xs uppercase tracking-[0.16em] text-[color:var(--text-secondary)] md:flex-row md:items-center md:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 text-[0.68rem] uppercase tracking-[0.13em] text-[color:var(--text-secondary)] sm:px-5 sm:text-xs sm:tracking-[0.16em] md:flex-row md:items-center md:justify-between">
           <p>{brand.name}</p>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
             <Link
               href="/artists"
               className="transition hover:text-[color:var(--gold-accent)]"

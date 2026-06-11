@@ -29,8 +29,8 @@ export default function HueyDArtistPage() {
 
   return (
     <main>
-      <section className="section-shell py-16 md:py-20">
-        <div className="relative mx-auto min-h-[34rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.03)]">
+      <section className="section-shell py-8 sm:py-12 md:py-20">
+        <div className="relative mx-auto min-h-[30rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55),inset_0_0_0_1px_rgba(255,255,255,0.03)] sm:min-h-[34rem]">
           <Image
             src={artist.image ?? "/assets/shared/chronicle-placeholder-cover.jpg"}
             alt={`${artist.name} profile artwork`}
@@ -42,12 +42,12 @@ export default function HueyDArtistPage() {
 
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_34%,rgba(212,175,55,0.16),transparent_18rem),linear-gradient(90deg,rgba(3,3,3,0.92)_0%,rgba(3,3,3,0.72)_40%,rgba(3,3,3,0.22)_68%,rgba(3,3,3,0.78)_100%),linear-gradient(180deg,rgba(3,3,3,0.12)_0%,rgba(3,3,3,0.74)_100%)]" />
 
-          <div className="relative z-10 flex min-h-[34rem] max-w-[42rem] flex-col justify-center p-8 md:p-12">
+          <div className="relative z-10 flex min-h-[30rem] max-w-[42rem] flex-col justify-center p-5 sm:min-h-[34rem] sm:p-8 md:p-12">
             <p className="eyebrow">DJ and Producer Profile</p>
-            <h1 className="brand-heading mt-5 text-[clamp(4rem,7vw,7.2rem)] leading-[0.9] tracking-[-0.055em] text-ivory">
+            <h1 className="brand-heading mt-4 text-[clamp(3rem,17vw,4.8rem)] leading-[0.9] tracking-[-0.045em] text-ivory sm:mt-5 md:text-[clamp(4rem,7vw,7.2rem)] md:tracking-[-0.055em]">
               {artist.name}
             </h1>
-            <p className="mt-5 max-w-[34rem] text-xl leading-8 text-[rgba(248,241,223,0.86)]">
+            <p className="mt-4 max-w-[34rem] text-base leading-7 text-[rgba(248,241,223,0.86)] sm:mt-5 sm:text-xl sm:leading-8">
               DJ, producer, creative profile, and future StudyEdge ambassador within the Chronicle / Sentry Sound ecosystem.
             </p>
             <p className="mt-6 max-w-[34rem] text-sm leading-7 text-[color:var(--text-secondary)]">
@@ -86,7 +86,7 @@ export default function HueyDArtistPage() {
       <section className="section-shell pb-14 md:pb-16">
         <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[1.05fr_0.95fr]">
           <section className="cinematic-panel overflow-hidden p-0">
-            <div className="relative min-h-[30rem]">
+            <div className="relative min-h-[20rem] sm:min-h-[30rem]">
               <Image
                 src={assets.ecosystem.hueyDMusicTechnologyLegacy}
                 alt="Huey-D Music Technology Legacy ecosystem"

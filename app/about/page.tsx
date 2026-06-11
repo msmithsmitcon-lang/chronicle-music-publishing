@@ -28,7 +28,7 @@ const values = [
 export default function AboutPage() {
   return (
     <main>
-      <section className="relative min-h-[72vh] overflow-hidden border-b border-[color:var(--line)] bg-black">
+      <section className="relative min-h-[56svh] overflow-hidden border-b border-[color:var(--line)] bg-black sm:min-h-[72vh]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_68%_32%,rgba(212,175,55,0.18),transparent_22rem),linear-gradient(90deg,rgba(3,3,3,0.96)_0%,rgba(3,3,3,0.72)_42%,rgba(3,3,3,0.36)_70%,rgba(3,3,3,0.88)_100%)]" />
         <Image
           src="/assets/ecosystem/chronicle-about-hero.png"
@@ -39,10 +39,10 @@ export default function AboutPage() {
           className="absolute inset-0 object-cover opacity-25"
         />
 
-        <div className="section-shell relative z-10 mx-auto flex min-h-[72vh] max-w-7xl items-center">
+        <div className="section-shell relative z-10 mx-auto flex min-h-[56svh] max-w-7xl items-center py-10 sm:min-h-[72vh] sm:py-0">
           <div className="max-w-[42rem]">
             <p className="eyebrow">About</p>
-            <h1 className="brand-heading mt-5 text-[clamp(3.8rem,7vw,7rem)] leading-[0.9] tracking-[-0.055em] text-ivory">
+            <h1 className="brand-heading mt-5 text-[clamp(3rem,14vw,5rem)] leading-[0.9] tracking-[-0.045em] text-ivory md:text-[clamp(3.8rem,7vw,7rem)] md:tracking-[-0.055em]">
               Chronicle
               <span className="block text-[color:var(--gold-accent)]">
                 Music Publishing
@@ -62,7 +62,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section-shell py-12 md:py-16">
-        <div className="relative mx-auto min-h-[38rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)]">
+        <div className="relative mx-auto min-h-[28rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)] sm:min-h-[38rem]">
           <Image
             src="/assets/ecosystem/chronicle-legacy-manuscript.png"
             alt="Chronicle Music legacy manuscript"
@@ -72,7 +72,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_38%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.72)_0%,rgba(3,3,3,0.46)_46%,rgba(3,3,3,0.12)_72%,rgba(3,3,3,0.50)_100%),linear-gradient(180deg,rgba(3,3,3,0.16)_0%,rgba(3,3,3,0.25)_100%)]" />
 
-          <article className="relative z-10 flex min-h-[38rem] max-w-[42rem] flex-col justify-center p-7 md:p-12">
+          <article className="relative z-10 flex min-h-[28rem] max-w-[42rem] flex-col justify-center p-5 sm:min-h-[38rem] sm:p-7 md:p-12">
             <p className="eyebrow">Our Purpose</p>
             <h2 className="brand-heading mt-4 text-3xl leading-tight text-ivory md:text-5xl">
               We do not just represent music.
@@ -94,7 +94,7 @@ export default function AboutPage() {
       <section className="section-shell py-10 md:py-14">
         <div className="mx-auto max-w-7xl">
           <p className="eyebrow text-center">What We Stand For</p>
-          <div className="mt-8 grid gap-4 md:grid-cols-5">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {values.map(([title, text]) => (
               <article
                 key={title}
@@ -113,7 +113,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section-shell py-12 md:py-16">
-        <div className="relative mx-auto min-h-[34rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)]">
+        <div className="relative mx-auto min-h-[28rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)] sm:min-h-[34rem]">
           <Image
             src="/assets/ecosystem/chronicle-music-legacy.png"
             alt="Chronicle Music legacy and catalogue archive"
@@ -123,7 +123,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_42%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.18)_0%,rgba(3,3,3,0.12)_45%,rgba(3,3,3,0.05)_72%,rgba(3,3,3,0.30)_100%),linear-gradient(180deg,rgba(3,3,3,0.18)_0%,rgba(3,3,3,0.25)_100%)]" />
 
-          <article className="relative z-10 flex min-h-[34rem] max-w-[42rem] flex-col justify-center p-7 md:p-12">
+          <article className="relative z-10 flex min-h-[28rem] max-w-[42rem] flex-col justify-center p-5 sm:min-h-[34rem] sm:p-7 md:p-12">
             <p className="eyebrow">We Believe That</p>
             <h2 className="brand-heading mt-4 text-3xl leading-tight text-ivory md:text-5xl">
               Music is more than sound.
@@ -141,7 +141,7 @@ export default function AboutPage() {
 
       <section className="section-shell py-12 md:py-16">
         <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="relative min-h-[34rem] overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)]">
+          <div className="relative min-h-[22rem] overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)] sm:min-h-[34rem]">
             <Image
               src="/assets/chronicle-sections/chronicle-contact-studio-hero.png"
               alt="Chronicle Music publishing approach"
@@ -151,7 +151,7 @@ export default function AboutPage() {
             />
           </div>
 
-          <article className="flex min-h-[34rem] flex-col justify-center rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-[linear-gradient(135deg,rgba(255,255,255,0.055),rgba(255,255,255,0.018)),rgba(12,12,12,0.92)] p-7 shadow-[0_22px_70px_rgba(0,0,0,0.55)] md:p-12">
+          <article className="flex min-h-[26rem] flex-col justify-center rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-[linear-gradient(135deg,rgba(255,255,255,0.055),rgba(255,255,255,0.018)),rgba(12,12,12,0.92)] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.55)] sm:min-h-[34rem] sm:p-7 md:p-12">
             <p className="eyebrow">Our Approach</p>
             <h2 className="brand-heading mt-4 text-3xl leading-tight text-ivory md:text-5xl">
               Bespoke publishing.

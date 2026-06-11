@@ -26,6 +26,7 @@
 
 html {
   background: var(--background);
+  overflow-x: hidden;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   text-rendering: geometricPrecision;
+  overflow-x: hidden;
 }
 
 body::selection {
@@ -60,6 +62,14 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+img,
+svg,
+video,
+canvas,
+audio {
+  max-width: 100%;
 }
 
 .section-shell {
@@ -150,6 +160,23 @@ textarea {
 
 .bg-charcoal {
   background-color: rgba(18, 18, 18, 0.82);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --space-shell: 0.85rem;
+    --shadow-premium: 0 18px 54px rgba(0, 0, 0, 0.42);
+    --shadow-gold: 0 0 42px rgba(212, 175, 55, 0.1);
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  .eyebrow {
+    font-size: 0.66rem;
+    letter-spacing: 0.18em;
+  }
 }
 
 

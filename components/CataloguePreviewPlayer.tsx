@@ -103,8 +103,8 @@ export function CataloguePreviewPlayer({
       <div
         className={
           isShowcase
-            ? "rounded-full border border-[rgba(200,169,107,0.28)] bg-black/45 px-3 py-2 [color-scheme:dark]"
-            : ""
+          ? "rounded-full border border-[rgba(200,169,107,0.28)] bg-black/45 px-3 py-2 [color-scheme:dark]"
+            : "[color-scheme:dark]"
         }
       >
         <audio

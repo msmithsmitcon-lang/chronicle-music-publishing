@@ -82,7 +82,7 @@ export function HueyDCollection() {
   }
 
   return (
-    <section className="section-shell py-14 md:py-16">
+    <section className="section-shell py-10 sm:py-14 md:py-16">
       <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[minmax(0,1fr)_24rem] lg:items-start">
         <div className="cinematic-panel p-5 md:p-6">
           <div className="mb-5 flex flex-col gap-3 border-b border-[color:var(--line)] pb-5 md:flex-row md:items-end md:justify-between">
@@ -108,7 +108,7 @@ export function HueyDCollection() {
                   key={track.title}
                   type="button"
                   onClick={() => playTrack(track)}
-                  className={`group grid w-full gap-3 rounded-[0.9rem] border px-3 py-2.5 text-left transition md:grid-cols-[3.5rem_minmax(0,1fr)_auto_auto] md:items-center ${
+                  className={`group grid w-full grid-cols-[3.25rem_minmax(0,1fr)] gap-3 rounded-[0.9rem] border px-3 py-3 text-left transition sm:grid-cols-[3.5rem_minmax(0,1fr)_auto] md:grid-cols-[3.5rem_minmax(0,1fr)_auto_auto] md:items-center md:py-2.5 ${
                     isSelected
                       ? "border-[color:var(--gold)] bg-[rgba(212,175,55,0.08)]"
                       : "border-[color:var(--line)] bg-black/24 hover:border-white/20 hover:bg-black/38"
@@ -134,12 +134,12 @@ export function HueyDCollection() {
                     </p>
                   </div>
 
-                  <span className="w-fit rounded-full border border-[color:var(--line)] bg-black/30 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[color:var(--gold-accent)]">
+                  <span className="w-fit rounded-full border border-[color:var(--line)] bg-black/30 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[color:var(--gold-accent)] max-sm:col-start-2">
                     {track.genre}
                   </span>
 
                   <span
-                    className={`inline-flex min-h-8 w-fit items-center rounded-full border px-3.5 text-[0.68rem] font-semibold uppercase tracking-[0.12em] ${
+                    className={`inline-flex min-h-8 w-fit items-center rounded-full border px-3.5 text-[0.68rem] font-semibold uppercase tracking-[0.12em] max-md:col-start-2 ${
                       isSelected
                         ? "border-[color:var(--gold)] bg-[color:var(--gold-accent)] text-black"
                         : "border-[color:var(--line)] bg-black/25 text-ivory group-hover:border-[color:var(--gold)] group-hover:text-[color:var(--gold-accent)]"
@@ -153,8 +153,8 @@ export function HueyDCollection() {
           </div>
         </div>
 
-        <aside className="cinematic-panel overflow-hidden border-l-2 border-l-[color:var(--gold)] p-5">
-          <div className="grid grid-cols-[5rem_1fr] gap-4">
+        <aside className="cinematic-panel overflow-hidden border-t-2 border-t-[color:var(--gold)] p-4 sm:p-5 lg:border-l-2 lg:border-t lg:border-l-[color:var(--gold)] lg:border-t-[color:var(--line)]">
+          <div className="grid grid-cols-[4.5rem_1fr] gap-3 sm:grid-cols-[5rem_1fr] sm:gap-4">
             <div className="relative aspect-square overflow-hidden rounded-[0.75rem] border border-[color:var(--line)] bg-black">
               <Image
                 src={selectedTrack.coverImage}
@@ -166,7 +166,7 @@ export function HueyDCollection() {
             </div>
             <div className="min-w-0">
               <p className="eyebrow">Selected Track</p>
-              <h2 className="brand-heading mt-2 text-2xl leading-tight text-ivory">
+              <h2 className="brand-heading mt-2 text-xl leading-tight text-ivory sm:text-2xl">
                 {selectedTrack.title}
               </h2>
               <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-stone-400">
@@ -183,7 +183,7 @@ export function HueyDCollection() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)]">
               Preview for catalogue context only
             </p>
-            <div className="mt-3 grid grid-cols-[2.5rem_1fr] items-center gap-3">
+            <div className="mt-3 grid grid-cols-[2.5rem_minmax(0,1fr)] items-center gap-3">
               <button
                 type="button"
                 onClick={() => playTrack(selectedTrack)}
@@ -194,7 +194,7 @@ export function HueyDCollection() {
                     : "Play Huey-D preview"
                 }
               >
-                {playingTitle === selectedTrack.title ? "Ⅱ" : "▶"}
+                {playingTitle === selectedTrack.title ? "II" : ">"}
               </button>
               <Waveform />
             </div>

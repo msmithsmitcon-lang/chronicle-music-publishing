@@ -13,24 +13,24 @@ const navItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[color:var(--line)] bg-[#0A0A0A]/92 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 md:flex-row md:items-center md:justify-between md:py-5">
+      <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:px-5 md:flex-row md:items-center md:justify-between md:py-5">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <Image
             src={brand.logoFull}
             alt="Chronicle Music"
             width={340}
             height={86}
-            className="h-20 w-auto max-w-[18rem] object-contain md:h-24 md:max-w-[22rem]"
+            className="h-14 w-auto max-w-[14rem] object-contain sm:h-16 sm:max-w-[16rem] md:h-24 md:max-w-[22rem]"
             priority
           />
         </Link>
 
-        <nav className="flex w-full flex-wrap items-center gap-x-5 gap-y-3 text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[color:var(--text-secondary)] md:w-auto lg:gap-7 lg:text-[0.68rem] lg:tracking-[0.22em]">
+        <nav className="-mx-4 flex w-[calc(100%+2rem)] items-center gap-4 overflow-x-auto px-4 pb-1 text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[color:var(--text-secondary)] [scrollbar-width:none] sm:-mx-5 sm:w-[calc(100%+2.5rem)] sm:px-5 sm:text-[0.66rem] sm:tracking-[0.18em] md:mx-0 md:w-auto md:flex-wrap md:overflow-visible md:px-0 md:pb-0 lg:gap-7 lg:text-[0.68rem] lg:tracking-[0.22em]">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="relative py-2 transition duration-300 hover:text-[color:var(--gold-accent)] after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[color:var(--gold-accent)] after:transition-all after:duration-300 hover:after:w-full"
+              className="relative shrink-0 py-2 transition duration-300 hover:text-[color:var(--gold-accent)] after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[color:var(--gold-accent)] after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </Link>

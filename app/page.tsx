@@ -158,7 +158,7 @@ export default function HomePage() {
                 <Link
                   href="/catalogue/browse"
                   key={item.title}
-                  className="group/item grid grid-cols-[4rem_1fr_auto] items-center gap-4 border border-[color:var(--line)] bg-black/25 p-3 transition hover:border-[color:var(--gold)]"
+                className="group/item grid grid-cols-[3.4rem_minmax(0,1fr)] items-center gap-3 border border-[color:var(--line)] bg-black/25 p-3 transition hover:border-[color:var(--gold)] sm:grid-cols-[4rem_1fr_auto] sm:gap-4"
                 >
                   <div className="relative aspect-square overflow-hidden">
                     <Image
@@ -170,12 +170,12 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-ivory">{item.title}</p>
+                    <p className="truncate font-semibold text-ivory">{item.title}</p>
                     <p className="mt-1 text-xs text-[color:var(--text-secondary)]">
                       {item.artist}
                     </p>
                   </div>
-                  <span className="grid h-9 w-9 place-items-center rounded-full border border-[color:var(--gold)] text-[color:var(--gold-accent)] transition group-hover/item:bg-[color:var(--gold)] group-hover/item:text-black">
+                  <span className="hidden h-9 w-9 place-items-center rounded-full border border-[color:var(--gold)] text-[color:var(--gold-accent)] transition group-hover/item:bg-[color:var(--gold)] group-hover/item:text-black sm:grid">
                     -&gt;
                   </span>
                 </Link>
@@ -184,7 +184,7 @@ export default function HomePage() {
                 <Link
                   href="/artists/huey-d"
                   key={item.title}
-                  className="group/item grid grid-cols-[4rem_1fr_auto] items-center gap-4 border border-[color:var(--line)] bg-black/25 p-3 transition hover:border-[color:var(--gold)]"
+                  className="group/item grid grid-cols-[3.4rem_minmax(0,1fr)] items-center gap-3 border border-[color:var(--line)] bg-black/25 p-3 transition hover:border-[color:var(--gold)] sm:grid-cols-[4rem_1fr_auto] sm:gap-4"
                 >
                   <div className="relative aspect-square overflow-hidden">
                     <Image
@@ -196,12 +196,12 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <p className="font-semibold text-ivory">{item.title}</p>
+                    <p className="truncate font-semibold text-ivory">{item.title}</p>
                     <p className="mt-1 text-xs text-[color:var(--text-secondary)]">
                       {item.artist}
                     </p>
                   </div>
-                  <span className="grid h-9 w-9 place-items-center rounded-full border border-[color:var(--gold)] text-[color:var(--gold-accent)] transition group-hover/item:bg-[color:var(--gold)] group-hover/item:text-black">
+                  <span className="hidden h-9 w-9 place-items-center rounded-full border border-[color:var(--gold)] text-[color:var(--gold-accent)] transition group-hover/item:bg-[color:var(--gold)] group-hover/item:text-black sm:grid">
                     -&gt;
                   </span>
                 </Link>

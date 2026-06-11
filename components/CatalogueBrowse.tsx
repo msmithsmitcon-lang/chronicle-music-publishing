@@ -49,8 +49,8 @@ function SelectedTrackPanel({
   }
 
   return (
-    <aside className="cinematic-panel overflow-hidden border-l-2 border-l-[color:var(--gold)] p-5">
-      <div className="grid grid-cols-[5.5rem_1fr] gap-4">
+    <aside className="cinematic-panel overflow-hidden border-t-2 border-t-[color:var(--gold)] p-4 sm:p-5 lg:border-l-2 lg:border-t lg:border-l-[color:var(--gold)] lg:border-t-[color:var(--line)]">
+      <div className="grid grid-cols-[4.5rem_1fr] gap-3 sm:grid-cols-[5.5rem_1fr] sm:gap-4">
         <div className="relative aspect-square overflow-hidden rounded-[var(--radius-card)] border border-[color:var(--line)] bg-black">
           <Image
             src={song.coverImage}
@@ -65,10 +65,10 @@ function SelectedTrackPanel({
 
         <div className="min-w-0">
           <p className="eyebrow">Selected Track</p>
-          <h2 className="brand-heading mt-2 text-2xl leading-tight text-ivory md:text-3xl">
+          <h2 className="brand-heading mt-2 text-xl leading-tight text-ivory sm:text-2xl md:text-3xl">
             {song.title}
           </h2>
-          <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-stone-400">
+          <p className="mt-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-stone-400 sm:text-xs sm:tracking-[0.18em]">
             {song.artist}
           </p>
         </div>
@@ -76,19 +76,19 @@ function SelectedTrackPanel({
 
       <div className="mt-5 grid gap-5">
         <div className="grid gap-3 text-sm text-[color:var(--text-secondary)]">
-          <div className="grid grid-cols-[7rem_1fr] gap-3 border-b border-[color:var(--line)] pb-3">
+          <div className="grid gap-1 border-b border-[color:var(--line)] pb-3 sm:grid-cols-[7rem_1fr] sm:gap-3">
             <span className="text-xs uppercase tracking-[0.16em] text-stone-500">
               Category
             </span>
             <span className="text-ivory">{song.genre}</span>
           </div>
-          <div className="grid grid-cols-[7rem_1fr] gap-3 border-b border-[color:var(--line)] pb-3">
+          <div className="grid gap-1 border-b border-[color:var(--line)] pb-3 sm:grid-cols-[7rem_1fr] sm:gap-3">
             <span className="text-xs uppercase tracking-[0.16em] text-stone-500">
               Language
             </span>
             <span className="text-ivory">{song.language}</span>
           </div>
-          <div className="grid grid-cols-[7rem_1fr] gap-3 border-b border-[color:var(--line)] pb-3">
+          <div className="grid gap-1 border-b border-[color:var(--line)] pb-3 sm:grid-cols-[7rem_1fr] sm:gap-3">
             <span className="text-xs uppercase tracking-[0.16em] text-stone-500">
               Mood
             </span>
@@ -122,7 +122,7 @@ function SelectedTrackPanel({
 
         <Link
           href="/contact"
-          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[color:var(--gold)] bg-[linear-gradient(135deg,rgba(212,175,55,0.1),rgba(0,0,0,0.24))] px-5 text-center text-xs font-semibold uppercase tracking-[0.14em] text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[linear-gradient(135deg,rgba(212,175,55,0.18),rgba(0,0,0,0.3))] hover:text-ivory"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[color:var(--gold)] bg-[linear-gradient(135deg,rgba(212,175,55,0.1),rgba(0,0,0,0.24))] px-4 text-center text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[linear-gradient(135deg,rgba(212,175,55,0.18),rgba(0,0,0,0.3))] hover:text-ivory sm:px-5 sm:text-xs sm:tracking-[0.14em]"
         >
           Publishing / Licensing Discussion
         </Link>
@@ -156,14 +156,14 @@ function PremiumFilterDropdown({
       <button
         type="button"
         onClick={onToggle}
-        className="flex min-h-13 items-center justify-between rounded-[0.55rem] border border-[rgba(217,170,73,0.24)] bg-black/55 px-4 text-left text-sm text-ivory outline-none transition hover:border-[rgba(217,170,73,0.52)]"
+        className="flex min-h-12 items-center justify-between gap-3 rounded-[0.55rem] border border-[rgba(217,170,73,0.24)] bg-black/55 px-3 text-left text-sm text-ivory outline-none transition hover:border-[rgba(217,170,73,0.52)] sm:min-h-13 sm:px-4"
       >
-        <span>{value}</span>
+        <span className="min-w-0 truncate">{value}</span>
         <span className="text-[color:var(--gold-accent)]">v</span>
       </button>
 
       {isOpen ? (
-        <div className="absolute left-0 right-0 top-[4.8rem] z-40 max-h-72 overflow-auto rounded-[0.55rem] border border-[rgba(217,170,73,0.34)] bg-[#090806] shadow-[0_24px_70px_rgba(0,0,0,0.72)]">
+        <div className="absolute left-0 right-0 top-[4.45rem] z-40 max-h-64 overflow-auto rounded-[0.55rem] border border-[rgba(217,170,73,0.34)] bg-[#090806] shadow-[0_24px_70px_rgba(0,0,0,0.72)] sm:top-[4.8rem] sm:max-h-72">
           {options.map((option) => (
             <button
               key={option}
@@ -279,8 +279,8 @@ export function CatalogueBrowse() {
   }
 
   return (
-    <div className="mx-auto grid max-w-7xl gap-8">
-      <section className="cinematic-panel relative overflow-hidden p-6 md:p-8">
+    <div className="mx-auto grid max-w-7xl gap-5 sm:gap-6 md:gap-8">
+      <section className="cinematic-panel relative overflow-hidden p-4 sm:p-6 md:p-8">
         <div className="absolute inset-0 overflow-hidden">
           <Image
             src="/assets/ecosystem/chronicle-catalouge-hero.png"
@@ -295,10 +295,10 @@ export function CatalogueBrowse() {
         <div className="relative z-10">
           <div>
             <p className="eyebrow">Browse Catalogue</p>
-            <h1 className="brand-heading mt-4 max-w-4xl text-4xl leading-tight text-ivory md:text-6xl">
+            <h1 className="brand-heading mt-3 max-w-4xl text-[clamp(2.15rem,10vw,3.25rem)] leading-[1.02] text-ivory sm:mt-4 md:text-6xl">
               Discover the Chronicle Music Publishing Catalogue.
             </h1>
-            <p className="mt-5 max-w-3xl text-base leading-8 text-[color:var(--text-secondary)] md:text-lg">
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-[color:var(--text-secondary)] sm:text-base md:mt-5 md:text-lg md:leading-8">
               Search by title, artist, category, language, or mood. Explore
               represented works, discover new voices, and preview selected
               catalogue recordings.
@@ -307,8 +307,8 @@ export function CatalogueBrowse() {
         </div>
       </section>
 
-      <section className="premium-panel border border-[rgba(217,170,73,0.22)] bg-[linear-gradient(135deg,rgba(10,10,10,0.94),rgba(22,16,7,0.62),rgba(5,5,5,0.94))] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.45)] md:p-6">
-        <div className="grid gap-4 lg:grid-cols-[1.45fr_0.75fr_0.75fr_0.75fr_auto] lg:items-end">
+      <section className="premium-panel border border-[rgba(217,170,73,0.22)] bg-[linear-gradient(135deg,rgba(10,10,10,0.94),rgba(22,16,7,0.62),rgba(5,5,5,0.94))] p-4 shadow-[0_22px_70px_rgba(0,0,0,0.45)] sm:p-5 md:p-6">
+        <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-[1.45fr_0.75fr_0.75fr_0.75fr_auto] lg:items-end">
           <label className="grid gap-2">
             <span className="text-xs font-semibold uppercase tracking-[0.16em] text-stone-500">
               Search
@@ -316,8 +316,8 @@ export function CatalogueBrowse() {
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search title, artist, mood, language, category"
-              className="min-h-13 rounded-[0.55rem] border border-[rgba(217,170,73,0.2)] bg-black/55 px-4 text-sm text-ivory outline-none transition placeholder:text-stone-600 focus:border-[color:var(--gold)] focus:shadow-[0_0_28px_rgba(217,170,73,0.12)]"
+              placeholder="Search title, artist, mood"
+              className="min-h-12 rounded-[0.55rem] border border-[rgba(217,170,73,0.2)] bg-black/55 px-3 text-sm text-ivory outline-none transition placeholder:text-stone-600 focus:border-[color:var(--gold)] focus:shadow-[0_0_28px_rgba(217,170,73,0.12)] sm:min-h-13 sm:px-4"
             />
           </label>
 
@@ -363,7 +363,7 @@ export function CatalogueBrowse() {
             }}
           />
 
-          <label className="flex min-h-13 items-center gap-3 rounded-[0.55rem] border border-[rgba(217,170,73,0.2)] bg-black/45 px-4 text-sm text-[color:var(--text-secondary)] transition hover:border-[rgba(217,170,73,0.42)]">
+          <label className="flex min-h-12 items-center gap-3 rounded-[0.55rem] border border-[rgba(217,170,73,0.2)] bg-black/45 px-3 text-sm text-[color:var(--text-secondary)] transition hover:border-[rgba(217,170,73,0.42)] sm:min-h-13 sm:px-4">
             <input
               type="checkbox"
               checked={previewOnly}
@@ -374,17 +374,17 @@ export function CatalogueBrowse() {
           </label>
         </div>
       </section>
-      <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_25rem] lg:items-start">
+      <section className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_25rem] lg:items-start">
         <div className="grid gap-6">
-          <div className="flex flex-col gap-2 border-b border-[color:var(--line)] pb-4 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-2 border-b border-[color:var(--line)] pb-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="eyebrow">Filtered Works</p>
-              <h2 className="brand-heading mt-2 text-3xl text-ivory">
+              <h2 className="brand-heading mt-2 text-2xl text-ivory sm:text-3xl">
                 {filteredSongs.length} catalogue result
                 {filteredSongs.length === 1 ? "" : "s"}
               </h2>
             </div>
-            <p className="text-sm leading-6 text-[color:var(--text-secondary)]">
+            <p className="text-xs leading-5 text-[color:var(--text-secondary)] sm:text-sm sm:leading-6">
               Streaming links available on request.
             </p>
           </div>
@@ -408,14 +408,14 @@ export function CatalogueBrowse() {
                         key={song.title}
                         type="button"
                         onClick={() => handleTrackClick(song)}
-                        className={`group grid w-full gap-3 border px-3 py-2.5 text-left transition md:grid-cols-[3.5rem_minmax(12rem,1fr)_auto_auto_auto] md:items-center ${
+                        className={`group grid w-full gap-3 border px-3 py-3 text-left transition md:grid-cols-[3.5rem_minmax(12rem,1fr)_auto_auto_auto] md:items-center md:py-2.5 ${
                           isSelected
                             ? "border-[color:var(--gold)] bg-[rgba(212,175,55,0.08)] shadow-[inset_3px_0_0_var(--gold-accent)]"
                             : "border-[color:var(--line)] bg-black/24 hover:border-white/20 hover:bg-black/38"
                         }`}
                         aria-pressed={isSelected}
                       >
-                        <div className="grid grid-cols-[3.5rem_1fr] gap-3 md:block">
+                        <div className="grid grid-cols-[3.25rem_minmax(0,1fr)] gap-3 md:block">
                           <div className="relative aspect-square overflow-hidden rounded-[var(--radius-card)] border border-[color:var(--line)] bg-black">
                             <Image
                               src={song.coverImage}
@@ -426,7 +426,7 @@ export function CatalogueBrowse() {
                             />
                           </div>
                           <div className="min-w-0 md:hidden">
-                            <h4 className="truncate text-sm font-semibold leading-tight text-ivory">
+                            <h4 className="line-clamp-2 text-sm font-semibold leading-tight text-ivory">
                               {song.title}
                             </h4>
                             <p className="mt-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-stone-400">
@@ -446,16 +446,16 @@ export function CatalogueBrowse() {
                           </div>
                         </div>
 
-                        <div className="flex flex-wrap items-center gap-2 md:justify-end">
-                          <span className="border border-[color:var(--line)] bg-black/30 px-2 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-ivory">
+                        <div className="flex min-w-0 flex-wrap items-center gap-2 md:justify-end">
+                          <span className="max-w-full truncate border border-[color:var(--line)] bg-black/30 px-2 py-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-ivory sm:text-[0.68rem] sm:tracking-[0.1em]">
                             {song.genre}
                           </span>
-                          <span className="border border-[color:var(--line)] bg-black/30 px-2 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-stone-300">
+                          <span className="border border-[color:var(--line)] bg-black/30 px-2 py-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-stone-300 sm:text-[0.68rem] sm:tracking-[0.1em]">
                             {song.language}
                           </span>
                         </div>
 
-                        <div className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[color:var(--text-secondary)] md:justify-end">
+                        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[color:var(--text-secondary)] sm:text-[0.68rem] sm:tracking-[0.1em] md:justify-end">
                           <span
                             className={
                               song.audioFileName
@@ -465,14 +465,14 @@ export function CatalogueBrowse() {
                           >
                             {song.audioFileName ? "Preview" : "On request"}
                           </span>
-                          <span className="text-stone-500">
+                          <span className="hidden text-stone-500 sm:inline">
                             Streaming on request
                           </span>
                         </div>
 
-                        <div className="flex items-center justify-end">
+                        <div className="flex items-center md:justify-end">
                           <span
-                            className={`inline-flex min-h-8 items-center rounded-full border px-3.5 text-[0.68rem] font-semibold uppercase tracking-[0.12em] ${
+                            className={`inline-flex min-h-8 items-center rounded-full border px-3 text-[0.66rem] font-semibold uppercase tracking-[0.1em] sm:px-3.5 sm:text-[0.68rem] sm:tracking-[0.12em] ${
                               isSelected
                                 ? "border-[color:var(--gold)] bg-[color:var(--gold-accent)] text-black"
                                 : "border-[color:var(--line)] bg-black/25 text-ivory group-hover:border-[color:var(--gold)] group-hover:text-[color:var(--gold-accent)]"
@@ -494,7 +494,7 @@ export function CatalogueBrowse() {
           )}
         </div>
 
-        <div className="order-first lg:order-none">
+        <div className="lg:sticky lg:top-36">
           <SelectedTrackPanel
             song={selectedSong}
             playbackCommand={playbackCommand}
