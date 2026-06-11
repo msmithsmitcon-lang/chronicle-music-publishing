@@ -4,8 +4,16 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getArtistCatalogue, getArtistProfile } from "@/lib/artists";
 import { assets } from "@/lib/assets";
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 const artist = getArtistProfile("m-wis");
+
+const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/mwis.chronicle/", icon: FaInstagram },
+  { label: "Facebook", href: "https://www.facebook.com/mwis.chronicle", icon: FaFacebookF },
+  { label: "YouTube", href: "https://www.youtube.com/@M-Wis", icon: FaYoutube },
+  { label: "TikTok", href: "https://www.tiktok.com/@mwis.chronicle", icon: FaTiktok },
+];
 
 export const metadata: Metadata = {
   title: "M-WIS",
@@ -67,8 +75,23 @@ export default function MWisArtistPage() {
               {artist.name}
             </h2>
             <p className="mt-4 max-w-[28rem] text-xs font-bold uppercase leading-[1.65] tracking-[0.21em] text-[color:var(--gold-accent)]">
-              Writer. Recording artist. Sonic storyteller.
+              Producer. Songwriter. Music Creator. Creative Visionary.
             </p>
+            <div className="mt-5 flex gap-3">
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  aria-label={`Follow M-Wis on ${label}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="grid h-10 w-10 place-items-center rounded-full border border-[rgba(217,170,73,0.36)] bg-black/35 text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[rgba(217,170,73,0.12)] hover:text-ivory"
+                >
+                  <Icon size={17} />
+                </Link>
+              ))}
+            </div>
+
             <p className="mt-5 max-w-[28rem] text-[0.93rem] leading-[1.75] text-[rgba(248,241,223,0.76)]">
               {artist.biography}
             </p>
@@ -130,7 +153,7 @@ export default function MWisArtistPage() {
               </div>
 
               <Link href="/catalogue/browse" className="inline-flex w-fit rounded-full border border-[color:var(--gold)] bg-[linear-gradient(135deg,rgba(212,175,55,0.1),rgba(0,0,0,0.24))] px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[linear-gradient(135deg,rgba(212,175,55,0.18),rgba(0,0,0,0.3))] hover:text-ivory">
-                View Catalogue <span className="ml-4">Ã¢â€ â€™</span>
+                View Catalogue <span className="ml-4">-&gt;</span>
               </Link>
             </div>
 

@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { CataloguePreviewPlayer } from "@/components/CataloguePreviewPlayer";
 import { assets } from "@/lib/assets";
@@ -123,7 +123,7 @@ export default function ArtistsMockupPage() {
               behind them. We protect rights, amplify voices and build lasting
               legacies.
             </p>
-            <Link href="/catalogue" className={styles.goldPill}>
+            <Link href="/catalogue/browse" className={styles.goldPill}>
               Explore Catalogue <span aria-hidden="true">↗</span>
             </Link>
           </div>
@@ -201,7 +201,7 @@ export default function ArtistsMockupPage() {
                 From artists to producers, Chronicle develops music, stories,
                 and catalogue value around selected original works.
               </p>
-              <Link href="/catalogue" className={styles.goldPill}>
+              <Link href="/catalogue/browse" className={styles.goldPill}>
                 Browse Catalogue <span aria-hidden="true">↗</span>
               </Link>
             </div>

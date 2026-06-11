@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -68,9 +68,9 @@ export default function AboutPage() {
             alt="Chronicle Music legacy manuscript"
             fill
             sizes="100vw"
-            className="absolute inset-0 object-cover opacity-62"
+            className="absolute inset-0 object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_38%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.9)_0%,rgba(3,3,3,0.64)_46%,rgba(3,3,3,0.24)_72%,rgba(3,3,3,0.74)_100%),linear-gradient(180deg,rgba(3,3,3,0.16)_0%,rgba(3,3,3,0.82)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_38%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.72)_0%,rgba(3,3,3,0.46)_46%,rgba(3,3,3,0.12)_72%,rgba(3,3,3,0.50)_100%),linear-gradient(180deg,rgba(3,3,3,0.16)_0%,rgba(3,3,3,0.25)_100%)]" />
 
           <article className="relative z-10 flex min-h-[38rem] max-w-[42rem] flex-col justify-center p-7 md:p-12">
             <p className="eyebrow">Our Purpose</p>
@@ -119,9 +119,9 @@ export default function AboutPage() {
             alt="Chronicle Music legacy and catalogue archive"
             fill
             sizes="100vw"
-            className="absolute inset-0 object-cover opacity-45"
+            className="absolute inset-0 object-cover opacity-85"
           />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_42%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.9)_0%,rgba(3,3,3,0.62)_45%,rgba(3,3,3,0.28)_72%,rgba(3,3,3,0.76)_100%),linear-gradient(180deg,rgba(3,3,3,0.18)_0%,rgba(3,3,3,0.82)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_42%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.18)_0%,rgba(3,3,3,0.12)_45%,rgba(3,3,3,0.05)_72%,rgba(3,3,3,0.30)_100%),linear-gradient(180deg,rgba(3,3,3,0.18)_0%,rgba(3,3,3,0.25)_100%)]" />
 
           <article className="relative z-10 flex min-h-[34rem] max-w-[42rem] flex-col justify-center p-7 md:p-12">
             <p className="eyebrow">We Believe That</p>
@@ -133,25 +133,25 @@ export default function AboutPage() {
             </h2>
             <div className="mt-6 h-px w-20 bg-[color:var(--gold-accent)]" />
             <p className="mt-6 text-sm leading-7 text-[color:var(--text-secondary)]">
-              Our mission is to ensure music is protected, valued, and heard —
-              with dignity, care, and professional publishing support.
+              Our mission is to ensure music is protected, valued, and heard with dignity, care, and professional publishing support.
             </p>
           </article>
         </div>
       </section>
 
       <section className="section-shell py-12 md:py-16">
-        <div className="relative mx-auto min-h-[38rem] max-w-7xl overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)]">
-          <Image
-            src="/assets/ecosystem/chronicle-publishing-approach.png"
-            alt="Chronicle Music publishing approach"
-            fill
-            sizes="100vw"
-            className="absolute inset-0 object-cover opacity-58"
-          />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_28%_42%,rgba(212,175,55,0.18),transparent_20rem),linear-gradient(90deg,rgba(3,3,3,0.38)_0%,rgba(3,3,3,0.58)_42%,rgba(3,3,3,0.92)_100%),linear-gradient(180deg,rgba(3,3,3,0.14)_0%,rgba(3,3,3,0.84)_100%)]" />
+        <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="relative min-h-[34rem] overflow-hidden rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-black shadow-[0_22px_70px_rgba(0,0,0,0.55)]">
+            <Image
+              src="/assets/chronicle-sections/chronicle-contact-studio-hero.png"
+              alt="Chronicle Music publishing approach"
+              fill
+              sizes="(min-width: 1024px) 54vw, 100vw"
+              className="object-contain scale-90 object-center opacity-100"
+            />
+          </div>
 
-          <article className="relative z-10 ml-auto flex min-h-[38rem] max-w-[45rem] flex-col justify-center p-7 md:p-12">
+          <article className="flex min-h-[34rem] flex-col justify-center rounded-[0.62rem] border border-[rgba(217,170,73,0.28)] bg-[linear-gradient(135deg,rgba(255,255,255,0.055),rgba(255,255,255,0.018)),rgba(12,12,12,0.92)] p-7 shadow-[0_22px_70px_rgba(0,0,0,0.55)] md:p-12">
             <p className="eyebrow">Our Approach</p>
             <h2 className="brand-heading mt-4 text-3xl leading-tight text-ivory md:text-5xl">
               Bespoke publishing.
@@ -178,3 +178,12 @@ export default function AboutPage() {
     </main>
   );
 }
+
+
+
+
+
+
+
+
+

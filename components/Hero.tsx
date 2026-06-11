@@ -33,10 +33,10 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-[0.58]"
+        className="object-cover opacity-[0.82] brightness-110"
       />
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(212,175,55,0.22),transparent_25rem),linear-gradient(90deg,#0A0A0A_0%,rgba(10,10,10,0.86)_42%,rgba(10,10,10,0.22)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(212,175,55,0.22),transparent_25rem),linear-gradient(90deg,#0A0A0A_0%,rgba(10,10,10,0.68)_42%,rgba(10,10,10,0.08)_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
 
       <div className="section-shell relative">
@@ -94,3 +94,4 @@ export function Hero() {
     </section>
   );
 }
+

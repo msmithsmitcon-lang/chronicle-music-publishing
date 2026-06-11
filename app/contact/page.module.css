@@ -18,17 +18,17 @@
 }
 
 .heroImage {
-  object-fit: cover;
-  object-position: 58% center;
-  opacity: 0.72;
-  filter: saturate(0.92) contrast(1.12) brightness(0.72);
+  object-fit: contain; transform: scale(0.8);
+  object-position: left center;
+  opacity: 0.88;
+  filter: saturate(1) contrast(1.05) brightness(0.9);
 }
 
 .heroShade {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.72) 30%, rgba(5, 5, 5, 0.18) 58%, rgba(5, 5, 5, 0.72) 100%),
+    linear-gradient(90deg, rgba(5, 5, 5, 0.82) 0%, rgba(5, 5, 5, 0.55) 30%, rgba(5, 5, 5, 0.10) 58%, rgba(5, 5, 5, 0.55) 100%),
     linear-gradient(180deg, rgba(5, 5, 5, 0.34) 0%, rgba(5, 5, 5, 0.16) 48%, #050505 100%);
 }
 
@@ -154,18 +154,16 @@
 }
 
 .audienceImage {
-  object-fit: cover;
-  object-position: 22% center;
-  opacity: 0.74;
-  filter: saturate(0.92) contrast(1.15) brightness(0.7);
+  object-fit: contain; transform: scale(0.8);
+  object-position: 0% center; transform: translateX(-15%);
+  opacity: 0.9;
+  filter: saturate(1) contrast(1.05) brightness(0.95);
 }
 
 .audienceOverlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.44) 42%, rgba(5, 5, 5, 0.92) 76%),
-    radial-gradient(circle at 35% 48%, rgba(212, 175, 55, 0.18), transparent 13rem);
+  background: transparent;
 }
 
 .audienceCopy {
@@ -344,7 +342,7 @@
 }
 
 .catalogueImage {
-  object-fit: cover;
+  object-fit: contain; transform: scale(0.8);
   object-position: 66% center;
   opacity: 0.58;
   filter: saturate(0.9) contrast(1.12) brightness(0.62);
@@ -445,10 +443,10 @@
   }
 
   .audienceOverlay {
-    background:
-      linear-gradient(180deg, rgba(5, 5, 5, 0.24), rgba(5, 5, 5, 0.92)),
-      radial-gradient(circle at 36% 42%, rgba(212, 175, 55, 0.18), transparent 12rem);
-  }
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
 
   .formCard {
     padding: 1.35rem;
@@ -468,3 +466,31 @@
     font-size: 0.66rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -94,9 +94,9 @@ export function ContactEmailForm() {
         Send Enquiry <span aria-hidden="true">-&gt;</span>
       </button>
       <p className={styles.formNote}>
-        <span aria-hidden="true">[]</span> This opens your email app with the
-        enquiry addressed to Markus.
+        <span aria-hidden="true">[]</span> This opens your email app with the enquiry addressed to Chronicle Music.
       </p>
     </form>
   );
 }
+

@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ContactEmailForm } from "./ContactEmailForm";
 import styles from "./page.module.css";
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -14,18 +15,25 @@ const contactDetails = [
   {
     icon: "@",
     label: "Email Us",
-    value: "info@chroniclemp.co.za",
-  },
-  {
-    icon: "T",
-    label: "Call Us",
-    value: "+27 71 242 7070",
+    value: "markus@chroniclemusic.co.za",
   },
   {
     icon: "SA",
     label: "Based in South Africa",
     value: "Working with creators globally",
   },
+  {
+    icon: "#",
+    label: "Follow Chronicle",
+    value: "Instagram / Facebook / YouTube / TikTok",
+  },
+];
+
+const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/chroniclemusicsa/", icon: FaInstagram },
+  { label: "Facebook", href: "https://www.facebook.com/chroniclemusicsa", icon: FaFacebookF },
+  { label: "YouTube", href: "https://www.youtube.com/@chroniclemusicsa", icon: FaYoutube },
+  { label: "TikTok", href: "https://www.tiktok.com/@chroniclemusicsa", icon: FaTiktok },
 ];
 
 const supportPoints = [
@@ -62,7 +70,7 @@ export default function ContactPage() {
 
         <div className={styles.shell}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>Contact</p>
+            <p className={styles.eyebrow}>Start the Conversation</p>
             <h1>
               Let&apos;s Build
               <br />
@@ -72,9 +80,7 @@ export default function ContactPage() {
             </h1>
             <div className={styles.signalLine} aria-hidden="true" />
             <p>
-              Whether you&apos;re an artist, rights holder, or collaborator,
-              we&apos;re here to help you protect your work, maximise your
-              value, and shape your legacy.
+              Whether you&apos;re an artist, collaborator, or creative partner, we&apos;d love to hear your story. Chronicle Music works with artists, develops original music, and builds releases and catalogues with long-term creative value.
             </p>
           </div>
         </div>
@@ -92,7 +98,24 @@ export default function ContactPage() {
                     </span>
                     <div>
                       <p>{item.label}</p>
-                      <span>{item.value}</span>
+                      {item.label === "Follow Chronicle" ? (
+                        <span className="flex gap-3">
+                          {socialLinks.map(({ label, href, icon: Icon }) => (
+                            <Link
+                              key={label}
+                              href={href}
+                              aria-label={label}
+                              className="text-[color:var(--text-secondary)] transition hover:text-[color:var(--gold-accent)]"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Icon size={18} />
+                            </Link>
+                          ))}
+                        </span>
+                      ) : (
+                        <span>{item.value}</span>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -100,7 +123,7 @@ export default function ContactPage() {
 
               <article className={styles.audienceCard}>
                 <Image
-                  src="/assets/chronicle-sections/resources-mic-reference.png"
+                  src="/assets/chronicle-sections/contact-mic-card-new.png"
                   alt="Studio microphone representing creator and rights holder conversations"
                   fill
                   sizes="(min-width: 1024px) 38vw, 100vw"
@@ -157,7 +180,7 @@ export default function ContactPage() {
                 opportunities.
               </p>
             </div>
-            <Link href="/contact" className={styles.catalogueButton}>
+            <Link href="mailto:markus@chroniclemusic.co.za?subject=Catalogue%20Submission%20Enquiry&body=Chronicle%20Music%20catalogue%20submission%20enquiry%0A%0AName:%0AEmail:%0AArtist%20/%20Company:%0ACatalogue%20or%20works%20summary:%0A%0AMessage:" className={styles.catalogueButton}>
               Submit Works <span aria-hidden="true">-&gt;</span>
             </Link>
           </aside>
@@ -166,3 +189,8 @@ export default function ContactPage() {
     </main>
   );
 }
+
+
+
+
+

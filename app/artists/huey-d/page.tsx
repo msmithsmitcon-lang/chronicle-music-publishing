@@ -5,8 +5,16 @@ import { notFound } from "next/navigation";
 import { HueyDCollection } from "@/components/HueyDCollection";
 import { getArtistProfile } from "@/lib/artists";
 import { assets } from "@/lib/assets";
+import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 const artist = getArtistProfile("huey-d");
+
+const socialLinks = [
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61590918562984", icon: FaFacebookF },
+  { label: "Instagram", href: "https://www.instagram.com/hueyd.chronicle/", icon: FaInstagram },
+  { label: "YouTube", href: "https://www.youtube.com/@HueyDOfficial", icon: FaYoutube },
+  { label: "TikTok", href: "https://www.tiktok.com/@hueyd.chronicle", icon: FaTiktok },
+];
 
 export const metadata: Metadata = {
   title: "Huey-D",
@@ -45,6 +53,21 @@ export default function HueyDArtistPage() {
             <p className="mt-6 max-w-[34rem] text-sm leading-7 text-[color:var(--text-secondary)]">
               Huey-D brings a producer-led sound shaped by rhythm, street culture, and creative collaboration. His profile reflects the energy behind the music, the people around it, and his future role as a visible face of the StudyEdge ecosystem.
             </p>
+            <div className="mt-6 flex gap-3">
+              {socialLinks.map(({ label, href, icon: Icon }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  aria-label={`Follow Huey-D on ${label}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="grid h-10 w-10 place-items-center rounded-full border border-[rgba(217,170,73,0.36)] bg-black/35 text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[rgba(217,170,73,0.12)] hover:text-ivory"
+                >
+                  <Icon size={17} />
+                </Link>
+              ))}
+            </div>
+
             <div className="mt-8 h-px w-16 bg-[color:var(--gold-accent)]" />
             <Link
               href="/catalogue/browse"

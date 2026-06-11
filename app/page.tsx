@@ -81,11 +81,11 @@ export default function HomePage() {
                 Our catalogue remains part of the business, but the public story begins with the artists, the music, and the creative direction behind each release.
               </p>
               <p>
-                Chronicle exists to build music that lasts — through story, sound, identity, and a growing body of original work.
+                Chronicle exists to build music that lasts â€” through story, sound, identity, and a growing body of original work.
               </p>
             </div>
             <Link
-              href="/contact"
+              href="/about"
               className="mt-7 inline-flex rounded-full border border-[color:var(--gold)] bg-[linear-gradient(135deg,rgba(212,175,55,0.1),rgba(0,0,0,0.24))] px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[linear-gradient(135deg,rgba(212,175,55,0.18),rgba(0,0,0,0.3))] hover:text-ivory"
             >
               Learn More About Us
@@ -134,7 +134,7 @@ export default function HomePage() {
                   creative catalogue readiness.
                 </p>
                 <span className="mt-5 inline-flex w-fit rounded-full border border-[color:var(--gold)] bg-black/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)] transition group-hover:bg-[rgba(212,175,55,0.14)] group-hover:text-ivory">
-                  View Artist Profile â†’
+                  View Artist Profile -&gt;
                 </span>
               </div>
             </Link>
@@ -253,6 +253,7 @@ export default function HomePage() {
     </>
   );
 }
+
 
 
 
