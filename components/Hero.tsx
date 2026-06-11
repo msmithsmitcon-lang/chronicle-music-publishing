@@ -40,13 +40,13 @@ export function Hero() {
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
 
       <div className="section-shell relative">
-        <div className="mx-auto flex min-h-[calc(100vh-5.5rem)] max-w-7xl items-center py-14 lg:py-16">
+        <div className="mx-auto flex min-h-[calc(100svh-5.5rem)] max-w-7xl items-center py-12 sm:py-14 lg:py-16">
           <div className="max-w-4xl">
             <p className="eyebrow text-[0.72rem] tracking-[0.26em]">
               Independent music company
             </p>
 
-            <h1 className="brand-heading mt-5 max-w-5xl text-5xl leading-[0.94] text-ivory md:text-7xl lg:text-[6.7rem]">
+            <h1 className="brand-heading mt-5 max-w-5xl text-[clamp(3.2rem,15vw,5rem)] leading-[0.94] text-ivory md:text-7xl lg:text-[6.7rem]">
               Building Music
               <span className="block gold-text">That Lasts.</span>
             </h1>
@@ -57,17 +57,17 @@ export function Hero() {
               future.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
                 href="/artists"
-                className="border border-[color:var(--gold)] bg-[linear-gradient(135deg,var(--gold-accent),var(--gold))] px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-black shadow-[0_18px_55px_var(--glow)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_70px_var(--glow)]"
+                className="border border-[color:var(--gold)] bg-[linear-gradient(135deg,var(--gold-accent),var(--gold))] px-6 py-3.5 text-center text-xs sm:px-7 sm:text-sm font-semibold uppercase tracking-[0.16em] text-black shadow-[0_18px_55px_var(--glow)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_70px_var(--glow)]"
               >
                 Explore Our Artists
               </Link>
 
               <Link
                 href="/catalogue/browse"
-                className="border border-[color:var(--line)] bg-white/[0.04] px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.16em] text-ivory transition duration-300 hover:-translate-y-0.5 hover:border-[color:var(--gold)] hover:text-[color:var(--gold-accent)]"
+                className="border border-[color:var(--line)] bg-white/[0.04] px-6 py-3.5 text-center text-xs sm:px-7 sm:text-sm font-semibold uppercase tracking-[0.16em] text-ivory transition duration-300 hover:-translate-y-0.5 hover:border-[color:var(--gold)] hover:text-[color:var(--gold-accent)]"
               >
                 Discover The Music
               </Link>
@@ -75,7 +75,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="premium-panel relative z-10 mx-auto mb-[-3rem] grid max-w-7xl gap-0 overflow-hidden md:grid-cols-4">
+        <div className="premium-panel relative z-10 mx-auto mb-[-2rem] grid max-w-7xl md:mb-[-3rem] gap-0 overflow-hidden md:grid-cols-4">
           {heroFeatures.map((feature) => (
             <div
               key={feature.title}
