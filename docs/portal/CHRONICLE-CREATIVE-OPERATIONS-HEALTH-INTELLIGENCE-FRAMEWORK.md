@@ -107,10 +107,10 @@ Each section below is a Phase 0.1 framework section.
 
 ### 3. Build a Living, Valuable Catalogue
 
-- Strategic outcome: Phase 0.1 framework section pending full insertion.
-- KPAs: Phase 0.1 framework section pending full insertion.
-- KPI composition: Phase 0.1 framework section pending full insertion.
-- Status: Phase 0.1 framework section.
+- Strategic outcome: captured in full.
+- KPAs: KPA 1 through KPA 8 captured in full.
+- KPI composition: complete.
+- Status: COMPLETE AND REPOSITORY LOCKED.
 
 ### 4. Build an Engaged Creative Community and Audience
 
@@ -234,8 +234,8 @@ Important:
 
 ## 11. Current Capture Status
 
-- Strategic Objectives: Strategic Objective 1 captured in full; Strategic Objective 2 captured in full; Strategic Objectives 3-6 remain future framework sections.
-- KPA Architecture: Strategic Objective 1 KPA architecture captured in full; Strategic Objective 2 KPA architecture captured in full.
+- Strategic Objectives: Strategic Objective 1 captured in full; Strategic Objective 2 captured in full; Strategic Objective 3 captured in full; Strategic Objectives 4-6 remain future framework sections.
+- KPA Architecture: Strategic Objective 1 KPA architecture captured in full; Strategic Objective 2 KPA architecture captured in full; Strategic Objective 3 KPA architecture captured in full.
 - KPI Composition:
   - Strategic Objective 1:
     - KPA 1 Creative Pipeline Health: CAPTURED.
@@ -255,8 +255,18 @@ Important:
     - KPA 6 Cultural Relevance & Meaningful Connection: CAPTURED.
     - KPA 7 Identity Longevity & Legacy Potential: CAPTURED.
   - Strategic Objective 2 Overall Status: COMPLETE AND REPOSITORY LOCKED.
+  - Strategic Objective 3:
+    - KPA 1 Catalogue Growth & Development: CAPTURED.
+    - KPA 2 Catalogue Quality & Enduring Value: CAPTURED.
+    - KPA 3 Catalogue Preservation & Historical Integrity: CAPTURED.
+    - KPA 4 Catalogue Context & Storytelling Value: CAPTURED.
+    - KPA 5 Catalogue Discoverability & Accessibility: CAPTURED.
+    - KPA 6 Catalogue Activation & Reuse Potential: CAPTURED.
+    - KPA 7 Audience Relationship with the Catalogue: CAPTURED.
+    - KPA 8 Catalogue Opportunity & Commercial Potential: CAPTURED.
+  - Strategic Objective 3 Overall Status: COMPLETE AND REPOSITORY LOCKED.
 
-## Phase 0.0 — Foundational Intelligence Principles
+## Phase 0.0 ? Foundational Intelligence Principles
 
 1. Chronicle is not building a task tracker.
 
@@ -264,7 +274,7 @@ Important:
 
 3. The central question is:
 
-   > “Is Chronicle Music becoming a stronger creative ecosystem than it was before, why or why not, and what must improve?”
+   > ?Is Chronicle Music becoming a stronger creative ecosystem than it was before, why or why not, and what must improve??
 
 4. The system evaluates health, not activity.
 
@@ -286,7 +296,7 @@ Important:
 
 9. This document will later guide Codex implementation. Codex must implement from the framework, not invent health logic.
 
-# Phase 0.1 — Strategic Objective Framework
+# Phase 0.1 ? Strategic Objective Framework
 
 ## Why Strategic Objectives Exist
 
@@ -1143,13 +1153,13 @@ COMPLETE AND REPOSITORY LOCKED
 KPI Composition Status:  
 COMPLETE
 
-KPA 1 — CAPTURED  
-KPA 2 — CAPTURED  
-KPA 3 — CAPTURED  
-KPA 4 — CAPTURED  
-KPA 5 — CAPTURED  
-KPA 6 — CAPTURED  
-KPA 7 — CAPTURED
+KPA 1 ? CAPTURED  
+KPA 2 ? CAPTURED  
+KPA 3 ? CAPTURED  
+KPA 4 ? CAPTURED  
+KPA 5 ? CAPTURED  
+KPA 6 ? CAPTURED  
+KPA 7 ? CAPTURED
 
 # Strategic Objective 2: Build Distinct and Valuable Creative Identities
 
@@ -1851,12 +1861,839 @@ CAPTURED
 Strategic Objective 2 Status:
 COMPLETE AND REPOSITORY LOCKED
 
+KPA 1 ? CAPTURED  
+KPA 2 ? CAPTURED  
+KPA 3 ? CAPTURED  
+KPA 4 ? CAPTURED  
+KPA 5 ? CAPTURED  
+KPA 6 ? CAPTURED  
+KPA 7 ? CAPTURED
+
+# Strategic Objective 3: Build a Living, Valuable Catalogue
+
+## Purpose
+
+Chronicle must develop a catalogue that is not merely a collection of songs, recordings, visual works, concepts, or creative assets.
+
+The catalogue must become a living intellectual property ecosystem that accumulates creative, cultural, historical, strategic, and commercial value over time.
+
+The objective is not simply to increase the number of works.
+
+The objective is to ensure that every work contributes to a larger body of intellectual property whose meaning, usability, discoverability, legacy, and opportunity potential grows across decades.
+
+## 12-Month Success State
+
+After 12 months:
+
+- The catalogue has grown with meaningful new intellectual property.
+- New additions strengthen the overall creative quality and identity of Chronicle.
+- Creative works are properly preserved with their history, context, contributors, and supporting assets.
+- The catalogue contains stories and narratives that deepen its cultural value.
+- Valuable works can be discovered, understood, and reused.
+- Previous creations continue creating new audience, creative, and strategic opportunities.
+- Audiences develop ongoing relationships with catalogue works.
+- The catalogue becomes increasingly valuable as a long-term creative asset.
+
+## Failure State
+
+The objective is failing when:
+
+- Catalogue growth occurs without increasing quality or strategic value.
+- Creative works lose historical context or supporting information.
+- Valuable works become forgotten or impossible to rediscover.
+- The catalogue only depends on new releases to remain relevant.
+- Older works have no ongoing audience or strategic value.
+- Creative opportunities are lost because assets, rights, information, or context are unavailable.
+- The catalogue exists as storage rather than a living intellectual property ecosystem.
+
+## Strategic Importance
+
+The Chronicle catalogue is the long-term memory and inheritance of the creative institution.
+
+Individual projects may succeed or fail, but a strong catalogue continuously compounds creative, cultural, and strategic value.
+
+A mature creative organisation treats every work as a long-term asset capable of influencing audiences, creating opportunities, preserving history, and contributing to institutional legacy.
+
+## KPA Index
+
+### KPA 1: Catalogue Growth & Development
+
+### KPA 2: Catalogue Quality & Enduring Value
+
+### KPA 3: Catalogue Preservation & Historical Integrity
+
+### KPA 4: Catalogue Context & Storytelling Value
+
+### KPA 5: Catalogue Discoverability & Accessibility
+
+### KPA 6: Catalogue Activation & Reuse Potential
+
+### KPA 7: Audience Relationship with the Catalogue
+
+### KPA 8: Catalogue Opportunity & Commercial Potential
+
+---
+
+## KPA 1: Catalogue Growth & Development
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures, standards, and strategic processes required to continuously develop a catalogue that increases long-term intellectual property value.
+
+#### Indicators of Strength
+
+- Clear standards exist for what constitutes valuable catalogue growth.
+- New works are evaluated according to creative quality and strategic contribution.
+- The catalogue strategy balances new creation with long-term institutional direction.
+- The ecosystem supports continuous development of meaningful intellectual property.
+- Growth decisions consider long-term identity, legacy, and catalogue balance.
+
+#### Indicators of Weakness
+
+- Catalogue growth focuses only on quantity.
+- New works are added without considering strategic contribution.
+- There is no clear direction for catalogue development.
+- The catalogue grows unevenly or with declining standards.
+- Creative output becomes disconnected from long-term institutional goals.
+
+#### Why This Category Matters
+
+A valuable catalogue is intentionally developed. More intellectual property does not automatically create more value.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators consistently contribute meaningful work that strengthens Chronicle's long-term catalogue vision.
+
+#### Indicators of Strength
+
+- Creators develop works that align with Chronicle's creative standards.
+- Contributors consider the long-term significance of their creations.
+- New works are properly completed, documented, and integrated into the catalogue.
+- Creators maintain responsibility for the quality and strategic value of their contributions.
+
+#### Indicators of Weakness
+
+- Creative output is created without regard for catalogue impact.
+- Works are abandoned or incompletely documented.
+- Contributors prioritise short-term production over lasting value.
+- The catalogue receives inconsistent creative contributions.
+
+#### Why This Category Matters
+
+The quality of the catalogue ultimately depends on the discipline and intention of the creators contributing to it.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether catalogue growth results in a stronger, more valuable, and more meaningful creative institution.
+
+#### Indicators of Strength
+
+- The catalogue develops greater creative depth and diversity.
+- Individual works strengthen the overall Chronicle identity.
+- The body of work becomes increasingly respected and recognised.
+- The catalogue demonstrates increasing long-term value.
+
+#### Indicators of Weakness
+
+- Growth does not improve the catalogue's reputation or usefulness.
+- New works dilute existing value.
+- The catalogue becomes large but lacks significance.
+- The overall identity of the catalogue weakens over time.
+
+#### Why This Category Matters
+
+Catalogue growth only matters when the institution becomes stronger because of what has been added.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators produce valuable work, but Chronicle lacks the strategy, standards, or structures required to turn individual creations into a coherent growing catalogue.
+
+2. **Strong System + Weak Execution**
+
+   Catalogue standards and direction exist, but creators fail to produce, document, or integrate works at the required level.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   The catalogue is growing correctly internally, but the resulting body of work is not increasing cultural, strategic, or long-term value.
+
+---
+
+## KPA 2: Catalogue Quality & Enduring Value
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the standards, review processes, preservation philosophy, and creative governance required to ensure that catalogue quality strengthens over time.
+
+#### Indicators of Strength
+
+- Clear standards define what qualifies as long-term valuable intellectual property.
+- Catalogue works are evaluated against artistic excellence, originality, authenticity, and strategic relevance.
+- Quality review and refinement processes exist before works become permanent catalogue assets.
+- The catalogue maintains a balanced body of work that reflects Chronicle's identity and creative philosophy.
+- Historical catalogue standards inform future creative decisions.
+
+#### Indicators of Weakness
+
+- Works enter the catalogue without sufficient creative evaluation.
+- Quantity is prioritised above lasting value.
+- Catalogue quality becomes inconsistent.
+- Creative standards decline over time.
+- There is no understanding of what makes a work valuable beyond immediate attention.
+
+#### Why This Category Matters
+
+A catalogue becomes a legacy asset because of the lasting significance of what it contains, not merely because of its size.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators consistently apply craftsmanship, honesty, and discipline when contributing to the Chronicle catalogue.
+
+#### Indicators of Strength
+
+- Creators treat every contribution as a long-term cultural asset.
+- Creative refinement continues until work reaches the appropriate standard.
+- Contributors understand the historical importance of their additions.
+- Short-term pressure does not compromise catalogue quality.
+
+#### Indicators of Weakness
+
+- Creators prioritise speed over craftsmanship.
+- Works are considered complete before reaching their potential.
+- Contributors add material without considering long-term impact.
+- Creative standards fluctuate based on circumstances.
+
+#### Why This Category Matters
+
+The future reputation of the institution depends on the discipline of the creators contributing to its history.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether the catalogue demonstrates increasing artistic, cultural, and strategic value over time.
+
+#### Indicators of Strength
+
+- Earlier works continue to hold meaning and relevance.
+- The catalogue develops a reputation for quality and originality.
+- Creative works gain respect from audiences, collaborators, and industry participants.
+- The overall value of the catalogue compounds as it grows.
+
+#### Indicators of Weakness
+
+- Older works quickly become irrelevant.
+- The catalogue lacks a consistent standard of excellence.
+- Creative output has little lasting impact.
+- Catalogue growth does not increase institutional value.
+
+#### Why This Category Matters
+
+Enduring quality is what transforms a collection of works into a lasting cultural asset.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Talented creators produce meaningful work, but Chronicle lacks the standards and processes necessary to preserve consistent catalogue excellence.
+
+2. **Strong System + Weak Execution**
+
+   Quality frameworks exist, but creators fail to apply the discipline required to maintain catalogue standards.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   The catalogue meets internal standards, but Chronicle must reassess whether the work is achieving meaningful cultural, creative, or strategic significance.
+
+---
+
+## KPA 3: Catalogue Preservation & Historical Integrity
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures required to preserve the complete history, context, assets, contributors, and evolution of its intellectual property.
+
+#### Indicators of Strength
+
+- Creative works are preserved together with their developmental history.
+- Contributor information, versions, decisions, and supporting materials are maintained.
+- Preservation standards exist for long-term access and future understanding.
+- The historical journey of Chronicle's creative evolution can be traced.
+
+#### Indicators of Weakness
+
+- Creative history is lost after release.
+- Important contributor knowledge disappears.
+- Original versions, decisions, or assets cannot be recovered.
+- The catalogue retains outputs but loses the story of how they were created.
+
+#### Why This Category Matters
+
+The value of a cultural institution depends not only on what it created, but on the preservation of its creative journey.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators and contributors actively preserve the knowledge and history surrounding their work.
+
+#### Indicators of Strength
+
+- Creators document important decisions and milestones.
+- Contributors preserve the context behind creative choices.
+- Historical material is treated as part of the intellectual property.
+- Teams actively maintain the accuracy and completeness of catalogue records.
+
+#### Indicators of Weakness
+
+- Documentation is ignored.
+- Historical information is considered unimportant.
+- Knowledge disappears when projects end.
+- Contributors rely on memory rather than preservation.
+
+#### Why This Category Matters
+
+Institutional memory is created when individual creative experiences become shared historical knowledge.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether preserved catalogue history increases the cultural, educational, and strategic value of Chronicle.
+
+#### Indicators of Strength
+
+- Audiences and collaborators can understand the story behind works.
+- Historical materials support future creative opportunities.
+- The catalogue becomes a documented creative legacy.
+- The institution gains deeper historical credibility.
+
+#### Indicators of Weakness
+
+- Works exist without meaningful historical context.
+- Future opportunities are limited because information has been lost.
+- The creative journey becomes impossible to communicate.
+- The catalogue loses potential long-term significance.
+
+#### Why This Category Matters
+
+Preservation transforms creative output into a historical asset that can continue creating value across generations.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators value their history, but Chronicle lacks the systems required to preserve institutional memory.
+
+2. **Strong System + Weak Execution**
+
+   Preservation structures exist, but creators fail to capture and maintain important historical information.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   Historical information is preserved effectively, but it is not yet increasing cultural understanding, strategic opportunity, or long-term value.
+
+---
+
+## KPA 4: Catalogue Context & Storytelling Value
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures, standards, and processes required to preserve the stories, meanings, creative intentions, and cultural context surrounding its intellectual property.
+
+#### Indicators of Strength
+
+- Creative works are accompanied by the stories behind their creation.
+- The intentions, inspirations, themes, and historical circumstances of works are preserved.
+- Contextual material is considered a valuable part of the intellectual property ecosystem.
+- The system encourages creators to capture the meaning behind their work.
+- Catalogue narratives are developed in a way that strengthens the broader Chronicle creative world.
+
+#### Indicators of Weakness
+
+- Works exist only as isolated creative outputs.
+- The meaning, origin, or creative journey behind works is lost.
+- Storytelling is treated as an optional marketing activity rather than cultural preservation.
+- Future audiences cannot understand why a work was significant.
+- The catalogue lacks a coherent historical narrative.
+
+#### Why This Category Matters
+
+Creative works become more valuable when the stories behind their existence are preserved. Context transforms content into cultural memory.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators consistently communicate and preserve the deeper meaning behind their creative work.
+
+#### Indicators of Strength
+
+- Creators document inspiration, intent, emotions, and creative decisions.
+- Contributors actively preserve the human story behind the work.
+- Creative narratives evolve naturally alongside the catalogue.
+- Creators recognise that storytelling contributes to long-term legacy.
+
+#### Indicators of Weakness
+
+- Creators complete projects without preserving their meaning.
+- Important personal, cultural, or creative insights are forgotten.
+- The creative journey becomes disconnected from the final work.
+- Story preservation depends on memory rather than intentional action.
+
+#### Why This Category Matters
+
+A catalogue gains emotional and historical depth when the people who created it actively preserve its story.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether catalogue stories deepen audience connection and increase the cultural significance of Chronicle's intellectual property.
+
+#### Indicators of Strength
+
+- Audiences understand and connect with the stories behind works.
+- The catalogue develops greater emotional depth and cultural meaning.
+- Creative stories create opportunities for education, media, archival use, and future interpretation.
+- Works remain relevant because their human context survives.
+
+#### Indicators of Weakness
+
+- Works are consumed without deeper understanding.
+- The catalogue lacks emotional or historical richness.
+- The significance of older works declines because their stories are unavailable.
+- The intellectual property has limited value beyond the original creative output.
+
+#### Why This Category Matters
+
+The stories surrounding a catalogue often become as valuable as the works themselves because they preserve the human and cultural journey behind creation.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators have meaningful stories and creative insight, but Chronicle lacks the structures required to preserve and connect them to the catalogue.
+
+2. **Strong System + Weak Execution**
+
+   Story preservation systems exist, but creators fail to consistently capture the narratives behind their work.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   Catalogue stories are being preserved, but they are not yet increasing emotional connection, cultural understanding, or long-term value.
+
+---
+
+## KPA 5: Catalogue Discoverability & Accessibility
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures required to ensure its intellectual property can be found, understood, and utilised over time.
+
+#### Indicators of Strength
+
+- Catalogue assets are organised logically and consistently.
+- Works can be discovered through meaningful creative, historical, and strategic relationships.
+- Metadata, descriptions, and contextual information support future access.
+- The catalogue remains understandable as it grows.
+- Access and retrieval support long-term creative and strategic use.
+
+#### Indicators of Weakness
+
+- Valuable works become difficult to locate.
+- Catalogue information is inconsistent or incomplete.
+- Creative assets exist but cannot be effectively accessed.
+- Knowledge about where or why assets exist is dependent on individual memory.
+- Catalogue growth reduces usability.
+
+#### Why This Category Matters
+
+A valuable catalogue that cannot be discovered or understood loses much of its potential value.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators and contributors consistently maintain catalogue information and accessibility standards.
+
+#### Indicators of Strength
+
+- Creators organise and maintain accurate catalogue information.
+- Supporting information is captured at the time of creation.
+- Contributors respect preservation and accessibility standards.
+- Teams maintain discipline around catalogue quality.
+
+#### Indicators of Weakness
+
+- Information is added inconsistently.
+- Creative assets are poorly organised.
+- Contributors assume information can be remembered later.
+- Catalogue management becomes a reactive recovery exercise.
+
+#### Why This Category Matters
+
+Accessibility depends on the daily discipline of the people responsible for preserving catalogue intelligence.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether catalogue accessibility increases its practical, cultural, and strategic usefulness.
+
+#### Indicators of Strength
+
+- Valuable works can be quickly identified for future opportunities.
+- The catalogue supports research, collaboration, creative reuse, and audience engagement.
+- Older works remain active and discoverable.
+- Catalogue intelligence increases the usefulness of the intellectual property.
+
+#### Indicators of Weakness
+
+- Opportunities are lost because works or information cannot be found.
+- The catalogue becomes increasingly difficult to use.
+- Historical works disappear despite being preserved.
+- Valuable intellectual property remains inactive due to poor accessibility.
+
+#### Why This Category Matters
+
+Preservation without accessibility creates an archive. A living catalogue must remain discoverable and usable.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators understand the value of organisation, but Chronicle lacks the structures required to maintain long-term discoverability.
+
+2. **Strong System + Weak Execution**
+
+   Catalogue structures exist, but contributors fail to maintain accurate and accessible information.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   The catalogue is well organised internally, but the information is not yet creating greater strategic, creative, or cultural value.
+
+---
+
+## KPA 6: Catalogue Activation & Reuse Potential
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the ability to continuously reactivate existing intellectual property for new creative, cultural, and strategic purposes.
+
+#### Indicators of Strength
+
+- The catalogue is viewed as a renewable creative resource.
+- Systems exist to identify opportunities for reinterpretation, adaptation, collaboration, and expansion.
+- Historical works can support future creative directions.
+- Catalogue knowledge enables ongoing activation.
+
+#### Indicators of Weakness
+
+- Works are considered complete and forgotten after release.
+- No consideration exists for future use.
+- Valuable intellectual property remains dormant.
+- Previous creative investments are not leveraged.
+
+#### Why This Category Matters
+
+A great catalogue creates value repeatedly rather than only at the moment of release.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators actively explore ways to build upon existing intellectual property.
+
+#### Indicators of Strength
+
+- Creators revisit and reinterpret earlier works.
+- Contributors identify new creative possibilities.
+- The catalogue is treated as a foundation for future innovation.
+- Past work inspires new directions.
+
+#### Indicators of Weakness
+
+- Creators only focus on creating entirely new material.
+- Existing works are ignored.
+- Previous creative learning is not applied.
+- The catalogue has little influence on future creation.
+
+#### Why This Category Matters
+
+Long-term creative institutions increase their strength by continuously extracting new value from previous achievements.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether catalogue activation creates new relationships, opportunities, and value.
+
+#### Indicators of Strength
+
+- Older works continue generating attention and opportunities.
+- Catalogue assets contribute to new projects, collaborations, and experiences.
+- The lifespan of intellectual property increases.
+- The catalogue demonstrates compounding value.
+
+#### Indicators of Weakness
+
+- The value of works ends shortly after creation.
+- Opportunities are lost because previous works remain inactive.
+- The catalogue does not contribute to future growth.
+- Intellectual property has only a single lifecycle.
+
+#### Why This Category Matters
+
+A living catalogue is defined by its ability to continually generate new forms of value.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators recognise opportunities within previous work, but Chronicle lacks structures to support catalogue reactivation.
+
+2. **Strong System + Weak Execution**
+
+   The opportunities and mechanisms for activation exist, but creators fail to engage with them.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   The catalogue is actively reused internally, but these efforts are not yet creating meaningful external value.
+
+---
+
+## KPA 7: Audience Relationship with the Catalogue
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures required to help audiences develop lasting emotional, cultural, and meaningful relationships with catalogue works.
+
+#### Indicators of Strength
+
+- Catalogue works are connected to audience-facing stories, themes, and experiences.
+- Older works remain part of the audience journey.
+- The catalogue supports repeat discovery, deeper listening, and long-term engagement.
+- Audience relationship is evaluated beyond release-period attention.
+- Catalogue works are positioned as part of a broader Chronicle creative world.
+
+#### Indicators of Weakness
+
+- Audience attention disappears shortly after release.
+- Catalogue works are treated as isolated outputs.
+- Older works are not reintroduced or contextualised.
+- The audience has no deeper relationship with the catalogue.
+- Catalogue engagement depends only on newness.
+
+#### Why This Category Matters
+
+A catalogue gains lasting value when audiences return to it, remember it, and form emotional or cultural connections with it over time.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators and contributors actively strengthen the relationship between audiences and the catalogue.
+
+#### Indicators of Strength
+
+- Creators communicate the meaning and relevance of catalogue works.
+- Contributors help audiences understand the creative journey.
+- Older works are intentionally revisited and reintroduced.
+- Audience responses are observed and used to deepen future catalogue engagement.
+- Creators treat the catalogue as a living relationship rather than a completed archive.
+
+#### Indicators of Weakness
+
+- Creators focus only on the newest work.
+- Audience connection is not cultivated beyond release activity.
+- Catalogue stories are not communicated.
+- Previous works are ignored by the people who created them.
+- Audience feedback does not inform catalogue understanding.
+
+#### Why This Category Matters
+
+Audience relationships are strengthened by intentional human communication, not by the mere existence of creative works.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether audiences are forming lasting relationships with Chronicle's catalogue.
+
+#### Indicators of Strength
+
+- Audiences return to older works.
+- Catalogue pieces become associated with memories, emotions, stories, or identity.
+- Listeners explore beyond single works into the wider catalogue.
+- Audience engagement deepens over time.
+- Catalogue works contribute to long-term loyalty and cultural memory.
+
+#### Indicators of Weakness
+
+- Audience interest is shallow or temporary.
+- Catalogue works do not generate repeat engagement.
+- Audiences do not connect individual works to the larger Chronicle ecosystem.
+- Older works become invisible.
+- The catalogue fails to build emotional or cultural attachment.
+
+#### Why This Category Matters
+
+The long-term cultural value of a catalogue depends on whether people continue to care about it after the moment of release has passed.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators want audiences to connect with catalogue works, but Chronicle lacks the structures required to sustain audience relationships over time.
+
+2. **Strong System + Weak Execution**
+
+   Audience relationship structures exist, but creators and contributors fail to actively cultivate catalogue connection.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   The catalogue is being presented and supported effectively, but audiences are not yet forming lasting emotional or cultural relationships with it.
+
+---
+
+## KPA 8: Catalogue Opportunity & Commercial Potential
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures required to identify, prepare, and develop catalogue-based creative, strategic, licensing, partnership, and commercial opportunities.
+
+#### Indicators of Strength
+
+- Catalogue works are assessed for future opportunity potential.
+- Rights, ownership, contributors, context, assets, and usage readiness are preserved.
+- The catalogue can support licensing, collaborations, media use, educational use, brand alignment, and future creative projects.
+- Opportunity readiness is considered during catalogue development.
+- The catalogue is treated as a strategic intellectual property asset.
+
+#### Indicators of Weakness
+
+- Catalogue works are not opportunity-ready.
+- Rights, ownership, contributor, or contextual information is incomplete.
+- Commercial or strategic possibilities are missed because catalogue assets are unprepared.
+- The catalogue is treated only as released content.
+- There is no process for identifying future use cases.
+
+#### Why This Category Matters
+
+A catalogue can only generate long-term opportunity when its intellectual property is preserved, understood, and prepared for use.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators and contributors support the long-term opportunity potential of catalogue works.
+
+#### Indicators of Strength
+
+- Contributors capture and maintain the information required for future use.
+- Creators understand that catalogue works may have value beyond initial release.
+- People identify possible future applications for existing works.
+- Contributors protect the professional readiness of the catalogue.
+- Creative and business decisions support long-term opportunity creation.
+
+#### Indicators of Weakness
+
+- Contributors neglect rights, ownership, context, or asset completeness.
+- Creators do not consider future use cases.
+- Opportunity preparation is delayed until opportunities appear.
+- Important information is unavailable when needed.
+- Short-term thinking limits future catalogue value.
+
+#### Why This Category Matters
+
+Commercial and strategic opportunity depends on people treating catalogue works as long-term intellectual property, not disposable creative output.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether the catalogue is creating real strategic, creative, cultural, or commercial opportunities.
+
+#### Indicators of Strength
+
+- Catalogue works attract licensing, collaboration, media, partnership, or creative reuse interest.
+- Existing works support new projects and strategic relationships.
+- The catalogue becomes increasingly useful to external parties.
+- Catalogue value grows beyond initial release performance.
+- Chronicle's intellectual property begins creating multiple opportunity pathways.
+
+#### Indicators of Weakness
+
+- Catalogue works do not generate future opportunities.
+- External parties cannot easily evaluate or use the catalogue.
+- Opportunities are lost due to incomplete readiness.
+- The catalogue has little strategic or commercial relevance.
+- Creative works remain valuable only internally.
+
+#### Why This Category Matters
+
+A mature creative catalogue becomes a source of future opportunity, influence, and commercial resilience.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators produce potentially valuable intellectual property, but Chronicle lacks the structures required to prepare catalogue works for opportunity development.
+
+2. **Strong System + Weak Execution**
+
+   Opportunity-readiness systems exist, but contributors fail to maintain the information, assets, and discipline required.
+
+3. **Strong System + Strong Execution + Weak External Outcome**
+
+   The catalogue is opportunity-ready, but external demand, positioning, relationship development, or market fit requires reassessment.
+
+---
+
+## Strategic Objective 3 Status
+
+Strategic Objective Definition:  
+CAPTURED
+
+KPA Architecture:  
+CAPTURED
+
+KPI Composition:  
+CAPTURED
+
+Strategic Objective 3 Status:  
+COMPLETE AND REPOSITORY LOCKED
+
 KPA 1 — CAPTURED  
 KPA 2 — CAPTURED  
 KPA 3 — CAPTURED  
 KPA 4 — CAPTURED  
 KPA 5 — CAPTURED  
 KPA 6 — CAPTURED  
-KPA 7 — CAPTURED
-
+KPA 7 — CAPTURED  
+KPA 8 — CAPTURED
 
