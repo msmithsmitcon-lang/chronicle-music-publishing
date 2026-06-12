@@ -129,3 +129,31 @@ Clarify the next phase after public website launch as Chronicle Creative Operati
 - No application code changed.
 - No deployment run.
 - Public website remains stable and live.
+
+## 2026-06-12 - Open The Door Continuity Correction
+
+### Objective
+
+Clarify public website, private portal, and governance history for future chats and Codex continuity.
+
+### Corrections
+
+- Public Chronicle Website is the public-facing brand/catalogue/artists/contact/showroom layer.
+- Chronicle Creative Operations Portal V1 is a separate private authenticated operational command centre.
+- Public webpages must not be edited during portal work unless Markus explicitly approves it.
+- Portal work is not public UX/UI work, not a public dashboard, and not a website redesign.
+- The public website was completed largely before the full high-level Plexicon-governed workflow was consistently available for this repository.
+- Plexicon/Chronicle docs were added later for continuity, Open The Door readiness, and future governance.
+- Do not imply the completed website was fully developed under the complete Plexicon method.
+- Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+- Portal build direction is manual and governed by Markus/ChatGPT, with Codex used where useful for bounded execution.
+- Docs must stay aligned so Codex and future chats remain oriented.
+- Plexicon feedback/adoption-back may be useful later, but is not current implementation work.
+- Chronicle remains a Plexicon-consuming system and does not become authoritative over Plexicon Core.
+
+### Not Changed
+
+- No application code changed.
+- No runtime behavior changed.
+- No packages installed.
+- No deployment run.

@@ -40,7 +40,22 @@ chronicle-music-publishing
 
 ## Current Return Point
 
-The public website should now be treated as a production-stable surface. Future work should start with Chronicle Portal planning and should avoid reopening broad public website redesign unless Markus explicitly requests it.
+The public website should now be treated as a production-stable surface. Future work should start with Chronicle Creative Operations Portal V1 planning and should avoid reopening broad public website redesign unless Markus explicitly requests it.
+
+The public website and portal are separate surfaces. The website is the public brand/catalogue/showroom layer. The portal is a private authenticated operational command centre.
+
+Do not edit public webpages during portal work unless Markus explicitly approves it.
+
+## Governance History
+
+- The public website was completed largely before the full high-level Plexicon-governed development workflow was consistently available for this repository.
+- Plexicon/Chronicle docs were added later to improve continuity, Open The Door readiness, and future governance.
+- Do not falsely imply that the completed website was fully developed under the complete Plexicon method.
+- Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+- Portal build direction is manual and governed by Markus/ChatGPT, with Codex used where useful for bounded execution.
+- Keep docs current so Codex and future chats stay aligned.
+- Plexicon feedback/adoption-back may be useful later, but it is not the immediate task.
+- Chronicle remains a Plexicon-consuming system and does not become authoritative over Plexicon Core.
 
 ## Correct Model
 

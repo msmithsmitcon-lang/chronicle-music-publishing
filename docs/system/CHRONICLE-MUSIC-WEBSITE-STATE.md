@@ -15,6 +15,23 @@ Chronicle Music public website is live and stable. The next development phase is
 - Current branch: checkpoint/mwis-artist-page
 - Public website should now be treated as a stable production surface.
 
+## Public Website / Private Portal Boundary
+- Public Chronicle Website = public-facing brand, catalogue, artists, contact, and showroom layer.
+- Chronicle Creative Operations Portal V1 = private authenticated operational command centre.
+- These are separate surfaces.
+- Do not edit public webpages during portal work unless Markus explicitly approves it.
+- Portal work is not public UX/UI work, not a public dashboard, and not a redesign of the website.
+
+## Governance history
+- The public website was completed largely before the full high-level Plexicon-governed development workflow was consistently available for this repository.
+- Plexicon/Chronicle docs were added later to improve continuity, Open The Door readiness, and future governance.
+- Do not imply that the completed public website was fully developed under the complete Plexicon method.
+- Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+- Portal development should be led manually by Markus/ChatGPT, with Codex used where useful for bounded execution.
+- The docs Codex references must be kept updated so Codex and future chats stay aligned.
+- Plexicon feedback/adoption-back may be useful later if Chronicle develops patterns or services worth review, but it is not the current implementation task.
+- Chronicle remains a consuming system and does not become authoritative over Plexicon Core.
+
 ## Next phase
 Chronicle Creative Operations Portal V1 development is the next active workstream.
 

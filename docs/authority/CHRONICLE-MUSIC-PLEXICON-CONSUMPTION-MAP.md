@@ -11,12 +11,12 @@ This map declares Chronicle Music's local Plexicon consumption. Plexicon Core re
 
 - System name: Chronicle Music
 - System owner: Human owner
-- Product / client / platform type: public website / music business presentation layer
+- Product / client / platform type: public website plus private Creative Operations Portal V1 planning
 - Repository name: Chronicle Music Website
 - Repository URL: local repository, Git remote not asserted by this record
 - Primary human authority: Human owner
 - Primary technical maintainer: Codex-assisted local repository maintainer
-- Current lifecycle state: existing-system Plexicon-consuming initialization
+- Current lifecycle state: public website stable; private portal planning under governed workflow
 
 ## 2. Plexicon Adoption Summary
 
@@ -24,8 +24,20 @@ This map declares Chronicle Music's local Plexicon consumption. Plexicon Core re
 - Execution-state continuity adoption: adopted through local Open The Door current briefing.
 - Product Composition adoption: not adopted as runtime logic; referenced only as Core authority where relevant.
 - Capability consumption adoption: presentation, asset, OEF, governance, and public-safe boundary consumption declared at development-time level.
-- Runtime/API/SDK adoption: none.
-- Deferred adoption: CLI, SDK, API, Workbench automation, database-backed adoption state, and capability-service integration.
+- Runtime/API/SDK adoption: none at this documentation stage.
+- Portal auth direction: Clerk intended for Chronicle Creative Operations Portal V1, pending implementation planning.
+- Deferred adoption: CLI, SDK, API, Workbench automation, database-backed adoption state, capability-service integration, and any Plexicon feedback/adoption-back process.
+
+## 2.1 Governance History
+
+- The public Chronicle website was completed largely before the full high-level Plexicon-governed workflow was consistently available for this repository.
+- Plexicon/Chronicle docs were added later to improve continuity, Open The Door readiness, and future governance.
+- Do not treat the completed website as evidence that the complete Plexicon method governed that build end to end.
+- Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+- Portal build direction remains manual and governed by Markus/ChatGPT, with Codex used where useful for bounded execution.
+- Docs must stay updated so Codex and future chats stay aligned.
+- Plexicon feedback/adoption-back may be useful later, but it is not the current implementation task.
+- Chronicle does not own, redefine, or supersede Plexicon Core.
 
 ## 3. Adopted Plexicon Capabilities
 
@@ -69,6 +81,7 @@ This map declares Chronicle Music's local Plexicon consumption. Plexicon Core re
 ### Chronicle Music Owns
 
 - Local website implementation.
+- Local private portal implementation when approved.
 - Local runtime behavior.
 - Local repository structure.
 - Local UI and user workflows.
@@ -77,6 +90,7 @@ This map declares Chronicle Music's local Plexicon consumption. Plexicon Core re
 - Local execution-state records.
 - Local project plans.
 - Chronicle Music domain evidence and public presentation.
+- Chronicle Creative Operations Portal V1 local workflow decisions.
 
 ### Chronicle Music Does Not Own
 
@@ -92,8 +106,8 @@ This map declares Chronicle Music's local Plexicon consumption. Plexicon Core re
 
 - Local implementation language / stack: Next.js App Router, React, TypeScript, Tailwind.
 - Local database / storage: no database declared in current repo inspection.
-- Local auth: no auth declared in current repo inspection.
-- Local deployment target: web deployment target not asserted by this record.
+- Local auth: Clerk intended for private portal; not implemented by this docs update.
+- Local deployment target: Vercel project `chronicle-music-publishing` for current public website; portal deployment behavior requires future approval.
 - Local integration points: static assets, local content modules, public routes.
 - Local tests / validation: `npm.cmd run build` historically used; not run during initialization.
 - Local source-of-truth documents: `docs/strategy/`, `docs/website/`, `docs/catalogue/`, `docs/authority/`, `docs/adoption/`, `docs/execution-state/`, `docs/project-plan/`, `docs/build-log/`.
@@ -104,7 +118,9 @@ This map declares Chronicle Music's local Plexicon consumption. Plexicon Core re
 | --- | --- | --- | --- | --- |
 | Existing repo has `README.txt` rather than startup `README.md` | Existing-system alignment should be non-disruptive | Chronicle Music | Low | Recorded; no README change made in this pass. |
 | Existing docs include local copies or local adaptations of OEF/UX protocols | Pre-existing repository memory | Chronicle Music | Medium, possible drift from Core | Preserve for now; Core remains authority. |
-| No Supabase, Clerk, API, SDK, or CLI adoption | Static website scope | Chronicle Music | Low | Approved by task constraints for this pass. |
+| Public website completed before full governed workflow | Codex and full high-level Plexicon-governed workflow were not consistently available during the website build | Chronicle Music | Medium, possible historical overstatement | Record explicitly; do not imply the website was fully Plexicon-governed end to end. |
+| Clerk planned but not implemented | Portal V1 is private and authenticated, but this pass is docs-only | Chronicle Music | Medium | Record as intended direction; implement only after approved portal plan. |
+| No Supabase, API, SDK, or CLI adoption | Public website scope and portal planning stage | Chronicle Music | Low | Deferred until approved portal/runtime plan. |
 
 Deviation rule:
 
@@ -135,6 +151,7 @@ This consuming system must not copy or redefine the following as local authority
 - Latest execution-state record: current briefing only; no separate live execution-state milestone record created in this pass
 - Current return point: adoption initialization complete, pending human review
 - Next allowed action: human review of generated adoption records, then decide whether to reconcile website implementation with existing strategy docs
+- Current portal return point: define private Chronicle Creative Operations Portal V1 scope and technical plan while preserving the live public website
 - Forbidden actions: website code changes, UI redesign, package installation, API/SDK/CLI logic, deployment changes, local doctrine redefinition
 - Review cadence: after each Plexicon Core manifest update, before major website workstreams, and when Open The Door detects stale adoption state
 
@@ -143,7 +160,7 @@ This consuming system must not copy or redefine the following as local authority
 - Template version used: Plexicon Consumption Map Template V1
 - Plexicon doctrine version / commit reference: Core files read from `C:\Users\Euan Smith\Desktop\Plexicon\02_REPOSITORIES\plexicon-contracts`, manifest version 2026-06-07
 - Last reviewed: 2026-06-07
+- Launch/portal continuity reviewed: 2026-06-12
 - Reviewed by: Codex draft, human review required for authority-bearing acceptance
-- Next review trigger: Core manifest update, new capability consumption, local boundary change, runtime/API/SDK introduction, approved local deviation, or major workstream change
+- Next review trigger: Core manifest update, new capability consumption, local boundary change, portal auth/runtime decision, runtime/API/SDK introduction, approved local deviation, or major workstream change
 - Update rule: update this map by reference to Plexicon Core sources; do not copy Core doctrine as local authority
-

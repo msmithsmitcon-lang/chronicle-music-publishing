@@ -28,6 +28,17 @@ The next development phase is Chronicle Creative Operations Portal V1 planning a
 - Chronicle Creative Operations Portal V1 = private authenticated operational environment.
 - Future Sentry Sound Creative Operations Module = industrialised version of the validated portal workflow.
 
+## Governance History
+
+- The public website was completed largely before Codex and the full high-level Plexicon-governed development workflow were consistently available for this repository.
+- Plexicon/Chronicle docs were added later for continuity, Open The Door readiness, and future governance.
+- Do not describe the completed public website as if it was fully developed under the complete Plexicon method.
+- Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+- Portal build direction is manual and governed by Markus/ChatGPT, with Codex used where useful for bounded execution.
+- Keep docs aligned so Codex and future chats stay oriented.
+- Plexicon feedback/adoption-back may be useful later, but it is not the immediate implementation task.
+- Chronicle does not become authoritative over Plexicon Core.
+
 ## Portal Guardrails
 
 - Do not destabilise the live public website while building portal features.
@@ -63,6 +74,12 @@ $output += Get-Content .\docs\execution-state\PORTAL-PHASE-HANDOVER.md -Raw
 
 $output += "`n===== CREATIVE OPERATIONS PORTAL V1 DOCTRINE ====="
 $output += Get-Content .\docs\portal\CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md -Raw
+
+$output += "`n===== REPOSITORY AUTHORITY ====="
+$output += Get-Content .\docs\authority\CHRONICLE-MUSIC-REPOSITORY-AUTHORITY.md -Raw
+
+$output += "`n===== PLEXICON CONSUMPTION MAP ====="
+$output += Get-Content .\docs\authority\CHRONICLE-MUSIC-PLEXICON-CONSUMPTION-MAP.md -Raw
 
 $output += "`n===== PROJECT PLAN ====="
 $output += Get-Content .\docs\project-plan\CHRONICLE-MUSIC-PROJECT-PLAN.md -Raw

@@ -22,6 +22,8 @@ Reason:
 - Current production domain known.
 - Portal phase handover exists.
 - Catalogue workflow is documented and stable.
+- Public website / private portal boundary is documented.
+- Governance history is documented: website completed first; Plexicon continuity added later; portal is the first deliberately governed Chronicle stream.
 - Next allowed action is defined.
 - Forbidden actions are defined.
 
@@ -30,6 +32,7 @@ Behavior:
 - Resume from the return point below.
 - Inspect only directly needed files.
 - Do not restart public website redesign unless Markus explicitly requests it.
+- Do not edit public webpages during portal work unless Markus explicitly approves it.
 - Do not deploy production unless explicitly instructed.
 
 ## 2. Active Repository
@@ -66,6 +69,12 @@ Execution state:
 Next work should start from this briefing, the system state doc, the portal phase handover, and the portal V1 doctrine doc. Do not edit public webpages while planning or building portal features unless Markus explicitly approves it.
 ```
 
+Governance history:
+
+```text
+The public website was completed largely before the full high-level Plexicon-governed workflow was consistently available for this repository. Plexicon/Chronicle docs were added later for continuity, Open The Door readiness, and future governance. Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+```
+
 Completed public website outputs:
 
 - Homepage rebuilt and live.
@@ -91,6 +100,8 @@ Open tasks:
 - Apply the portal lifecycle: Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations.
 - Consider spreadsheet/database-style workflows for marketing activity management.
 - Preserve the public website as a stable live production surface.
+- Keep docs aligned for Codex and future-chat continuity.
+- Use Codex for bounded execution where useful; direction remains manual and governed by Markus/ChatGPT.
 
 Current blocker:
 
@@ -145,6 +156,7 @@ Inspect the existing stack and docs, then define a private authenticated Creativ
 - Public Chronicle Website = public brand/catalogue/showroom.
 - Chronicle Creative Operations Portal V1 = private authenticated operational environment.
 - Future Sentry Sound Creative Operations Module = industrialised version of the validated portal workflow.
+- The portal is not public UX/UI work, not a public dashboard, and not a website redesign.
 - Portal must use the existing Chronicle brand direction unless a future approved plan changes it.
 - Portal should use Next.js, React, Tailwind, Vercel, and Clerk.
 - Public website routes and content should remain stable during portal development.
@@ -187,6 +199,7 @@ When Markus opens the portal every morning, it must tell him what creative, mark
 - Decide workbook/Google Sheets source-of-truth structure.
 - Map workbook tabs to future database entities.
 - Draft a scoped implementation plan before code changes.
+- Do not invite Plexicon VS back or promote Chronicle learnings into Plexicon Core as part of immediate implementation work. Record possible feedback/adoption-back later only if Markus explicitly starts that process.
 
 ## 12. Review Triggers
 

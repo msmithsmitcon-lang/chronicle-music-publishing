@@ -20,6 +20,36 @@ This plan is local to Chronicle Music Website. It references Plexicon Core autho
 Maintain the stable live Chronicle Music public website while planning and building the private authenticated Chronicle Creative Operations Portal V1.
 ```
 
+## 2.1 Surface Boundary And Governance History
+
+Public Chronicle Website:
+
+- public-facing
+- live and stable
+- brand/catalogue/artists/contact/showroom layer
+- not to be edited during portal work unless Markus explicitly approves it
+
+Chronicle Creative Operations Portal V1:
+
+- private
+- authenticated/logged-in
+- separate section/route tree
+- operational command centre
+- not public UX/UI work
+- not a public dashboard
+- not a redesign of the website
+
+Governance history:
+
+- The public website was completed largely before the full high-level Plexicon-governed workflow was consistently available for this repository.
+- Plexicon/Chronicle docs were added later to improve continuity, Open The Door readiness, and future governance.
+- Do not imply that the completed public website was fully developed under the complete Plexicon method.
+- Chronicle Creative Operations Portal V1 is the first Chronicle stream intended to proceed more deliberately under the governed workflow.
+- Portal build direction is manual and governed by Markus/ChatGPT, with Codex used where useful for bounded execution.
+- Docs must stay aligned so Codex and future chats have reliable context.
+- Plexicon feedback/adoption-back may be useful later, but it is not the current implementation task.
+- Chronicle remains a consuming system and does not become authoritative over Plexicon Core.
+
 ## 3. Current Repository Memory
 
 Existing memory includes:
@@ -55,6 +85,7 @@ New adoption memory includes:
 | Chronicle Creative Operations Portal V1 planning | Next | Private authenticated operational environment; scope, Clerk access model, and workbook/data workflow must be defined before implementation. |
 | Portal implementation | Pending approval | Must preserve public website stability and build separately from public pages. |
 | Future Sentry Sound Creative Operations Module | Future | Industrialised version of the validated Chronicle portal workflow. |
+| Plexicon feedback/adoption-back | Future optional | Possible later review path if Chronicle generates patterns or services worth Plexicon review; not current implementation work. |
 
 ## 5. Next Allowed Action
 

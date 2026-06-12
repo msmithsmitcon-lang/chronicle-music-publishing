@@ -16,6 +16,18 @@ Correct model:
 - Chronicle Creative Operations Portal V1 = private authenticated operational environment.
 - Future Sentry Sound Creative Operations Module = industrialised version of the validated portal workflow.
 
+## Governance Context
+
+The completed public website should not be described as a fully Plexicon-governed build. It was completed largely before Codex and the full high-level Plexicon-governed workflow were consistently available for this repository.
+
+Plexicon/Chronicle docs were added later for continuity, Open The Door readiness, and future governance.
+
+Chronicle Creative Operations Portal V1 is the first Chronicle development stream intended to proceed more deliberately under the governed workflow.
+
+Portal development is a manual governed build led by Markus/ChatGPT, with Codex used where useful for bounded execution. Documentation must stay current so Codex and future chats can remain aligned.
+
+Chronicle does not own or redefine Plexicon Core. Future feedback/adoption-back into Plexicon may be useful later, but it is not the immediate portal implementation task.
+
 ## Public Website Boundary
 
 The public Chronicle Music website is live and stable.
@@ -142,9 +154,12 @@ The public website remains accessible without login.
 - Do not deploy production unless explicitly approved.
 - Do not treat the portal as public-facing website UX.
 - Update documentation as part of development.
+- Keep Open The Door, execution-state, and portal docs aligned as decisions are made.
+- Use Codex for bounded execution when useful; keep Markus/ChatGPT responsible for direction and governance decisions.
 - Build portal routes separately.
 - Keep public website stable.
 - Treat this as a product prototype, not a utility.
+- Do not promote Chronicle learnings into Plexicon Core from this repo; record future feedback candidates only if Markus explicitly starts that process.
 
 ## Success Criterion
 
