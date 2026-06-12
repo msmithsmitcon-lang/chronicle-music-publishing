@@ -3,7 +3,7 @@
 Record type: Open The Door Current Briefing
 Authority Level: Local Operational State
 Created: 2026-06-07
-Last reviewed: 2026-06-11
+Last reviewed: 2026-06-12
 
 This briefing references the single Plexicon Open The Door protocol. It does not define a Chronicle-specific protocol variant.
 
@@ -21,6 +21,7 @@ Reason:
 - Public website launch state documented.
 - Current production domain known.
 - Portal phase handover exists.
+- Formal portal execution plan exists.
 - Catalogue workflow is documented and stable.
 - Public website / private portal boundary is documented.
 - Governance history is documented: website completed first; Plexicon continuity added later; portal is the first deliberately governed Chronicle stream.
@@ -66,7 +67,7 @@ Public website launch complete. Private Chronicle Creative Operations Portal V1 
 Execution state:
 
 ```text
-Next work should start from this briefing, the system state doc, the portal phase handover, and the portal V1 doctrine doc. Do not edit public webpages while planning or building portal features unless Markus explicitly approves it.
+Next work should start from this briefing, the system state doc, the portal phase handover, the portal V1 doctrine doc, and the formal portal execution plan. Do not edit public webpages while planning or building portal features unless Markus explicitly approves it.
 ```
 
 Governance history:
@@ -112,7 +113,7 @@ Portal scope is not yet fully defined. Markus must define or approve the first u
 ## 5. Return Point
 
 ```text
-Public website is live and stable. Resume by planning the private Chronicle Creative Operations Portal V1, starting from docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md and docs/execution-state/PORTAL-PHASE-HANDOVER.md.
+Public website is live and stable. Resume by planning the private Chronicle Creative Operations Portal V1 from Phase 0 - Product & Operational Definition, starting from docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md, docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md, and docs/execution-state/PORTAL-PHASE-HANDOVER.md.
 ```
 
 ## 6. Next Allowed Action
@@ -144,6 +145,7 @@ Inspect the existing stack and docs, then define a private authenticated Creativ
 - `docs/execution-state/PORTAL-PHASE-HANDOVER.md`
 - `docs/open-the-door/CHRONICLE-OPEN-THE-DOOR.md`
 - `docs/project-plan/CHRONICLE-MUSIC-PROJECT-PLAN.md`
+- `docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md`
 - `docs/website/WEBSITE_STRUCTURE.md`
 - `docs/catalogue/CATALOGUE-MANAGEMENT-WORKFLOW.md`
 - `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md`
@@ -194,6 +196,7 @@ When Markus opens the portal every morning, it must tell him what creative, mark
 ## 11. What Is Needed Next
 
 - Ask Markus to define the first Chronicle Creative Operations Portal V1 workflow.
+- Treat Phase 0 - Product & Operational Definition as ACTIVE until the product definition is approved and documented.
 - Confirm private authenticated user model.
 - Confirm Clerk setup requirements.
 - Decide workbook/Google Sheets source-of-truth structure.

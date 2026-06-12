@@ -65,6 +65,7 @@ Existing memory includes:
 - stable Excel-driven catalogue workflow
 - portal phase handover in `docs/execution-state/PORTAL-PHASE-HANDOVER.md`
 - Creative Operations Portal V1 doctrine in `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md`
+- formal Creative Operations Portal V1 execution plan in `docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md`
 
 New adoption memory includes:
 
@@ -83,6 +84,7 @@ New adoption memory includes:
 | Catalogue Excel workflow | Stable | Spreadsheet to generated data workflow is approved and working. |
 | Plexicon-consuming initialization | Complete, pending broader human review | Local records created by reference to Core templates. |
 | Chronicle Creative Operations Portal V1 planning | Next | Private authenticated operational environment; scope, Clerk access model, and workbook/data workflow must be defined before implementation. |
+| Portal Phase 0 - Product & Operational Definition | Active | Governed by `docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md`; no implementation before Phase 0 exit criteria are met. |
 | Portal implementation | Pending approval | Must preserve public website stability and build separately from public pages. |
 | Future Sentry Sound Creative Operations Module | Future | Industrialised version of the validated Chronicle portal workflow. |
 | Plexicon feedback/adoption-back | Future optional | Possible later review path if Chronicle generates patterns or services worth Plexicon review; not current implementation work. |
@@ -92,6 +94,8 @@ New adoption memory includes:
 ```text
 Define private Chronicle Creative Operations Portal V1 scope and technical plan while preserving the live public website.
 ```
+
+Portal execution must follow `docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md`. Current phase: Phase 0 - Product & Operational Definition.
 
 ## 6. Forbidden Actions
 

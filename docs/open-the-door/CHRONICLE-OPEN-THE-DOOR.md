@@ -11,6 +11,12 @@ https://www.chroniclemusic.co.za
 
 The next development phase is Chronicle Creative Operations Portal V1 planning and implementation. This helper gathers the current operational state, public website guardrails, catalogue workflow, and portal doctrine so future work does not accidentally restart public website redesign or treat the portal as a public website feature.
 
+The formal source of truth for portal execution governance is:
+
+```text
+docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md
+```
+
 ## Current Return Point
 
 - Public website redesign: complete.
@@ -21,6 +27,7 @@ The next development phase is Chronicle Creative Operations Portal V1 planning a
 - MP3 previews: tracked and working.
 - Social links: integrated for Chronicle Music, M-WIS, and Huey-D.
 - Next phase: define and build private authenticated Chronicle Creative Operations Portal V1.
+- Current portal execution phase: Phase 0 - Product & Operational Definition.
 
 ## Correct Model
 
@@ -74,6 +81,9 @@ $output += Get-Content .\docs\execution-state\PORTAL-PHASE-HANDOVER.md -Raw
 
 $output += "`n===== CREATIVE OPERATIONS PORTAL V1 DOCTRINE ====="
 $output += Get-Content .\docs\portal\CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md -Raw
+
+$output += "`n===== CREATIVE OPERATIONS PORTAL V1 EXECUTION PLAN ====="
+$output += Get-Content .\docs\project-plan\CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md -Raw
 
 $output += "`n===== REPOSITORY AUTHORITY ====="
 $output += Get-Content .\docs\authority\CHRONICLE-MUSIC-REPOSITORY-AUTHORITY.md -Raw
