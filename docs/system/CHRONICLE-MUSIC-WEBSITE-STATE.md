@@ -3,7 +3,39 @@
 Branch: checkpoint/mwis-artist-page
 
 ## Current focus
-Chronicle Music public website refinement: artist pages, catalogue routing, and About page creation.
+Chronicle Music public website is live and stable. The next development phase is Chronicle Creative Operations Portal V1 planning and implementation.
+
+## Live production state
+- Live domain: https://www.chroniclemusic.co.za
+- Hosting platform: Vercel
+- Vercel project: chronicle-music-publishing
+- Public website redesign: complete
+- Production deployment: complete
+- Mobile/responsive optimisation: complete
+- Current branch: checkpoint/mwis-artist-page
+- Public website should now be treated as a stable production surface.
+
+## Next phase
+Chronicle Creative Operations Portal V1 development is the next active workstream.
+
+Correct model:
+- Public Chronicle Website = public brand/catalogue/showroom.
+- Chronicle Creative Operations Portal V1 = private authenticated operational environment.
+- Future Sentry Sound Creative Operations Module = industrialised version of the validated portal workflow.
+
+Portal direction:
+- Portal is private and requires login/authentication.
+- Portal should use the current stack: Next.js, React, Tailwind, Vercel, Clerk.
+- Portal may have a website entry button/link when approved, but it must not be treated as a public website feature.
+- Do not edit public webpages during portal work unless Markus explicitly approves it.
+- Workbook/Google Sheets is temporary source-of-truth for V1, but structure should mirror future database entities.
+- Do not design around spreadsheet limitations.
+- Portal V1 operational lifecycle:
+  - Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations.
+- Strategic path:
+  - Chronicle Creative Operations Portal V1 -> validated workflow -> Sentry Sound Creative Operations Module.
+- Main success criterion:
+  - When Markus opens the portal every morning, it must tell him what creative, marketing, catalogue, campaign, and release actions need to happen today.
 
 ## Locked design direction
 - Chronicle Music remains the primary brand.
@@ -14,6 +46,21 @@ Chronicle Music public website refinement: artist pages, catalogue routing, and 
 - Avoid fake achievements, awards, streams, charts, or exaggerated claims.
 
 ## Completed current checkpoint
+- Website redesign completed and deployed live to production.
+- Mobile/responsive optimisation completed across the public website, with /catalogue/browse treated as the priority mobile surface.
+- Catalogue browse page is working at /catalogue/browse.
+- Catalogue source is stable:
+  - data/catalogue/chronicle-master-catalogue.xlsx
+  - scripts/generate-catalogue-browse.cjs
+  - lib/catalogueBrowse.ts
+- MP3 catalogue previews are tracked and working under:
+  - public/catalogue/audio
+  - public/catalogue/audio-huey-d
+- Chronicle Music social links integrated.
+- M-WIS official social links integrated.
+- Huey-D official social links integrated.
+- Contact page mailto workflow works with markus@chroniclemusic.co.za.
+- Submit Works mailto workflow works for catalogue submission enquiries.
 - M-WIS artist page refined into cinematic creative archive / publishing dossier direction.
 - M-WIS catalogue link routes directly to /catalogue/browse.
 - Huey-D artist page redesigned with cinematic producer profile direction.
@@ -112,6 +159,37 @@ Do not assume section images are in /assets/ecosystem/. Verify actual folder and
 - For image-heavy Chronicle sections, prefer purpose-built assets or two-card layouts over forcing an unsuitable image with excessive CSS crop, opacity or transform hacks.
 
 ### Current status
-- Contact page V1 is functionally complete.
-- About page major visual sections are aligned and improved.
+- Public website is functionally complete, mobile-optimised, and live in production.
+- Contact page, About page, Artists page, M-WIS page, Huey-D page, and Catalogue Browse page are stable public surfaces.
 - Chronicle website direction remains artist, music, release and long-term catalogue focused.
+- Next work should start from Chronicle Creative Operations Portal V1 planning, not public-site redesign.
+
+---
+
+## Launch and Portal Handover - 2026-06-11
+
+### Public Website Stable/Live
+- The redeveloped Chronicle Music website is live at https://www.chroniclemusic.co.za.
+- Do not run production deployment commands unless explicitly instructed.
+- Do not redesign the public website while building portal functionality.
+- Public website changes should be bounded, inspected first, and validated with `npm.cmd run build`.
+
+### Portal Development Guardrails
+- Portal work should preserve Chronicle's dark luxury, black/gold, cinematic brand language.
+- Portal is private and authenticated; it is not a public-facing UX/UI extension.
+- Portal should use Next.js, React, Tailwind, Vercel, and Clerk.
+- Add sign-in / portal access carefully so public navigation remains stable, but treat it only as an entry point into the private portal.
+- Portal routes, authentication boundaries, data model, and scope require a planning pass before implementation.
+- Workbook/Google Sheets may be used as temporary V1 source-of-truth.
+- Workbook structure should mirror future database entities.
+- Spreadsheet/database-style workflows are approved as a pattern to explore for marketing activity management, but portal design must not be limited by spreadsheet constraints.
+- Sentry Sound belongs mainly in portal/strategy/handover docs, not public website positioning.
+
+### Catalogue Pattern To Preserve
+- The catalogue Excel pipeline is stable and should not be casually replaced.
+- Future portal data workflows may borrow this pattern:
+  - structured spreadsheet-style source or table
+  - generator or sync layer
+  - typed/generated website data
+  - clear file ownership
+  - low-friction management for Markus/Chronicle operators

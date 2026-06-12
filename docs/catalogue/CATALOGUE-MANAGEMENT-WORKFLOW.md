@@ -1,74 +1,122 @@
-﻿# Chronicle Music Website — Handover 2026-06-10-2351
+# Chronicle Music Catalogue Management Workflow
 
-## Current state
-We are working on the Chronicle Music Publishing website.
+## Current Status - 2026-06-11
 
-The catalogue page is now at:
-- /catalogue/browse
+The catalogue system is stable, mobile-optimised, and live on the public website at:
 
-The catalogue is no longer M-WIS-only. It is now positioned as:
+```text
+https://www.chroniclemusic.co.za/catalogue/browse
+```
+
+This workflow should be preserved. It is also an important pattern for future Chronicle Creative Operations Portal V1 workbook/database-style workflows, especially marketing activity management.
+
+## Catalogue Positioning
+
+The catalogue is positioned as:
+
 - Chronicle Music Publishing catalogue
 - multi-artist
-- searchable by title, artist, mood, language, category
+- searchable by title, artist, mood, language, and category
 - filterable by represented artist, category, language, and preview availability
+- public-facing discovery and licensing context, not a full backend catalogue management system
 
-## Completed catalogue architecture
-- Master catalogue spreadsheet is now the source of truth:
-  data/catalogue/chronicle-master-catalogue.xlsx
-- Generator script created:
-  scripts/generate-catalogue-browse.cjs
-- NPM command added:
-  npm run generate:catalogue
-- Generated website data file:
-  lib/catalogueBrowse.ts
-- MP3 files are stored in Git under:
-  public/catalogue/audio
-  public/catalogue/audio-huey-d
+## Source Of Truth
 
-## Current workflow to add songs
+Master catalogue spreadsheet:
+
+```text
+data/catalogue/chronicle-master-catalogue.xlsx
+```
+
+Generator script:
+
+```text
+scripts/generate-catalogue-browse.cjs
+```
+
+NPM command:
+
+```powershell
+npm run generate:catalogue
+```
+
+Generated website data:
+
+```text
+lib/catalogueBrowse.ts
+```
+
+Audio preview folders:
+
+```text
+public/catalogue/audio
+public/catalogue/audio-huey-d
+```
+
+## Current Workflow To Add Songs
+
 1. Open:
-   data/catalogue/chronicle-master-catalogue.xlsx
-2. Add/edit song rows.
-3. Ensure:
-   Website Visible = Yes
-   Preview Available = Yes
-   Audio File Name = exact mp3 filename
-   Cover Image Key = mwis or hueyd
-   Website Mood = public-facing mood text
-4. Save Excel.
+   `data/catalogue/chronicle-master-catalogue.xlsx`
+2. Add or edit song rows.
+3. Ensure the required website fields are correct:
+   - `Website Visible = Yes`
+   - `Preview Available = Yes` where a preview should appear
+   - `Audio File Name` exactly matches the MP3 filename
+   - `Cover Image Key` is valid, such as `mwis` or `hueyd`
+   - `Website Mood` contains public-facing mood text
+4. Save the Excel file.
 5. Run:
-   npm run generate:catalogue
-6. Refresh /catalogue/browse.
-7. Commit and push.
+   `npm run generate:catalogue`
+6. Check `/catalogue/browse`.
+7. Commit the spreadsheet, generated data, and any audio/assets together.
 
-## Current visual state of catalogue page
-- Hero heading:
-  Discover the Chronicle Music Publishing Catalogue.
-- Hero copy:
-  Search by title, artist, category, language, or mood. Explore represented works, discover new voices, and preview selected catalogue recordings.
-- Stats block was removed from hero.
-- Hero image changed to:
-  /assets/ecosystem/chronicle-catalouge-hero.png
-- Filter bar has:
-  Search | Represented Artists | Category | Language | Preview available
-- Dropdown arrow was changed to plain "v" to avoid encoding corruption.
+## Current Production State
+
+- Catalogue browse is live and mobile-optimised.
+- Public route: `/catalogue/browse`.
+- Search, filters, preview availability, and selected-track preview behavior are working.
 - Adult Contemporary is sorted first via generator genre sort order.
+- Dropdown arrow uses plain `v` to avoid encoding corruption.
+- MP3 previews are tracked in Git.
 
-## Important issue to remember
-Avoid broad text replacements like replacing "Artist" globally. It previously broke variables such as catalogueBrowseArtists and matchesArtist.
+## Important Issues To Remember
 
-## Current likely next changes before publishing
-User wants a few final visual polish changes on the catalogue page before publishing.
-Do not redesign everything. Make only bounded changes.
-Inspect components/CatalogueBrowse.tsx before editing.
+- Avoid broad text replacements like replacing `Artist` globally. This previously broke variables such as `catalogueBrowseArtists` and `matchesArtist`.
+- Do not replace the Excel workflow casually.
+- Inspect `components/CatalogueBrowse.tsx` before changing catalogue UI.
+- Inspect `scripts/generate-catalogue-browse.cjs` before changing generated fields or ordering.
+- Preserve public-safe wording and avoid unsupported claims.
 
-## Key files
-- components/CatalogueBrowse.tsx
-- lib/catalogueBrowse.ts
-- scripts/generate-catalogue-browse.cjs
-- data/catalogue/chronicle-master-catalogue.xlsx
-- public/assets/ecosystem/chronicle-catalouge-hero.png
-- package.json
+## Creative Operations Portal Pattern Note
 
-## Commit checkpoint
-This handover documents the working Excel-to-catalogue system and current catalogue visual direction.
+The catalogue workflow can inform Chronicle Creative Operations Portal V1 data management:
+
+- spreadsheet/table-like source of truth
+- required fields
+- controlled generator/sync process
+- typed/generated app data
+- predictable public asset paths
+- clear operator instructions
+- low-friction workflow for Chronicle operators
+
+Important constraint:
+
+- Workbook/Google Sheets may be a temporary V1 source-of-truth.
+- Do not design around spreadsheet limitations.
+- Workbook structure should mirror future database entities.
+
+Portal V1 lifecycle:
+
+```text
+Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations
+```
+
+Possible private portal workflows that may use this pattern:
+
+- campaign trackers
+- artist marketing activity
+- release task planning
+- social content calendar
+- press and playlist outreach logs
+- catalogue promotion activity
+- daily creative/marketing/release actions for Markus

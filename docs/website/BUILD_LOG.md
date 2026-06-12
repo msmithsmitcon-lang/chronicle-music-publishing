@@ -237,3 +237,23 @@ Reviewed the live-route surface for the V1 stabilization phase and kept changes 
 - Updated hero image to /assets/ecosystem/chronicle-catalouge-hero.png.
 - Removed hero stats block.
 - Added code-side genre ordering so Adult Contemporary appears first.
+
+## 2026-06-11 - Website Launch, Mobile Optimisation, and Portal Handover
+
+- Redeveloped Chronicle Music public website deployed live to production.
+- Live domain:
+  - https://www.chroniclemusic.co.za
+- Vercel project:
+  - chronicle-music-publishing
+- Mobile/responsive optimisation completed across the public website.
+- Catalogue browse page at /catalogue/browse is stable and mobile-optimised.
+- Excel-driven catalogue workflow is stable:
+  - data/catalogue/chronicle-master-catalogue.xlsx
+  - scripts/generate-catalogue-browse.cjs
+  - lib/catalogueBrowse.ts
+- MP3 preview assets are tracked and working under public/catalogue/audio and public/catalogue/audio-huey-d.
+- Contact and Submit Works mailto workflows point to markus@chroniclemusic.co.za.
+- Chronicle Music, M-WIS, and Huey-D official social links are integrated.
+- Next development phase is Chronicle Portal planning.
+- Public website should now be treated as stable/live; do not destabilise it while building portal features.
+- Existing catalogue spreadsheet/generator workflow is a design pattern for future spreadsheet/database-style marketing activity management.

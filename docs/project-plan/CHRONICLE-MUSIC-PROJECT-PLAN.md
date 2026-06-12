@@ -10,14 +10,14 @@ This plan is local to Chronicle Music Website. It references Plexicon Core autho
 
 - Project: Chronicle Music Website
 - System: Chronicle Music
-- Repository role: public website and Plexicon-consuming system
-- Current lifecycle state: existing-system adoption initialized
-- Current implementation mode: docs-only initialization, no website code changes
+- Repository role: public website and private Chronicle Creative Operations Portal V1 repository
+- Current lifecycle state: public website launched; Creative Operations Portal V1 planning next
+- Current implementation mode: production-stable public site; private portal scope pending
 
 ## 2. Current Local Objective
 
 ```text
-Maintain Chronicle Music Website as a public-facing music company website while consuming Plexicon Core governance, execution-state continuity, adoption lifecycle, and public-safe boundary patterns by reference.
+Maintain the stable live Chronicle Music public website while planning and building the private authenticated Chronicle Creative Operations Portal V1.
 ```
 
 ## 3. Current Repository Memory
@@ -31,6 +31,10 @@ Existing memory includes:
 - `docs/operational-experience/`
 - `docs/backups/`
 - local app, component, library, and public asset structure
+- live production website state at https://www.chroniclemusic.co.za
+- stable Excel-driven catalogue workflow
+- portal phase handover in `docs/execution-state/PORTAL-PHASE-HANDOVER.md`
+- Creative Operations Portal V1 doctrine in `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md`
 
 New adoption memory includes:
 
@@ -44,29 +48,60 @@ New adoption memory includes:
 
 | Workstream | Status | Notes |
 | --- | --- | --- |
-| Plexicon-consuming initialization | Complete, pending human review | Local records created by reference to Core templates. |
-| Adoption record review | Next | Human review required before treating records as accepted local state. |
-| Website-state reconciliation | Proposed | Compare implemented website state against existing strategy docs and adoption boundaries. |
-| Public presentation implementation | Deferred | Requires explicit implementation approval. |
-| Runtime/API/SDK/CLI integration | Not planned | Forbidden in initialization pass. |
+| Public website redesign | Complete | Website is live in production. |
+| Mobile/responsive optimisation | Complete | Catalogue browse was the priority mobile surface. |
+| Catalogue Excel workflow | Stable | Spreadsheet to generated data workflow is approved and working. |
+| Plexicon-consuming initialization | Complete, pending broader human review | Local records created by reference to Core templates. |
+| Chronicle Creative Operations Portal V1 planning | Next | Private authenticated operational environment; scope, Clerk access model, and workbook/data workflow must be defined before implementation. |
+| Portal implementation | Pending approval | Must preserve public website stability and build separately from public pages. |
+| Future Sentry Sound Creative Operations Module | Future | Industrialised version of the validated Chronicle portal workflow. |
 
 ## 5. Next Allowed Action
 
 ```text
-Review generated adoption records and decide whether to proceed to website-state reconciliation.
+Define private Chronicle Creative Operations Portal V1 scope and technical plan while preserving the live public website.
 ```
 
 ## 6. Forbidden Actions
 
+- Do not destabilise the live public website.
+- Do not deploy production unless explicitly instructed.
+- Do not run `vercel --prod` unless explicitly instructed.
+- Do not redesign the public website as part of portal planning.
+- Do not edit public webpages during portal work unless Markus explicitly approves it.
+- Do not treat portal access as a public website feature.
 - Do not modify website code without a future implementation prompt.
-- Do not redesign UI as part of adoption review.
 - Do not install packages.
 - Do not alter framework, auth, database, deployment, API, SDK, or CLI setup.
 - Do not copy Plexicon Core doctrine into Chronicle as local authority.
+- Do not introduce database or third-party services without an approved portal plan.
+- Use Clerk as the intended portal authentication direction unless a future approved plan changes it.
+- Do not replace the catalogue Excel workflow casually.
+- Do not design portal workflows around spreadsheet limitations; workbook/Google Sheets is temporary V1 source-of-truth and should mirror future database entities.
+
+## 6.1 Portal Doctrine
+
+Correct model:
+
+- Public Chronicle Website = public brand/catalogue/showroom.
+- Chronicle Creative Operations Portal V1 = private authenticated operational environment.
+- Future Sentry Sound Creative Operations Module = industrialised version of the validated portal workflow.
+
+Portal V1 operational lifecycle:
+
+```text
+Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations
+```
+
+Main success criterion:
+
+```text
+When Markus opens the portal every morning, it must tell him what creative, marketing, catalogue, campaign, and release actions need to happen today.
+```
 
 ## 7. Validation Expectations
 
-For docs-only adoption initialization:
+For docs-only adoption or planning updates:
 
 - Confirm files exist.
 - Confirm local records reference Plexicon Core.
@@ -78,6 +113,7 @@ For future implementation work:
 - Inspect relevant local docs first.
 - Confirm allowed files and forbidden actions.
 - Run appropriate validation commands, likely `npm.cmd run build`, only when implementation changes justify it.
+- Do not deploy production unless explicitly instructed.
 
 ## 8. Review Triggers
 
@@ -88,4 +124,5 @@ Review this plan when:
 - human owner changes the active objective.
 - website implementation work is approved.
 - a feedback candidate is identified.
-
+- portal scope, authentication, or data model is approved.
+- public website deployment is requested.

@@ -2,10 +2,10 @@
 
 Record type: Open The Door Current Briefing
 Authority Level: Local Operational State
-Template source: `../plexicon-contracts/docs/templates/OPEN-THE-DOOR-CURRENT-BRIEFING-TEMPLATE-V1.md`
 Created: 2026-06-07
+Last reviewed: 2026-06-11
 
-This briefing references the single Plexicon Open The Door protocol. It does not define a Chronicle-specific variant.
+This briefing references the single Plexicon Open The Door protocol. It does not define a Chronicle-specific protocol variant.
 
 ## 1. Context Confidence
 
@@ -17,34 +17,33 @@ HIGH
 
 Reason:
 
-- current briefing exists: yes
-- relevant execution-state record exists: current briefing and initial update check exist
-- active repository identified: yes
-- active project/workstream identified: yes
-- return point identified: yes
-- next allowed action identified: yes
-- forbidden actions identified: yes
-- governing doctrine referenced: yes
-- conflicting records found: no blocking conflict; existing strategy and implementation state still require future reconciliation
+- Active repository identified.
+- Public website launch state documented.
+- Current production domain known.
+- Portal phase handover exists.
+- Catalogue workflow is documented and stable.
+- Next allowed action is defined.
+- Forbidden actions are defined.
 
 Behavior:
 
-- Resume from the return point.
+- Resume from the return point below.
 - Inspect only directly needed files.
-- Do not restart full Plexicon doctrine inspection unless Core references changed or context confidence drops.
+- Do not restart public website redesign unless Markus explicitly requests it.
+- Do not deploy production unless explicitly instructed.
 
 ## 2. Active Repository
 
 - Repository name: Chronicle Music Website
-- Repository path / URL: `C:\Users\Euan Smith\Desktop\CHRONICLE MUSIC PUBLISHING\17_Marketing_Press\Website`
-- Repository role: Plexicon-consuming public website repository
-- Active project: Chronicle Music Website
-- Active workstream: Plexicon-consuming system initialization
+- Repository path: `C:\Users\Euan Smith\Desktop\CHRONICLE MUSIC PUBLISHING\17_Marketing_Press\Website`
+- Repository role: public website and future Chronicle Portal repository
+- Active project: Chronicle Music Website / Chronicle Creative Operations Portal V1
+- Active workstream: Private Creative Operations Portal planning after public website launch
 
 ## 3. Active Objective
 
 ```text
-Initialize Chronicle Music Website as a Plexicon-consuming system using Plexicon Core templates and adoption model, without modifying website code.
+Plan the private Chronicle Creative Operations Portal V1 while preserving the stable live public Chronicle Music website.
 ```
 
 ## 4. Current Execution State
@@ -52,226 +51,150 @@ Initialize Chronicle Music Website as a Plexicon-consuming system using Plexicon
 System state:
 
 ```text
-Existing Next.js public website with substantial local strategy, UX, website, catalogue, and asset memory.
+Next.js public website is redeveloped, mobile-optimised, and live in production at https://www.chroniclemusic.co.za.
 ```
 
 Operational state:
 
 ```text
-Plexicon-consuming initialization records created locally; authority-bearing acceptance pending human review.
+Public website launch complete. Private Chronicle Creative Operations Portal V1 planning is the next operational phase.
 ```
 
 Execution state:
 
 ```text
-Initial adoption pass complete. Website code was not modified. Next work should start from this briefing and the local adoption records.
+Next work should start from this briefing, the system state doc, the portal phase handover, and the portal V1 doctrine doc. Do not edit public webpages while planning or building portal features unless Markus explicitly approves it.
 ```
 
-Completed outputs:
+Completed public website outputs:
 
-- `docs/authority/CHRONICLE-MUSIC-REPOSITORY-AUTHORITY.md`
-- `docs/authority/CHRONICLE-MUSIC-PLEXICON-CONSUMPTION-MAP.md`
-- `docs/adoption/CHRONICLE-MUSIC-PLEXICON-ADOPTION-STATUS.md`
-- `docs/adoption/update-check-initial.md`
-- `docs/adoption/feedback-candidates.md`
-- `docs/execution-state/OPEN-THE-DOOR-CURRENT-BRIEFING.md`
-- `docs/project-plan/CHRONICLE-MUSIC-PROJECT-PLAN.md`
-- `docs/build-log/BUILD-LOG.md`
+- Homepage rebuilt and live.
+- About page refined and live.
+- Contact page refined and live.
+- Artists page live.
+- M-WIS artist page live with official social links.
+- Huey-D artist page live with official social links.
+- Catalogue browse page live at `/catalogue/browse`.
+- Excel-driven catalogue workflow stable.
+- MP3 previews tracked and working.
+- Contact mailto workflow working.
+- Submit Works mailto workflow working.
+- Chronicle Music social links integrated.
+- Production deployed on Vercel project `chronicle-music-publishing`.
 
 Open tasks:
 
-- Human review of generated adoption records.
-- Decide whether to accept, revise, or expand adoption initialization.
-- Reconcile current website implementation state with existing Chronicle strategy docs in a later approved workstream.
-- Run validation only when an implementation or docs verification pass is approved.
+- Define Chronicle Creative Operations Portal V1 scope with Markus.
+- Use Clerk for private portal authentication unless a future approved plan changes that.
+- Decide first workbook/Google Sheets source-of-truth shape.
+- Mirror future database entities instead of designing around spreadsheet limitations.
+- Apply the portal lifecycle: Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations.
+- Consider spreadsheet/database-style workflows for marketing activity management.
+- Preserve the public website as a stable live production surface.
 
 Current blocker:
 
 ```text
-No technical blocker for initialization. Human review is required before treating adoption records as accepted authority-bearing local state.
+Portal scope is not yet fully defined. Markus must define or approve the first useful private creative operations workflows before implementation should broaden.
 ```
 
 ## 5. Return Point
 
 ```text
-Initial Plexicon-consuming system records have been generated. Resume by reviewing adoption records, then choose the next approved Chronicle website workstream.
+Public website is live and stable. Resume by planning the private Chronicle Creative Operations Portal V1, starting from docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md and docs/execution-state/PORTAL-PHASE-HANDOVER.md.
 ```
 
 ## 6. Next Allowed Action
 
 ```text
-Review the generated Plexicon adoption records and confirm whether Chronicle should proceed to a website-state reconciliation workstream.
+Inspect the existing stack and docs, then define a private authenticated Creative Operations Portal V1 implementation plan before changing application code.
 ```
 
 ## 7. Forbidden Actions
 
-- Do not modify website code unless a future prompt explicitly authorizes implementation.
-- Do not redesign UI during adoption review.
-- Do not install packages.
-- Do not change Supabase, Next.js, Tailwind, Clerk, deployment, API, SDK, or CLI setup.
+- Do not destabilise the live public website.
+- Do not deploy production unless explicitly instructed.
+- Do not run `vercel --prod` unless explicitly instructed.
+- Do not change DNS manually unless explicitly instructed.
+- Do not delete old deployments.
+- Do not redesign the public website as part of portal planning.
+- Do not edit public webpages during portal work unless Markus explicitly approves it.
+- Do not treat portal access as a public website feature.
+- Do not replace the catalogue Excel workflow casually.
+- Do not introduce authentication, database, or third-party services without an approved portal plan, except that Clerk is the intended authentication direction for this portal.
+- Do not install packages unless the approved portal plan requires it.
+- Do not change Next.js, Tailwind, deployment, API, SDK, or CLI setup without approval.
 - Do not copy Plexicon doctrine into Chronicle as editable local authority.
 - Do not promote Chronicle local learning to Plexicon Core without feedback candidate review.
 
-## 8. Governing Doctrine
+## 8. Key Files For Next Chat
+
+- `docs/system/CHRONICLE-MUSIC-WEBSITE-STATE.md`
+- `docs/execution-state/PORTAL-PHASE-HANDOVER.md`
+- `docs/open-the-door/CHRONICLE-OPEN-THE-DOOR.md`
+- `docs/project-plan/CHRONICLE-MUSIC-PROJECT-PLAN.md`
+- `docs/website/WEBSITE_STRUCTURE.md`
+- `docs/catalogue/CATALOGUE-MANAGEMENT-WORKFLOW.md`
+- `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md`
+- `package.json`
+- `app/layout.tsx`
+- `components/Header.tsx`
+
+## 9. Portal Guardrails
+
+- Public Chronicle Website = public brand/catalogue/showroom.
+- Chronicle Creative Operations Portal V1 = private authenticated operational environment.
+- Future Sentry Sound Creative Operations Module = industrialised version of the validated portal workflow.
+- Portal must use the existing Chronicle brand direction unless a future approved plan changes it.
+- Portal should use Next.js, React, Tailwind, Vercel, and Clerk.
+- Public website routes and content should remain stable during portal development.
+- Add sign-in / portal access carefully, ideally as a bounded navigation addition after portal route and access model are approved. This is only a doorway into the private portal.
+- Workbook/Google Sheets is temporary source-of-truth for V1, but structure should mirror future database entities.
+- Do not design around spreadsheet limitations.
+- The catalogue spreadsheet/generator workflow is a design pattern for future marketing activity management:
+  - spreadsheet/table-like source
+  - clear fields
+  - generator/sync step
+  - typed/generated data
+  - predictable asset paths
+  - low-friction operator workflow
+
+Operational lifecycle:
+
+```text
+Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations
+```
+
+Success criterion:
+
+```text
+When Markus opens the portal every morning, it must tell him what creative, marketing, catalogue, campaign, and release actions need to happen today.
+```
+
+## 10. Governing Doctrine
 
 | Doctrine / standard | Plexicon Core source path | Why relevant |
 | --- | --- | --- |
 | Open The Door Protocol V1 | `docs/architecture/PLEXICON-OPEN-THE-DOOR-PROTOCOL-V1.md` | Governs new-chat and handover continuity. |
 | Consumption Model V1 | `docs/architecture/PLEXICON-CONSUMPTION-MODEL-V1.md` | Governs Plexicon adoption by consuming systems. |
 | Consuming-System Update, Adoption, and Promotion Lifecycle V1 | `docs/architecture/PLEXICON-CONSUMING-SYSTEM-UPDATE-ADOPTION-AND-PROMOTION-LIFECYCLE-V1.md` | Governs update checks, adoption status, and feedback candidates. |
-| Adoption Manifest | `docs/registry/PLEXICON-ADOPTION-MANIFEST.md` | Provides Core items available for adoption comparison. |
 
-## 9. Role Split
+## 11. What Is Needed Next
 
-Human owns:
+- Ask Markus to define the first Chronicle Creative Operations Portal V1 workflow.
+- Confirm private authenticated user model.
+- Confirm Clerk setup requirements.
+- Decide workbook/Google Sheets source-of-truth structure.
+- Map workbook tabs to future database entities.
+- Draft a scoped implementation plan before code changes.
 
-- intent
-- approval
-- priority
-- final authority
+## 12. Review Triggers
 
-ChatGPT owns:
+Review this briefing when:
 
-- governance interpretation
-- alignment framing
-- role clarification
-- risk/gap identification
-
-Codex owns:
-
-- repository inspection
-- bounded implementation when approved
-- validation commands
-- execution-state impact reporting
-
-Plexicon doctrine owns:
-
-- approved rules
-- lifecycle/progression standards
-- authority boundaries
-- AI execution boundaries
-
-## 10. What Is Needed Next
-
-- Human review of local adoption records.
-- Confirm whether the next workstream is adoption record refinement, website-state reconciliation, or implementation planning.
-- If website work is approved, inspect the relevant local docs and code before modifying anything.
-
-## 11. Last Reviewed
-
-- Last reviewed: 2026-06-07
-- Reviewed by: Codex draft, human review required
-- Supersedes: no prior Chronicle Open The Door briefing found
-- Next review trigger: human acceptance/revision, active workstream change, next allowed action change, Core manifest update, or major blocker change
-
-
-## Checkpoint Update — 2026-06-10-1959
-
-### Current return point
-Chronicle website has a stable checkpoint after:
-- M-WIS artist page refinement.
-- Huey-D artist page refinement.
-- Catalogue routing moved from /catalogue to /catalogue/browse for live navigation/buttons.
-- /about page created with Chronicle-only positioning and cinematic sections.
-
-### Current approved direction
-Chronicle Music remains the public website’s primary brand.
-The website should focus on:
-- artists,
-- represented works,
-- catalogue discovery,
-- publishing identity,
-- company story,
-- rights/legacy value,
-- Chronicle capabilities.
-
-### Brand boundary
-Do not turn the Chronicle About page into a Sentry Sound / StudyEdge ecosystem page.
-Sentry Sound and StudyEdge may appear only when relevant to an individual artist story.
-
-### Next likely work
-Review /about visually and perform small polish only.
-Then continue catalogue page refinement or contact/capabilities cleanup.
-
-### Rollback
-Backup folder:
-.\docs\backups\checkpoint-about-page-2026-06-10-1959
-
-Git commit target:
-Checkpoint Chronicle artist pages catalogue routing and About page
-
-
-# Chronicle Music Website — Handover 2026-06-10-2351
-
-## Current state
-We are working on the Chronicle Music Publishing website.
-
-The catalogue page is now at:
-- /catalogue/browse
-
-The catalogue is no longer M-WIS-only. It is now positioned as:
-- Chronicle Music Publishing catalogue
-- multi-artist
-- searchable by title, artist, mood, language, category
-- filterable by represented artist, category, language, and preview availability
-
-## Completed catalogue architecture
-- Master catalogue spreadsheet is now the source of truth:
-  data/catalogue/chronicle-master-catalogue.xlsx
-- Generator script created:
-  scripts/generate-catalogue-browse.cjs
-- NPM command added:
-  npm run generate:catalogue
-- Generated website data file:
-  lib/catalogueBrowse.ts
-- MP3 files are stored in Git under:
-  public/catalogue/audio
-  public/catalogue/audio-huey-d
-
-## Current workflow to add songs
-1. Open:
-   data/catalogue/chronicle-master-catalogue.xlsx
-2. Add/edit song rows.
-3. Ensure:
-   Website Visible = Yes
-   Preview Available = Yes
-   Audio File Name = exact mp3 filename
-   Cover Image Key = mwis or hueyd
-   Website Mood = public-facing mood text
-4. Save Excel.
-5. Run:
-   npm run generate:catalogue
-6. Refresh /catalogue/browse.
-7. Commit and push.
-
-## Current visual state of catalogue page
-- Hero heading:
-  Discover the Chronicle Music Publishing Catalogue.
-- Hero copy:
-  Search by title, artist, category, language, or mood. Explore represented works, discover new voices, and preview selected catalogue recordings.
-- Stats block was removed from hero.
-- Hero image changed to:
-  /assets/ecosystem/chronicle-catalouge-hero.png
-- Filter bar has:
-  Search | Represented Artists | Category | Language | Preview available
-- Dropdown arrow was changed to plain "v" to avoid encoding corruption.
-- Adult Contemporary is sorted first via generator genre sort order.
-
-## Important issue to remember
-Avoid broad text replacements like replacing "Artist" globally. It previously broke variables such as catalogueBrowseArtists and matchesArtist.
-
-## Current likely next changes before publishing
-User wants a few final visual polish changes on the catalogue page before publishing.
-Do not redesign everything. Make only bounded changes.
-Inspect components/CatalogueBrowse.tsx before editing.
-
-## Key files
-- components/CatalogueBrowse.tsx
-- lib/catalogueBrowse.ts
-- scripts/generate-catalogue-browse.cjs
-- data/catalogue/chronicle-master-catalogue.xlsx
-- public/assets/ecosystem/chronicle-catalouge-hero.png
-- package.json
-
-## Commit checkpoint
-This handover documents the working Excel-to-catalogue system and current catalogue visual direction.
+- Markus approves portal scope.
+- Portal authentication or data storage is selected.
+- Public website deployment is requested.
+- Chronicle brand direction changes.
+- Catalogue workflow changes.
+- Major blocker appears.
