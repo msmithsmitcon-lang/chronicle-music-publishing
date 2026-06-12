@@ -105,6 +105,47 @@ Initial portal idea:
 Artist -> Song -> Creative Direction -> Assets -> Campaigns -> Content Queue -> Daily Operations
 ```
 
+## Creative Entity, Capability, Identity, and Contextual Role Model
+
+Phase 0.1 identified an important portal architecture principle:
+
+```text
+Entity
+-> Capabilities
+-> Identity / Positioning
+-> Contextual Operational Role
+```
+
+The portal must not reduce a person or entity to one fixed label such as artist, producer, engineer, builder, or performer.
+
+Capability is what a person/entity can do, such as producer, songwriter, beat creator, performer, recording artist, engineer, or visual creator.
+
+Identity / Positioning is how the person/entity is presented to the market or operating environment.
+
+Chronicle configuration:
+
+- Chronicle Music = creative house, catalogue, legacy platform, and ecosystem.
+- M-Wis / Markus = creative identity, producer, songwriter, beat creator, musical creator, and architect behind the sound.
+- Huey-D = creative identity, producer, songwriter, beat creator, musical creator, and public-facing creative world/personality.
+
+Do not position Markus/M-Wis or Huey-D as traditional performing artists unless Markus explicitly changes that positioning later. Huey-D being "the face" means the public-facing identity/personality of Huey-D, not traditional artist/performer positioning.
+
+Contextual Operational Role is the role performed in a specific project, song, campaign, asset, release, or work item. The same person/entity may play different roles in different contexts.
+
+Chronicle Portal must support this Chronicle configuration while keeping the larger future model flexible enough for traditional music roles and other configurations.
+
+Future Sentry Sound candidate:
+
+```text
+Creative Capability vs Identity vs Contextual Operational Role separation
+```
+
+Possible Plexicon relevance:
+
+This may become a later cross-domain adoption candidate because the logic transfers beyond music. Construction example: a person/entity may have capabilities such as architect, engineer, builder, painter, or tiler; their market identity may be "luxury residential specialist"; and their contextual role on a project may be "lead architect", "site engineer", or "finishing contractor."
+
+This is not current Plexicon Core doctrine. Do not promote it into Plexicon Core now, do not make Chronicle authoritative over Plexicon, and do not create new Plexicon doctrine.
+
 ## Strategic Path
 
 ```text
@@ -116,6 +157,18 @@ Chronicle Creative Operations Portal V1 -> validated workflow -> Sentry Sound Cr
 ```text
 When Markus opens the portal every morning, it must tell him what creative, marketing, catalogue, campaign, and release actions need to happen today.
 ```
+
+## Health Intelligence Framework
+
+The portal must evaluate whether Chronicle Music is becoming a stronger creative ecosystem, why or why not, and what must improve.
+
+Source-of-truth framework:
+
+```text
+docs/portal/CHRONICLE-CREATIVE-OPERATIONS-HEALTH-INTELLIGENCE-FRAMEWORK.md
+```
+
+The framework distinguishes System Capability, Human Execution, and External Outcome / Validation so the portal can diagnose root cause rather than merely show activity. Codex must not invent health logic; future implementation must consume the approved framework.
 
 ## Catalogue Workflow Pattern
 

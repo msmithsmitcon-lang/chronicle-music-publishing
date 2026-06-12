@@ -22,9 +22,12 @@ Reason:
 - Current production domain known.
 - Portal phase handover exists.
 - Formal portal execution plan exists.
+- Health Intelligence Framework exists for Phase 0 strategic evaluation and diagnostic logic.
+- Phase Close-Out Protocol is part of the governed workflow.
 - Catalogue workflow is documented and stable.
 - Public website / private portal boundary is documented.
 - Governance history is documented: website completed first; Plexicon continuity added later; portal is the first deliberately governed Chronicle stream.
+- Phase 0 entity-role modelling discovery is documented.
 - Next allowed action is defined.
 - Forbidden actions are defined.
 
@@ -67,7 +70,7 @@ Public website launch complete. Private Chronicle Creative Operations Portal V1 
 Execution state:
 
 ```text
-Next work should start from this briefing, the system state doc, the portal phase handover, the portal V1 doctrine doc, and the formal portal execution plan. Do not edit public webpages while planning or building portal features unless Markus explicitly approves it.
+Next work should start from this briefing, the system state doc, the portal phase handover, the portal V1 doctrine doc, the formal portal execution plan, and the Health Intelligence Framework. Do not edit public webpages while planning or building portal features unless Markus explicitly approves it.
 ```
 
 Governance history:
@@ -95,6 +98,8 @@ Completed public website outputs:
 Open tasks:
 
 - Define Chronicle Creative Operations Portal V1 scope with Markus.
+- Preserve the Phase 0 entity model: Entity -> Capabilities -> Identity / Positioning -> Contextual Operational Role.
+- Build out the Health Intelligence Framework strategic objectives, KPAs, and KPI composition before Codex implements health assessment logic.
 - Use Clerk for private portal authentication unless a future approved plan changes that.
 - Decide first workbook/Google Sheets source-of-truth shape.
 - Mirror future database entities instead of designing around spreadsheet limitations.
@@ -103,6 +108,7 @@ Open tasks:
 - Preserve the public website as a stable live production surface.
 - Keep docs aligned for Codex and future-chat continuity.
 - Use Codex for bounded execution where useful; direction remains manual and governed by Markus/ChatGPT.
+- Apply the Phase Close-Out Protocol before any phase, strategic objective package, or implementation package is recommended for lock.
 
 Current blocker:
 
@@ -113,7 +119,7 @@ Portal scope is not yet fully defined. Markus must define or approve the first u
 ## 5. Return Point
 
 ```text
-Public website is live and stable. Resume by planning the private Chronicle Creative Operations Portal V1 from Phase 0 - Product & Operational Definition, starting from docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md, docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md, and docs/execution-state/PORTAL-PHASE-HANDOVER.md.
+Public website is live and stable. Resume by planning the private Chronicle Creative Operations Portal V1 from Phase 0 - Product & Operational Definition, starting from docs/project-plan/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1-EXECUTION-PLAN.md, docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md, docs/portal/CHRONICLE-CREATIVE-OPERATIONS-HEALTH-INTELLIGENCE-FRAMEWORK.md, and docs/execution-state/PORTAL-PHASE-HANDOVER.md.
 ```
 
 ## 6. Next Allowed Action
@@ -149,6 +155,7 @@ Inspect the existing stack and docs, then define a private authenticated Creativ
 - `docs/website/WEBSITE_STRUCTURE.md`
 - `docs/catalogue/CATALOGUE-MANAGEMENT-WORKFLOW.md`
 - `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-PORTAL-V1.md`
+- `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-HEALTH-INTELLIGENCE-FRAMEWORK.md`
 - `package.json`
 - `app/layout.tsx`
 - `components/Header.tsx`
@@ -165,6 +172,12 @@ Inspect the existing stack and docs, then define a private authenticated Creativ
 - Add sign-in / portal access carefully, ideally as a bounded navigation addition after portal route and access model are approved. This is only a doorway into the private portal.
 - Workbook/Google Sheets is temporary source-of-truth for V1, but structure should mirror future database entities.
 - Do not design around spreadsheet limitations.
+- Do not reduce people/entities to one fixed label. Model creative entities through capabilities, identity/positioning, and contextual operational roles.
+- Chronicle configuration:
+  - Chronicle Music = creative house, catalogue, legacy platform, and ecosystem.
+  - M-Wis / Markus = creative identity, producer, songwriter, beat creator, musical creator, and architect behind the sound.
+  - Huey-D = creative identity, producer, songwriter, beat creator, musical creator, and public-facing creative world/personality.
+- Do not position Markus/M-Wis or Huey-D as traditional performing artists unless Markus explicitly changes that positioning later.
 - The catalogue spreadsheet/generator workflow is a design pattern for future marketing activity management:
   - spreadsheet/table-like source
   - clear fields
@@ -197,6 +210,9 @@ When Markus opens the portal every morning, it must tell him what creative, mark
 
 - Ask Markus to define the first Chronicle Creative Operations Portal V1 workflow.
 - Treat Phase 0 - Product & Operational Definition as ACTIVE until the product definition is approved and documented.
+- Keep the Creative Capability vs Identity vs Contextual Operational Role separation in Phase 0 architecture. Record it as a possible future Sentry Sound and Plexicon adoption candidate only; do not promote it into Plexicon Core.
+- Continue the Health Intelligence Framework capture process. Codex must not invent health logic.
+- Run the Phase Close-Out Protocol for each Strategic Objective package before recommending phase lock.
 - Confirm private authenticated user model.
 - Confirm Clerk setup requirements.
 - Decide workbook/Google Sheets source-of-truth structure.

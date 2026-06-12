@@ -157,3 +157,124 @@ Clarify public website, private portal, and governance history for future chats 
 - No runtime behavior changed.
 - No packages installed.
 - No deployment run.
+
+## 2026-06-12 - Phase Close-Out Protocol Added
+
+### Objective
+
+Add the Chronicle Creative Operations Portal V1 Phase Close-Out Protocol to the governed workflow.
+
+### Governance Added
+
+- A phase, strategic objective package, or implementation package is not complete merely because content was written or files were updated.
+- Every package must pass a formal close-out protocol before it can be committed, locked, and used as a basis for the next phase.
+- The close-out protocol includes:
+  - Strategic Integrity Gate.
+  - Repository Integrity Gate.
+  - Codex Consumption Readiness Gate.
+  - Git Protection Gate.
+  - Phase Completion Recommendation.
+- Codex may recommend `READY FOR PHASE LOCK` or `NOT READY FOR PHASE LOCK`.
+- Codex does not independently declare a phase complete.
+- Final phase lock authority remains Codex inspection -> ChatGPT governance approval -> Git commit -> Phase locked -> next phase.
+
+### Workflow Recorded
+
+```text
+Strategic Objective Package
+-> Repository Doctrine Capture
+-> Codex Integrity Inspection
+-> Correction Loop if required
+-> Git Protection
+-> ChatGPT Governance Approval
+-> Phase Lock
+-> Next Strategic Objective Package
+```
+
+### Future Relevance
+
+- Sentry Sound / Plexicon candidate: AI-Governed Phase Completion & Repository Closure Protocol.
+- Not current Plexicon Core doctrine.
+- Chronicle does not become authoritative over Plexicon.
+- No promotion into Plexicon Core is made by this docs update.
+
+### Not Changed
+
+- No application code changed.
+- No runtime behavior changed.
+- No packages installed.
+- No deployment run.
+
+## 2026-06-12 - Health Intelligence Framework Created
+
+### Objective
+
+Create the authoritative Chronicle Creative Operations Health Intelligence Framework for Phase 0 strategic evaluation and future implementation guidance.
+
+### Created
+
+- `docs/portal/CHRONICLE-CREATIVE-OPERATIONS-HEALTH-INTELLIGENCE-FRAMEWORK.md`
+
+### Framework Purpose
+
+- Define how the portal evaluates whether Chronicle Music is becoming a stronger creative ecosystem.
+- Separate System Capability, Human Execution, and External Outcome / Validation.
+- Support root-cause diagnosis rather than activity tracking only.
+- Record the strategic hierarchy from 12-month objective through KPA, KPI composition, health assessment, diagnostic interpretation, intervention, and future portal implementation.
+- Preserve future Sentry Sound and possible Plexicon adoption relevance without promoting Chronicle doctrine into Plexicon Core.
+
+### References Updated
+
+- Portal execution plan.
+- Portal doctrine.
+- Open The Door current briefing.
+- Portal phase handover.
+
+### Not Changed
+
+- No application code changed.
+- No runtime behavior changed.
+- No packages installed.
+- No deployment run.
+
+## 2026-06-12 - Phase 0 Entity Role Modelling Discovery
+
+### Objective
+
+Lock in the Chronicle Creative Operations Portal V1 Phase 0.1 modelling discovery as a formal architectural principle.
+
+### Principle Added
+
+The portal must not reduce people/entities to one fixed label such as artist, producer, engineer, builder, or performer.
+
+The model separates:
+
+```text
+Entity
+-> Capabilities
+-> Identity / Positioning
+-> Contextual Operational Role
+```
+
+### Chronicle Configuration
+
+- Chronicle Music = creative house, catalogue, legacy platform, and ecosystem.
+- M-Wis / Markus = creative identity, producer, songwriter, beat creator, musical creator, and architect behind the sound.
+- Huey-D = creative identity, producer, songwriter, beat creator, musical creator, and public-facing creative world/personality.
+
+Markus/M-Wis and Huey-D should not be positioned as traditional performing artists unless Markus explicitly changes that positioning later. Huey-D being "the face" means the public-facing identity/personality of Huey-D, not traditional artist/performer positioning.
+
+### Future Relevance
+
+- Sentry Sound candidate: Creative Capability vs Identity vs Contextual Operational Role separation.
+- Possible later Plexicon adoption candidate because the logic is transferable beyond music.
+- Not current Plexicon Core doctrine.
+- Chronicle does not become authoritative over Plexicon.
+- No promotion into Plexicon Core is made by this docs update.
+
+### Not Changed
+
+- No application code changed.
+- No runtime behavior changed.
+- No packages installed.
+- No deployment run.

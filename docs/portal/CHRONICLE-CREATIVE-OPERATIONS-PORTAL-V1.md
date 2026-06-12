@@ -84,6 +84,18 @@ Chronicle Creative Operations Portal V1
 -> Sentry Sound Creative Operations Module
 -> Supabase PostgreSQL backend
 
+## Health Intelligence Framework
+
+The portal does not merely track tasks. It evaluates whether Chronicle Music is becoming a stronger creative ecosystem, why or why not, and what must improve.
+
+Source-of-truth framework:
+
+```text
+docs/portal/CHRONICLE-CREATIVE-OPERATIONS-HEALTH-INTELLIGENCE-FRAMEWORK.md
+```
+
+Codex must not invent health logic. Future implementation must consume the approved strategic objectives, KPAs, KPI composition, diagnostic logic, workbook/data mapping, and product map from the framework.
+
 ## Operational Lifecycle
 
 Artist
@@ -93,6 +105,73 @@ Artist
 -> Campaigns
 -> Content Queue
 -> Daily Operations
+
+## Creative Entity, Capability, Identity, and Contextual Role Model
+
+Chronicle Portal must not reduce a person or entity to one fixed label such as artist, producer, engineer, builder, or performer.
+
+The correct model separates:
+
+```text
+Entity
+-> Capabilities
+-> Identity / Positioning
+-> Contextual Operational Role
+```
+
+### 1. Capability
+
+Capability means what a person or entity can do.
+
+Music examples:
+
+- Producer.
+- Songwriter.
+- Beat creator.
+- Performer.
+- Recording artist.
+- Engineer.
+- Visual creator.
+
+### 2. Identity / Positioning
+
+Identity / Positioning means how that person or entity is presented to the market or operating environment.
+
+Chronicle configuration:
+
+- Chronicle Music = creative house, catalogue, legacy platform, and ecosystem.
+- M-Wis / Markus = creative identity, producer, songwriter, beat creator, musical creator, and architect behind the sound.
+- Huey-D = creative identity, producer, songwriter, beat creator, musical creator, and public-facing creative world/personality.
+
+Do not position Markus/M-Wis or Huey-D as traditional performing artists unless Markus explicitly changes that positioning later.
+
+Huey-D being "the face" means the public-facing identity/personality of Huey-D. It does not mean traditional artist/performer positioning.
+
+### 3. Contextual Operational Role
+
+Contextual Operational Role means the role performed in a specific project, song, campaign, asset, release, or work item.
+
+The same person or entity may play different roles in different contexts.
+
+Chronicle Portal must support the Chronicle configuration, but the larger future model must remain flexible enough for traditional music roles and other configurations.
+
+Construction example:
+
+- A person/entity may have capabilities such as architect, engineer, builder, painter, or tiler.
+- Their market identity may be "luxury residential specialist."
+- Their contextual role on a specific project may be "lead architect", "site engineer", or "finishing contractor."
+
+Future Sentry Sound relevance:
+
+```text
+Creative Capability vs Identity vs Contextual Operational Role separation
+```
+
+This is a future Sentry Sound architecture candidate.
+
+Plexicon relevance:
+
+This is a possible later Plexicon cross-domain adoption candidate because the abstract reusable logic is transferable beyond music. It is not current Plexicon Core doctrine, does not make Chronicle authoritative over Plexicon, and must not be promoted into Plexicon Core without a separate future review process.
 
 ## Initial Workbook Modules
 
