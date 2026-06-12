@@ -1,4 +1,4 @@
-ï»¿# Chronicle Creative Operations Health Intelligence Framework
+# Chronicle Creative Operations Health Intelligence Framework
 
 ## 1. Document Status
 
@@ -100,10 +100,10 @@ Each section below is a Phase 0.1 framework section.
 
 ### 2. Build Distinct and Valuable Creative Identities
 
-- Strategic outcome: Phase 0.1 framework section pending full insertion.
-- KPAs: Phase 0.1 framework section pending full insertion.
-- KPI composition: Phase 0.1 framework section pending full insertion.
-- Status: Phase 0.1 framework section.
+- Strategic outcome: captured in full.
+- KPAs: KPA 1 through KPA 7 captured in full.
+- KPI composition: complete.
+- Status: COMPLETE AND REPOSITORY LOCKED.
 
 ### 3. Build a Living, Valuable Catalogue
 
@@ -234,8 +234,8 @@ Important:
 
 ## 11. Current Capture Status
 
-- Strategic Objectives: Strategic Objective 1 captured in full; Strategic Objectives 2-6 remain future framework sections.
-- KPA Architecture: Strategic Objective 1 KPA architecture captured in full.
+- Strategic Objectives: Strategic Objective 1 captured in full; Strategic Objective 2 captured in full; Strategic Objectives 3-6 remain future framework sections.
+- KPA Architecture: Strategic Objective 1 KPA architecture captured in full; Strategic Objective 2 KPA architecture captured in full.
 - KPI Composition:
   - Strategic Objective 1:
     - KPA 1 Creative Pipeline Health: CAPTURED.
@@ -246,8 +246,17 @@ Important:
     - KPA 6 Creative Knowledge & Resource Preservation: CAPTURED.
     - KPA 7 Creative Capacity & Sustainability: CAPTURED.
   - Strategic Objective 1 Overall Status: COMPLETE AND REPOSITORY LOCKED.
+  - Strategic Objective 2:
+    - KPA 1 Identity Clarity & Positioning: CAPTURED.
+    - KPA 2 Creative Authenticity & Integrity: CAPTURED.
+    - KPA 3 Creative World & Narrative Development: CAPTURED.
+    - KPA 4 Aesthetic & Creative Signature Development: CAPTURED.
+    - KPA 5 Capability Development & Creative Evolution: CAPTURED.
+    - KPA 6 Cultural Relevance & Meaningful Connection: CAPTURED.
+    - KPA 7 Identity Longevity & Legacy Potential: CAPTURED.
+  - Strategic Objective 2 Overall Status: COMPLETE AND REPOSITORY LOCKED.
 
-## Phase 0.0 â€” Foundational Intelligence Principles
+## Phase 0.0 — Foundational Intelligence Principles
 
 1. Chronicle is not building a task tracker.
 
@@ -255,7 +264,7 @@ Important:
 
 3. The central question is:
 
-   > â€œIs Chronicle Music becoming a stronger creative ecosystem than it was before, why or why not, and what must improve?â€
+   > “Is Chronicle Music becoming a stronger creative ecosystem than it was before, why or why not, and what must improve?”
 
 4. The system evaluates health, not activity.
 
@@ -277,7 +286,7 @@ Important:
 
 9. This document will later guide Codex implementation. Codex must implement from the framework, not invent health logic.
 
-# Phase 0.1 â€” Strategic Objective Framework
+# Phase 0.1 — Strategic Objective Framework
 
 ## Why Strategic Objectives Exist
 
@@ -298,21 +307,21 @@ The health engine must therefore evaluate progress against strategic objectives 
 Each Strategic Objective contains:
 
 Strategic Objective  
-â†“  
+?  
 Key Performance Areas (KPAs)  
-â†“  
+?  
 KPI Composition  
-â†“  
+?  
 System Capability Evaluation  
-â†“  
+?  
 Human Execution Evaluation  
-â†“  
+?  
 External Outcome / Validation  
-â†“  
+?  
 Health Score  
-â†“  
+?  
 Diagnostic Interpretation  
-â†“  
+?  
 Recommended Strategic Action
 
 ## The Six Strategic Objectives Index
@@ -1134,11 +1143,720 @@ COMPLETE AND REPOSITORY LOCKED
 KPI Composition Status:  
 COMPLETE
 
-KPA 1 â€” CAPTURED  
-KPA 2 â€” CAPTURED  
-KPA 3 â€” CAPTURED  
-KPA 4 â€” CAPTURED  
-KPA 5 â€” CAPTURED  
-KPA 6 â€” CAPTURED  
-KPA 7 â€” CAPTURED
+KPA 1 — CAPTURED  
+KPA 2 — CAPTURED  
+KPA 3 — CAPTURED  
+KPA 4 — CAPTURED  
+KPA 5 — CAPTURED  
+KPA 6 — CAPTURED  
+KPA 7 — CAPTURED
+
+# Strategic Objective 2: Build Distinct and Valuable Creative Identities
+
+## Purpose
+
+Chronicle must develop clear, authentic, recognisable creative identities with their own philosophies, worlds, narratives, aesthetics, capabilities, and long-term creative value.
+
+The objective is not popularity.
+
+The objective is to build meaningful creative worlds that strengthen Chronicle's ecosystem and become recognisable over time.
+
+## 12-Month Success State
+
+After 12 months:
+
+- Chronicle, M-Wis, and Huey-D have clearer identity positions.
+- Each identity has a stronger creative philosophy, narrative, and aesthetic direction.
+- Audiences and collaborators can better understand what each identity represents.
+- Creative output reinforces identity rather than confusing it.
+- The identities show authentic evolution without losing their core meaning.
+- The identities contribute to Chronicle's long-term cultural and catalogue value.
+
+## Failure State
+
+The objective is failing when:
+
+- Creative identities are unclear, generic, or inconsistent.
+- Identity positioning changes randomly.
+- Creative work does not reinforce the intended identity.
+- The identities imitate trends without authentic direction.
+- Audiences cannot understand the difference between Chronicle, M-Wis, and Huey-D.
+- Creative identity value does not accumulate over time.
+
+## Strategic Importance
+
+Creative works gain long-term value when they are connected to recognisable identities, philosophies, stories, and worlds.
+
+A strong creative institution does not only produce works; it develops identities that people understand, remember, and return to.
+
+## KPA Index
+
+### KPA 1: Identity Clarity & Positioning
+
+### KPA 2: Creative Authenticity & Integrity
+
+### KPA 3: Creative World & Narrative Development
+
+### KPA 4: Aesthetic & Creative Signature Development
+
+### KPA 5: Capability Development & Creative Evolution
+
+### KPA 6: Cultural Relevance & Meaningful Connection
+
+### KPA 7: Identity Longevity & Legacy Potential
+
+---
+
+## KPA 1: Identity Clarity & Positioning
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures and strategic definitions required to make each creative identity clear, distinct, and understandable.
+
+#### Indicators of Strength
+
+- Each identity has a defined purpose, position, philosophy, and role in the ecosystem.
+- Identity documentation separates capability, public positioning, and project-specific operational role.
+- The identity model prevents confusion between Chronicle, M-Wis, Huey-D, and future creative entities.
+- Messaging and creative direction can be checked against a clear positioning standard.
+
+#### Indicators of Weakness
+
+- Identity definitions are vague or inconsistent.
+- Capabilities, public identity, and project roles are confused.
+- Identities overlap without strategic reason.
+- Positioning changes reactively without long-term direction.
+
+#### Why This Category Matters
+
+Identity clarity gives every creative action a strategic centre and prevents Chronicle from becoming a collection of disconnected creative outputs.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators and contributors consistently act in ways that reinforce the intended identity position.
+
+#### Indicators of Strength
+
+- Creators understand the identity they are building.
+- Creative decisions align with the approved positioning.
+- Communication, collaboration, and output reinforce identity clarity.
+- Contributors avoid actions that confuse or dilute the identity.
+
+#### Indicators of Weakness
+
+- Creators present the identity inconsistently.
+- Work is released without considering identity alignment.
+- Contributors describe or position the identity differently.
+- Short-term attention overrides strategic identity discipline.
+
+#### Why This Category Matters
+
+A defined identity only becomes valuable when people consistently express and protect it.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether audiences, collaborators, and external observers understand what the identity represents.
+
+#### Indicators of Strength
+
+- External parties can describe the identity accurately.
+- The identity is recognised for intended characteristics.
+- People understand the difference between Chronicle, M-Wis, and Huey-D.
+- Identity recognition strengthens over time.
+
+#### Indicators of Weakness
+
+- Audiences cannot explain what the identity represents.
+- The identity is misunderstood or confused with unrelated roles.
+- Recognition depends only on isolated content.
+- External perception conflicts with intended positioning.
+
+#### Why This Category Matters
+
+A creative identity becomes valuable when its meaning is understood beyond the organisation itself.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators have identity instinct, but Chronicle lacks clear definitions, positioning rules, or identity structure.
+
+2. **Strong System + Weak Execution**
+
+   Identity definitions exist, but people fail to apply them consistently.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   The identity is being expressed clearly internally, but the market does not yet understand or recognise it.
+
+---
+
+## KPA 2: Creative Authenticity & Integrity
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has principles and safeguards that protect identities from becoming trend-driven, artificial, or strategically diluted.
+
+#### Indicators of Strength
+
+- Core identity principles are defined.
+- Creative choices can be evaluated against authenticity and integrity.
+- The system allows evolution without abandoning identity foundations.
+- There are standards for rejecting misaligned opportunities.
+
+#### Indicators of Weakness
+
+- No clear identity integrity principles exist.
+- Trend-following overrides authentic direction.
+- Opportunities are accepted even when they weaken identity.
+- Creative evolution occurs without reference to core philosophy.
+
+#### Why This Category Matters
+
+Authenticity protects long-term trust and makes identity development durable.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators make choices that remain true to the identity's values, philosophy, and creative purpose.
+
+#### Indicators of Strength
+
+- Creators make decisions that feel authentic to the identity.
+- Growth is intentional rather than opportunistic.
+- Creators resist choices that damage long-term integrity.
+- Creative work reflects honest philosophy and purpose.
+
+#### Indicators of Weakness
+
+- Creators chase trends without strategic reason.
+- Identity behaviour feels artificial or inconsistent.
+- Creative decisions contradict the intended philosophy.
+- Short-term visibility compromises long-term meaning.
+
+#### Why This Category Matters
+
+A creative identity cannot build legacy if its own creators do not protect its integrity.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether the identity is perceived as genuine, credible, and trustworthy.
+
+#### Indicators of Strength
+
+- Audiences experience the identity as authentic.
+- Supporters trust the creative direction.
+- Peers and collaborators respect the identity's integrity.
+- The identity develops emotional credibility.
+
+#### Indicators of Weakness
+
+- The identity feels manufactured or opportunistic.
+- Audiences disengage because the identity lacks sincerity.
+- External perception becomes cynical or confused.
+- Trust declines due to inconsistency.
+
+#### Why This Category Matters
+
+Long-term creative value depends on trust, and trust depends on authenticity.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators care about authenticity, but Chronicle lacks principles to protect identity integrity.
+
+2. **Strong System + Weak Execution**
+
+   Integrity principles exist, but creators make inconsistent or trend-driven decisions.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   The identity is authentic internally, but the market has not yet recognised or trusted it.
+
+---
+
+## KPA 3: Creative World & Narrative Development
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the structures required to build stories, symbolism, history, context, and meaning around each identity.
+
+#### Indicators of Strength
+
+- Identity narratives are documented and developed over time.
+- Creative works are connected to a broader world or journey.
+- Stories, origins, motivations, and themes are preserved.
+- Narrative development supports future content, catalogue, and audience connection.
+
+#### Indicators of Weakness
+
+- Creative works exist without story or context.
+- Identity history is not captured.
+- Projects feel disconnected from one another.
+- Narrative development happens randomly or only at release time.
+
+#### Why This Category Matters
+
+Creative worlds deepen meaning and help audiences build long-term relationships with identities.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators consistently build, express, and preserve the stories behind the identity.
+
+#### Indicators of Strength
+
+- Creators document the journey, inspiration, and meaning behind work.
+- Communication reinforces the identity's world.
+- New projects expand the narrative instead of fragmenting it.
+- Contributors understand the story they are helping build.
+
+#### Indicators of Weakness
+
+- Creators ignore story and context.
+- Meaning is lost after projects are completed.
+- Communication is purely promotional.
+- Narrative decisions are inconsistent or shallow.
+
+#### Why This Category Matters
+
+A creative world only becomes real when creators continuously feed and protect its story.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether audiences and collaborators connect with the identity's story and creative world.
+
+#### Indicators of Strength
+
+- Audiences understand the journey behind the identity.
+- People engage with themes, stories, and symbolism.
+- The identity becomes more memorable through narrative.
+- The creative world increases audience depth and loyalty.
+
+#### Indicators of Weakness
+
+- Audiences only consume isolated outputs.
+- The identity has no memorable story.
+- Creative works fail to create deeper interpretation.
+- Narrative material does not strengthen connection.
+
+#### Why This Category Matters
+
+Stories turn creative output into cultural memory.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators have rich stories, but Chronicle lacks structures to capture and develop them.
+
+2. **Strong System + Weak Execution**
+
+   Narrative structures exist, but creators fail to document or communicate the story.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   The story is being developed, but audiences are not yet connecting with it meaningfully.
+
+---
+
+## KPA 4: Aesthetic & Creative Signature Development
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the standards and creative references required to develop recognisable sound, visual language, tone, and artistic signatures.
+
+#### Indicators of Strength
+
+- Aesthetic direction is defined for each identity.
+- Visual, musical, lyrical, conceptual, and communication elements are aligned.
+- Signature elements are tracked and refined over time.
+- The system supports originality while maintaining coherence.
+
+#### Indicators of Weakness
+
+- No recognisable aesthetic direction exists.
+- Projects look, sound, or feel disconnected.
+- Creative signatures are accidental rather than intentional.
+- Visual and sonic language conflicts with identity positioning.
+
+#### Why This Category Matters
+
+Recognisable signatures make identities memorable and increase long-term creative value.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators consistently apply and develop the identity's artistic language.
+
+#### Indicators of Strength
+
+- Creators make intentional aesthetic choices.
+- Signature elements become stronger across projects.
+- Creative decisions reinforce the identity's world.
+- Contributors maintain coherence while allowing growth.
+
+#### Indicators of Weakness
+
+- Creators change aesthetic direction without strategic reason.
+- Work lacks recognisable style.
+- Visuals, sounds, and communication feel unrelated.
+- Execution is inconsistent across projects.
+
+#### Why This Category Matters
+
+Aesthetic strength depends on repeated, disciplined creative choices.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether the identity is becoming externally recognisable through its creative signature.
+
+#### Indicators of Strength
+
+- Audiences or peers recognise work by its style or feel.
+- The identity develops a distinct creative presence.
+- Aesthetic consistency increases memorability.
+- Creative signature contributes to professional respect.
+
+#### Indicators of Weakness
+
+- Work is indistinct or generic.
+- Audiences cannot identify what makes the identity unique.
+- Style changes prevent recognition.
+- The aesthetic does not support long-term positioning.
+
+#### Why This Category Matters
+
+A creative identity becomes valuable when its work carries a recognisable signature.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators have taste and instinct, but Chronicle lacks aesthetic standards or reference structures.
+
+2. **Strong System + Weak Execution**
+
+   Aesthetic direction exists, but creators do not apply it consistently.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   Signature development is strong internally, but external recognition has not yet formed.
+
+---
+
+## KPA 5: Capability Development & Creative Evolution
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle supports the continuous development of creative skills, roles, knowledge, and identity capability.
+
+#### Indicators of Strength
+
+- Capability development priorities are defined.
+- The system supports learning, experimentation, and skill growth.
+- Each identity's capabilities are separated from public positioning and project role.
+- Growth is aligned with long-term identity direction.
+
+#### Indicators of Weakness
+
+- Skills remain static.
+- Capability development is unplanned.
+- New abilities are pursued without identity relevance.
+- The system cannot distinguish capability from public identity.
+
+#### Why This Category Matters
+
+Identities become more valuable when their underlying creative capability grows.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators actively develop skills and expand their creative range.
+
+#### Indicators of Strength
+
+- Creators improve their craft over time.
+- New techniques and knowledge are applied meaningfully.
+- Creators stretch beyond existing comfort zones.
+- Capability growth strengthens identity rather than confusing it.
+
+#### Indicators of Weakness
+
+- Creators repeat familiar methods without improvement.
+- Learning is neglected.
+- New capabilities are not integrated into work.
+- Growth is reactive rather than intentional.
+
+#### Why This Category Matters
+
+Long-term identity value requires continuous creative growth.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether capability development results in stronger creative output, recognition, and ecosystem value.
+
+#### Indicators of Strength
+
+- Creative work shows increasing maturity.
+- The identity gains respect for expanding capability.
+- New skills create new project possibilities.
+- Capability development strengthens the catalogue and opportunities.
+
+#### Indicators of Weakness
+
+- Skill growth does not translate into better work.
+- The identity stagnates creatively.
+- New abilities create confusion instead of value.
+- External parties do not perceive development.
+
+#### Why This Category Matters
+
+Capability only matters when it increases creative and strategic value.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators want to grow, but Chronicle lacks learning support, direction, or capability planning.
+
+2. **Strong System + Weak Execution**
+
+   Development pathways exist, but creators do not apply effort or discipline.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   Capability is improving, but the growth is not yet visible or valuable externally.
+
+---
+
+## KPA 6: Cultural Relevance & Meaningful Connection
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle has the strategic awareness required to connect identities with audiences, communities, and cultural contexts meaningfully.
+
+#### Indicators of Strength
+
+- The system identifies the communities and cultural spaces each identity speaks to.
+- Identity expression is linked to meaningful themes, values, and conversations.
+- Audience understanding informs identity development without compromising authenticity.
+- Cultural relevance is evaluated beyond popularity.
+
+#### Indicators of Weakness
+
+- Identities are developed in isolation from culture.
+- Audience meaning is not considered.
+- Relevance is confused with trend-chasing.
+- The system cannot identify who the identity matters to or why.
+
+#### Why This Category Matters
+
+Creative identities gain power when they matter to people and culture.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators communicate and create in ways that build meaningful connection.
+
+#### Indicators of Strength
+
+- Creators express ideas that resonate beyond surface attention.
+- Communication invites interpretation, emotion, and participation.
+- Creators listen without losing identity integrity.
+- Work reflects awareness of audience and cultural context.
+
+#### Indicators of Weakness
+
+- Creators communicate only promotionally.
+- Work does not invite deeper connection.
+- Audience feedback is ignored or blindly followed.
+- Cultural expression feels disconnected or shallow.
+
+#### Why This Category Matters
+
+Meaningful connection is built through intentional human expression.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether the identity is developing cultural meaning and emotional relevance.
+
+#### Indicators of Strength
+
+- Audiences attach meaning to the identity.
+- Conversations develop around themes, stories, or values.
+- The identity resonates with specific communities.
+- Connection deepens over time.
+
+#### Indicators of Weakness
+
+- Attention is temporary and shallow.
+- Audiences do not form emotional attachment.
+- The identity fails to enter relevant conversations.
+- Engagement does not translate into relationship.
+
+#### Why This Category Matters
+
+A creative identity becomes culturally valuable when people feel it means something.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators have meaningful expression, but Chronicle lacks strategy for cultural connection.
+
+2. **Strong System + Weak Execution**
+
+   Cultural strategy exists, but creators fail to communicate or create with depth.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   Meaningful work is being produced, but the intended audience has not yet connected with it.
+
+---
+
+## KPA 7: Identity Longevity & Legacy Potential
+
+### System Capability Evaluation
+
+#### Purpose
+
+Determine whether Chronicle is building creative identities as long-term assets rather than temporary attention vehicles.
+
+#### Indicators of Strength
+
+- Identity development is connected to long-term catalogue, audience, and institutional value.
+- Past work, history, stories, and aesthetic evolution are preserved.
+- Identity decisions are evaluated against legacy impact.
+- The system supports identity growth across years and decades.
+
+#### Indicators of Weakness
+
+- Identity development depends only on current trends or campaigns.
+- Past work is disconnected from present identity.
+- There is no long-term identity roadmap.
+- Short-term attention damages future value.
+
+#### Why This Category Matters
+
+Chronicle is building creative legacy, not temporary creative visibility.
+
+### Human Execution Evaluation
+
+#### Purpose
+
+Determine whether creators make decisions that protect and grow the identity's long-term value.
+
+#### Indicators of Strength
+
+- Creators act as stewards of the identity.
+- Decisions consider future reputation and catalogue value.
+- The identity accumulates history and meaning.
+- Creators protect the identity from dilution.
+
+#### Indicators of Weakness
+
+- Creators prioritise immediate attention over legacy.
+- Identity decisions are inconsistent or short-sighted.
+- Past achievements are not built upon.
+- The identity loses meaning over time.
+
+#### Why This Category Matters
+
+Creative legacy requires long-term discipline from the people carrying the identity.
+
+### External Outcome / Validation Evaluation
+
+#### Purpose
+
+Determine whether the identity is accumulating lasting recognition, memory, and value.
+
+#### Indicators of Strength
+
+- Earlier work continues to contribute to identity value.
+- The identity becomes more recognisable over time.
+- Audiences and collaborators associate the identity with a growing body of meaning.
+- The identity shows potential to remain relevant beyond current activity.
+
+#### Indicators of Weakness
+
+- Interest disappears quickly after each release.
+- The identity has no lasting memory or recognition.
+- Past work does not strengthen current positioning.
+- The identity remains dependent on constant novelty.
+
+#### Why This Category Matters
+
+An identity becomes an institutional asset when its value compounds over time.
+
+### Diagnostic Model
+
+1. **Weak System + Strong People**
+
+   Creators care about legacy, but Chronicle lacks structures to preserve and compound identity value.
+
+2. **Strong System + Weak Execution**
+
+   Legacy structures exist, but creators make short-term or inconsistent decisions.
+
+3. **Strong System + Strong Execution + Weak External Validation**
+
+   Identity legacy is being built internally, but lasting external recognition has not yet developed.
+
+---
+
+## Strategic Objective 2 Status
+
+Strategic Objective Definition:  
+CAPTURED
+
+KPA Architecture:  
+CAPTURED
+
+KPI Composition:  
+CAPTURED
+
+Strategic Objective 2 Status:
+COMPLETE AND REPOSITORY LOCKED
+
+KPA 1 — CAPTURED  
+KPA 2 — CAPTURED  
+KPA 3 — CAPTURED  
+KPA 4 — CAPTURED  
+KPA 5 — CAPTURED  
+KPA 6 — CAPTURED  
+KPA 7 — CAPTURED
+
 
