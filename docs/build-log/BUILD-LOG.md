@@ -158,6 +158,143 @@ Clarify public website, private portal, and governance history for future chats 
 - No packages installed.
 - No deployment run.
 
+## 2026-06-13 - Foundation Build Milestone 2 Implemented
+
+### Objective
+
+Implement the organizational identity, authorization, event, evidence, and audit foundation for the private Chronicle Creative Operations Portal.
+
+### Created
+
+- `docs/build-log/FOUNDATION-BUILD-MILESTONE-2-IMPLEMENTATION-RECORD.md`
+- `lib/portal/authorization.ts`
+- `lib/portal/db.ts`
+- `lib/portal/foundation-events.ts`
+- `lib/portal/validation.ts`
+- `prisma/migrations/20260613091500_portal_identity_trust_foundation/migration.sql`
+
+### Updated
+
+- `prisma/schema.prisma`
+- `package.json`
+- `package-lock.json`
+
+### Foundation Introduced
+
+- Workspace and organization ownership model.
+- Clerk-linked internal user profile model.
+- Workspace membership lifecycle.
+- Role and permission model.
+- Domain event model.
+- Evidence record model.
+- Audit event model.
+- Server-side Prisma access utility.
+- Server-side authorization and validation utilities.
+
+### Dependencies Added
+
+- `@prisma/adapter-pg`
+- `pg`
+
+### Validation
+
+- Prisma schema validation passed.
+- Prisma client generation passed.
+- Application build passed.
+- Public website routes/components were not modified.
+
+### Not Changed
+
+- No public website routes changed.
+- No public UI components changed.
+- No catalogue, artist, resource, contact, capability, or marketing pages changed.
+- No deployment run.
+
+## 2026-06-13 - Portal Foundation Milestone 1 Initialization
+
+### Objective
+
+Initialize the private Chronicle Creative Operations Portal foundation under the protected `/portal` application boundary without modifying the public Chronicle website experience.
+
+### Implemented
+
+- Installed approved foundation dependencies:
+  - Clerk authentication foundation.
+  - Prisma ORM and client foundation.
+  - Zod validation foundation.
+- Created safe environment template:
+  - `.env.example`
+- Initialized Prisma 7 PostgreSQL foundation:
+  - `prisma/schema.prisma`
+  - `prisma.config.ts`
+- Added private portal application boundary:
+  - `app/portal/layout.tsx`
+  - `app/portal/page.tsx`
+  - `components/portal/PortalNavigation.tsx`
+- Added portal-scoped Clerk middleware:
+  - `proxy.ts`
+- Added portal environment validation foundation:
+  - `lib/portal/env.ts`
+- Updated `.gitignore` to keep secrets ignored while allowing `.env.example` to be tracked.
+
+### Protection Notes
+
+- Public routes, public UI components, public navigation, public styling, catalogue pages, artist pages, contact pages, resources pages, and capabilities pages were not intentionally modified.
+- Proxy matcher is scoped to `/portal/:path*`.
+- No production deployment was run.
+
+### Governance Notes
+
+- This milestone implements Build Package 1 foundation direction from the Phase 2 master plan.
+- No strategic doctrine was modified.
+- No full business-domain schema was introduced.
+
+## 2026-06-13 - Portal Foundation Milestone 2 Identity Trust Backbone
+
+### Objective
+
+Implement the foundational operational identity, authorization, event, evidence, and audit backbone required by future Creative Operations Intelligence modules.
+
+### Implemented
+
+- Extended Prisma foundation models for:
+  - Organization.
+  - Workspace.
+  - Workspace settings.
+  - Workspace lifecycle state.
+  - User profile and Clerk identity linkage.
+  - Workspace membership lifecycle.
+  - Roles.
+  - Permissions.
+  - Role-to-permission assignments.
+  - Source references.
+  - Evidence records.
+  - Audit events.
+  - Domain events.
+- Added backend foundation utilities:
+  - Prisma access singleton.
+  - Portal authorization constants and permission helper.
+  - Foundation event and audit writers.
+  - Zod validation contracts for events, audit events, evidence, and workspace slugs.
+- Created initial migration artifact:
+  - `prisma/migrations/20260613091500_portal_identity_trust_foundation/migration.sql`
+- Added `postinstall` Prisma client generation so ignored generated client files are recreated after dependency installation.
+
+### Protection Notes
+
+- No public routes were modified.
+- No public UI components were modified.
+- No public navigation or styling was modified.
+- No catalogue, artist, resource, contact, capability, or marketing pages were modified.
+
+### Governance Notes
+
+- This milestone remains a platform foundation milestone.
+- No creative domain tables were introduced.
+- No catalogue intelligence module was implemented.
+- No production deployment was run.
+- No secrets were committed.
+
 ## 2026-06-12 - Phase Close-Out Protocol Added
 
 ### Objective

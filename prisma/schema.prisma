@@ -1,0 +1,273 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum WorkspaceLifecycleState {
+  SETUP
+  ACTIVE
+  SUSPENDED
+  ARCHIVED
+}
+
+enum OrganizationOwnershipType {
+  INTERNAL
+  CLIENT
+  PARTNER
+}
+
+enum WorkspaceMembershipStatus {
+  INVITED
+  ACTIVE
+  SUSPENDED
+  ARCHIVED
+}
+
+enum AuditEventSeverity {
+  INFO
+  WARNING
+  CRITICAL
+}
+
+enum ChangeSourceType {
+  HUMAN
+  SYSTEM
+  IMPORT
+  AI_ASSISTED
+}
+
+enum EvidenceType {
+  DOCUMENT
+  LINK
+  NOTE
+  ATTACHMENT
+  SUPPORTING_RECORD
+}
+
+enum EvidenceVerificationStatus {
+  UNVERIFIED
+  REVIEW_REQUIRED
+  VERIFIED
+  REJECTED
+  ARCHIVED
+}
+
+model Organization {
+  id              String                    @id @default(cuid())
+  name            String
+  slug            String                    @unique
+  ownershipType   OrganizationOwnershipType @default(INTERNAL)
+  createdAt       DateTime                  @default(now())
+  updatedAt       DateTime                  @updatedAt
+  ownedWorkspaces Workspace[]
+}
+
+model Workspace {
+  id                  String                  @id @default(cuid())
+  ownerOrganizationId String?
+  name                String
+  slug                String                  @unique
+  description         String?
+  lifecycleState      WorkspaceLifecycleState @default(SETUP)
+  createdAt           DateTime                @default(now())
+  updatedAt           DateTime                @updatedAt
+  ownerOrganization   Organization?           @relation(fields: [ownerOrganizationId], references: [id], onDelete: SetNull)
+  settings            WorkspaceSetting[]
+  memberships         WorkspaceMembership[]
+  roles               Role[]
+  permissions         Permission[]
+  sourceReferences    SourceReference[]
+  evidenceRecords     EvidenceRecord[]
+  auditEvents         AuditEvent[]
+  domainEvents        DomainEvent[]
+
+  @@index([ownerOrganizationId])
+  @@index([lifecycleState])
+}
+
+model WorkspaceSetting {
+  id          String    @id @default(cuid())
+  workspaceId String
+  key         String
+  value       Json
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  workspace   Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+
+  @@unique([workspaceId, key])
+  @@index([workspaceId])
+}
+
+model UserProfile {
+  id               String                @id @default(cuid())
+  clerkUserId      String                @unique
+  email            String?
+  displayName      String?
+  avatarUrl        String?
+  isActive         Boolean               @default(true)
+  createdAt        DateTime              @default(now())
+  updatedAt        DateTime              @updatedAt
+  memberships      WorkspaceMembership[]
+  verifiedEvidence EvidenceRecord[]      @relation("EvidenceVerifier")
+  auditEvents      AuditEvent[]          @relation("AuditActor")
+  domainEvents     DomainEvent[]         @relation("DomainEventActor")
+}
+
+model WorkspaceMembership {
+  id          String                    @id @default(cuid())
+  workspaceId String
+  userId      String
+  roleId      String?
+  status      WorkspaceMembershipStatus @default(INVITED)
+  invitedAt   DateTime?
+  activatedAt DateTime?
+  suspendedAt DateTime?
+  archivedAt  DateTime?
+  createdAt   DateTime                  @default(now())
+  updatedAt   DateTime                  @updatedAt
+  workspace   Workspace                 @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  user        UserProfile               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role        Role?                     @relation(fields: [roleId], references: [id], onDelete: SetNull)
+
+  @@unique([workspaceId, userId])
+  @@index([workspaceId])
+  @@index([userId])
+  @@index([status])
+}
+
+model Role {
+  id          String                @id @default(cuid())
+  workspaceId String
+  name        String
+  key         String
+  description String?
+  isSystem    Boolean               @default(false)
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+  workspace   Workspace             @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  memberships WorkspaceMembership[]
+  permissions RolePermission[]
+
+  @@unique([workspaceId, key])
+  @@index([workspaceId])
+  @@index([isSystem])
+}
+
+model Permission {
+  id          String           @id @default(cuid())
+  workspaceId String
+  key         String
+  description String?
+  category    String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  workspace   Workspace        @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  roles       RolePermission[]
+
+  @@unique([workspaceId, key])
+  @@index([workspaceId])
+  @@index([category])
+}
+
+model RolePermission {
+  id           String     @id @default(cuid())
+  roleId       String
+  permissionId String
+  createdAt    DateTime   @default(now())
+  role         Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, permissionId])
+  @@index([permissionId])
+}
+
+model SourceReference {
+  id              String           @id @default(cuid())
+  workspaceId     String
+  sourceType      String
+  title           String
+  uri             String?
+  description     String?
+  metadata        Json?
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  workspace       Workspace        @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  evidenceRecords EvidenceRecord[]
+
+  @@index([workspaceId])
+  @@index([sourceType])
+}
+
+model EvidenceRecord {
+  id                 String                     @id @default(cuid())
+  workspaceId        String
+  sourceReferenceId  String?
+  verifiedByUserId   String?
+  evidenceType       EvidenceType
+  title              String
+  body               String?
+  uri                String?
+  attachmentKey      String?
+  targetEntityType   String?
+  targetEntityId     String?
+  verificationStatus EvidenceVerificationStatus @default(UNVERIFIED)
+  verifiedAt         DateTime?
+  metadata           Json?
+  createdAt          DateTime                   @default(now())
+  updatedAt          DateTime                   @updatedAt
+  workspace          Workspace                  @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  sourceReference    SourceReference?           @relation(fields: [sourceReferenceId], references: [id], onDelete: SetNull)
+  verifiedBy         UserProfile?               @relation("EvidenceVerifier", fields: [verifiedByUserId], references: [id], onDelete: SetNull)
+
+  @@index([workspaceId, createdAt])
+  @@index([evidenceType])
+  @@index([verificationStatus])
+  @@index([targetEntityType, targetEntityId])
+  @@index([sourceReferenceId])
+}
+
+model AuditEvent {
+  id          String             @id @default(cuid())
+  workspaceId String
+  actorId     String?
+  action      String
+  entityType  String
+  entityId    String?
+  sourceType  ChangeSourceType   @default(HUMAN)
+  sourceId    String?
+  before      Json?
+  after       Json?
+  severity    AuditEventSeverity @default(INFO)
+  metadata    Json?
+  createdAt   DateTime           @default(now())
+  workspace   Workspace          @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  actor       UserProfile?       @relation("AuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([workspaceId, createdAt])
+  @@index([entityType, entityId])
+  @@index([sourceType])
+}
+
+model DomainEvent {
+  id          String           @id @default(cuid())
+  workspaceId String
+  actorId     String?
+  eventType   String
+  entityType  String
+  entityId    String?
+  sourceType  ChangeSourceType @default(HUMAN)
+  sourceId    String?
+  payload     Json?
+  createdAt   DateTime         @default(now())
+  workspace   Workspace        @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  actor       UserProfile?     @relation("DomainEventActor", fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([workspaceId, createdAt])
+  @@index([eventType])
+  @@index([entityType, entityId])
+  @@index([sourceType])
+}
