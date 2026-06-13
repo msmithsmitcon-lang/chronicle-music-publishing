@@ -23,6 +23,25 @@ const lifecycleLabels: Record<string, string> = {
   ARCHIVED: "Archived",
 };
 
+const operationalLoop = [
+  "Asset",
+  "Evidence",
+  "Readiness evaluation",
+  "Risks",
+  "Required actions",
+  "Audit/Event history",
+  "Operational visibility",
+];
+
+const readinessSignals = [
+  "Metadata completeness",
+  "Required evidence status",
+  "Ownership context",
+  "Unresolved risks",
+  "Open required actions",
+  "Activation opportunity",
+];
+
 export default function PortalCataloguePage() {
   return (
     <section className="space-y-8">
@@ -72,6 +91,20 @@ export default function PortalCataloguePage() {
         </div>
       </div>
 
+      <div className="border border-white/10 bg-white/[0.03] p-5">
+        <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#c7a55b]">
+          Operational Loop
+        </h2>
+        <div className="mt-4 grid gap-3 md:grid-cols-4 xl:grid-cols-7">
+          {operationalLoop.map((step, index) => (
+            <div key={step} className="border border-white/10 px-4 py-3">
+              <p className="text-xs text-[#c7a55b]">{String(index + 1).padStart(2, "0")}</p>
+              <p className="mt-2 text-sm text-[#f5f0e8]">{step}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="space-y-3">
           <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#c7a55b]">
@@ -94,6 +127,34 @@ export default function PortalCataloguePage() {
             {catalogueLifecycleStatuses.map((status) => (
               <div key={status} className="border border-white/10 px-4 py-3 text-sm text-[#f5f0e8]">
                 {lifecycleLabels[status]}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
+        <div className="space-y-3">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#c7a55b]">
+            Readiness Signals
+          </h2>
+          <div className="grid gap-3">
+            {readinessSignals.map((signal) => (
+              <div key={signal} className="border border-white/10 px-4 py-3 text-sm text-[#f5f0e8]">
+                {signal}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#c7a55b]">
+            Execution Records
+          </h2>
+          <div className="grid gap-3">
+            {["Domain events", "Audit records", "Evidence links", "Required actions"].map((item) => (
+              <div key={item} className="border border-white/10 px-4 py-3 text-sm text-[#f5f0e8]">
+                {item}
               </div>
             ))}
           </div>

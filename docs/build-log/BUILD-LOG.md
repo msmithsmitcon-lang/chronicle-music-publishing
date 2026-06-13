@@ -255,6 +255,106 @@ Implement the first operational Creative Operations Intelligence domain: Catalog
 - No catalogue spreadsheet, generator, public audio, artist, resource, contact, capability, or marketing pages changed.
 - No deployment run.
 
+## 2026-06-13 - Foundation Build Milestone 4 Implemented
+
+### Objective
+
+Convert the Catalogue Asset Readiness Foundation into the first complete operational intelligence loop:
+
+```text
+Asset
+-> Evidence
+-> Readiness evaluation
+-> Risks
+-> Required actions
+-> Audit/Event history
+-> Operational visibility
+```
+
+### Created
+
+- `docs/build-log/FOUNDATION-BUILD-MILESTONE-4-IMPLEMENTATION-RECORD.md`
+- `lib/portal/catalogue/evaluation.ts`
+
+### Updated
+
+- `app/portal/catalogue/page.tsx`
+- `lib/portal/catalogue/service.ts`
+- `lib/portal/catalogue/validation.ts`
+
+### Operational Services Introduced
+
+- Create catalogue asset.
+- Update asset information.
+- Update readiness state.
+- Transition lifecycle state through controlled rules.
+- Record missing information.
+- Record risks.
+- Create and manage required actions.
+- Attach evidence records.
+- Update evidence requirements.
+- Evaluate and persist deterministic readiness health.
+
+### Validation
+
+- Prisma schema validation passed.
+- Prisma client generation passed.
+- Application build passed.
+- Deterministic readiness evaluator runtime check passed.
+- Private `/portal/catalogue` route generated successfully.
+
+### Not Changed
+
+- No public website routes changed.
+- No public UI components changed.
+- No public catalogue browsing experience changed.
+- No catalogue spreadsheet, generator, public audio, artist, resource, contact, capability, or marketing pages changed.
+- No deployment run.
+
+## 2026-06-13 - Milestone 5A Owner Command Centre UI Implemented
+
+### Objective
+
+Implement the approved Owner Command Centre V1 UI at `/portal` using the locked visual mockup as the milestone reference.
+
+### Created
+
+- `components/portal/OwnerCommandCentre.tsx`
+- `docs/build-log/MILESTONE-5A-OWNER-COMMAND-CENTRE-UI-IMPLEMENTATION-RECORD.md`
+
+### Updated
+
+- `app/portal/layout.tsx`
+- `app/portal/page.tsx`
+- `components/portal/PortalNavigation.tsx`
+
+### UI Surfaces Implemented
+
+- Portal-only Chronicle sidebar.
+- Owner profile area.
+- Owner Command Centre header.
+- Top health/status/refresh/alert strip.
+- Intelligence overview cards.
+- Catalogue, risk, creative identity, relationship, business, and memory intelligence panels.
+- Critical alerts and upcoming priority panels.
+- Right-side AI assistant panel with suggested prompts and input area.
+
+### Validation
+
+- Application build passed.
+- `/portal` route generated successfully.
+- Public routes generated successfully.
+
+### Not Changed
+
+- No public website routes changed.
+- No public navigation changed.
+- No public catalogue browsing experience changed.
+- No public artist, marketing, resource, contact, capability, or shared public styling changes were made.
+- No backend data wiring added.
+- No schema changes made.
+- No deployment run.
+
 ## 2026-06-13 - Portal Foundation Milestone 1 Initialization
 
 ### Objective
