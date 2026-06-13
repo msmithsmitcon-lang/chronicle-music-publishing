@@ -56,6 +56,68 @@ enum EvidenceVerificationStatus {
   ARCHIVED
 }
 
+enum CreativeAssetType {
+  SONG
+  RECORDING
+  COMPOSITION
+  LYRICS
+  ARRANGEMENT
+  CREATIVE_CONCEPT
+  VISUAL_ASSET
+  OTHER
+}
+
+enum AssetLifecycleStatus {
+  DRAFT
+  IN_PROGRESS
+  REGISTERED
+  PUBLISHED
+  ACTIVE
+  ARCHIVED
+}
+
+enum AssetReadinessState {
+  DRAFT_IMPORTED
+  NEEDS_REVIEW
+  MISSING_EVIDENCE
+  READY_FOR_ACTIVATION
+  OPPORTUNITY_IDENTIFIED
+  ACTION_REQUIRED
+  REVIEWED
+}
+
+enum AssetOwnershipType {
+  ORIGINAL_CREATOR
+  CONTRIBUTOR
+  PUBLISHER
+  ADMINISTRATOR
+  RIGHTS_HOLDER
+  UNKNOWN
+}
+
+enum AssetIndicatorSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum AssetActionStatus {
+  OPEN
+  IN_PROGRESS
+  BLOCKED
+  COMPLETE
+  DISMISSED
+}
+
+enum AssetEvidenceRequirementStatus {
+  REQUIRED
+  REQUESTED
+  ATTACHED
+  VERIFIED
+  WAIVED
+}
+
 model Organization {
   id              String                    @id @default(cuid())
   name            String
@@ -84,6 +146,7 @@ model Workspace {
   evidenceRecords     EvidenceRecord[]
   auditEvents         AuditEvent[]
   domainEvents        DomainEvent[]
+  creativeAssets      CreativeAsset[]
 
   @@index([ownerOrganizationId])
   @@index([lifecycleState])
@@ -197,6 +260,7 @@ model SourceReference {
   updatedAt       DateTime         @updatedAt
   workspace       Workspace        @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
   evidenceRecords EvidenceRecord[]
+  creativeAssets  CreativeAsset[]
 
   @@index([workspaceId])
   @@index([sourceType])
@@ -222,6 +286,7 @@ model EvidenceRecord {
   workspace          Workspace                  @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
   sourceReference    SourceReference?           @relation(fields: [sourceReferenceId], references: [id], onDelete: SetNull)
   verifiedBy         UserProfile?               @relation("EvidenceVerifier", fields: [verifiedByUserId], references: [id], onDelete: SetNull)
+  creativeAssetLinks CreativeAssetEvidence[]
 
   @@index([workspaceId, createdAt])
   @@index([evidenceType])
@@ -270,4 +335,197 @@ model DomainEvent {
   @@index([eventType])
   @@index([entityType, entityId])
   @@index([sourceType])
+}
+
+model CreativeAsset {
+  id                String              @id @default(cuid())
+  workspaceId       String
+  sourceReferenceId String?
+  title             String
+  slug              String
+  assetType         CreativeAssetType
+  lifecycleStatus   AssetLifecycleStatus @default(DRAFT)
+  readinessState    AssetReadinessState  @default(DRAFT_IMPORTED)
+  description       String?
+  originNote        String?
+  strategicValue    String?
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  workspace         Workspace           @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  sourceReference   SourceReference?    @relation(fields: [sourceReferenceId], references: [id], onDelete: SetNull)
+  versions          AssetVersion[]
+  metadata          AssetMetadata?
+  ownershipRecords  AssetOwnership[]
+  healthProfile     AssetHealthProfile?
+  readinessSignals  AssetReadinessIndicator[]
+  riskIndicators    AssetRiskIndicator[]
+  evidenceLinks     CreativeAssetEvidence[]
+  evidenceRequirements AssetEvidenceRequirement[]
+  recommendedActions   AssetRecommendedAction[]
+
+  @@unique([workspaceId, slug])
+  @@index([workspaceId, lifecycleStatus])
+  @@index([workspaceId, readinessState])
+  @@index([assetType])
+  @@index([sourceReferenceId])
+}
+
+model AssetVersion {
+  id              String        @id @default(cuid())
+  creativeAssetId String
+  versionLabel    String
+  notes           String?
+  fileReference   String?
+  isCurrent       Boolean       @default(false)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  creativeAsset   CreativeAsset @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+
+  @@unique([creativeAssetId, versionLabel])
+  @@index([creativeAssetId])
+  @@index([isCurrent])
+}
+
+model AssetMetadata {
+  id                   String        @id @default(cuid())
+  creativeAssetId      String        @unique
+  alternateTitle       String?
+  durationSeconds      Int?
+  genre                String?
+  mood                 String?
+  language             String?
+  releaseDate          DateTime?
+  registrationCode     String?
+  publishingIdentifier String?
+  metadataCompleteness Int           @default(0)
+  commercialNotes      String?
+  creativeNotes        String?
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+  creativeAsset        CreativeAsset @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+}
+
+model AssetOwnership {
+  id              String             @id @default(cuid())
+  creativeAssetId String
+  ownerName       String
+  ownershipType   AssetOwnershipType @default(UNKNOWN)
+  percentage      Decimal?           @db.Decimal(5, 2)
+  rightsScope     String?
+  territory       String?
+  startDate       DateTime?
+  endDate         DateTime?
+  evidenceStatus  AssetEvidenceRequirementStatus @default(REQUIRED)
+  notes           String?
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+  creativeAsset   CreativeAsset      @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+
+  @@index([creativeAssetId])
+  @@index([ownershipType])
+  @@index([evidenceStatus])
+}
+
+model AssetHealthProfile {
+  id                    String        @id @default(cuid())
+  creativeAssetId       String        @unique
+  readinessScore        Int           @default(0)
+  metadataScore         Int           @default(0)
+  evidenceScore         Int           @default(0)
+  ownershipScore        Int           @default(0)
+  opportunityScore      Int           @default(0)
+  riskScore             Int           @default(0)
+  missingInformation    Json?
+  healthInputs          Json?
+  recommendedNextReview DateTime?
+  calculatedAt          DateTime?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+  creativeAsset         CreativeAsset @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+}
+
+model AssetReadinessIndicator {
+  id              String                 @id @default(cuid())
+  creativeAssetId String
+  indicatorKey    String
+  label           String
+  severity        AssetIndicatorSeverity @default(MEDIUM)
+  isResolved      Boolean                @default(false)
+  evidenceRequired Boolean               @default(false)
+  details         String?
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+  creativeAsset   CreativeAsset          @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+
+  @@index([creativeAssetId])
+  @@index([indicatorKey])
+  @@index([severity])
+  @@index([isResolved])
+}
+
+model AssetRiskIndicator {
+  id              String                 @id @default(cuid())
+  creativeAssetId String
+  riskKey         String
+  label           String
+  severity        AssetIndicatorSeverity @default(MEDIUM)
+  isResolved      Boolean                @default(false)
+  mitigationNote  String?
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+  creativeAsset   CreativeAsset          @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+
+  @@index([creativeAssetId])
+  @@index([riskKey])
+  @@index([severity])
+  @@index([isResolved])
+}
+
+model AssetEvidenceRequirement {
+  id              String                         @id @default(cuid())
+  creativeAssetId String
+  requirementKey  String
+  label           String
+  status          AssetEvidenceRequirementStatus @default(REQUIRED)
+  evidenceType    EvidenceType?
+  notes           String?
+  createdAt       DateTime                       @default(now())
+  updatedAt       DateTime                       @updatedAt
+  creativeAsset   CreativeAsset                  @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+
+  @@unique([creativeAssetId, requirementKey])
+  @@index([creativeAssetId])
+  @@index([status])
+}
+
+model CreativeAssetEvidence {
+  id              String         @id @default(cuid())
+  creativeAssetId String
+  evidenceRecordId String
+  purpose         String?
+  createdAt       DateTime       @default(now())
+  creativeAsset   CreativeAsset  @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+  evidenceRecord  EvidenceRecord @relation(fields: [evidenceRecordId], references: [id], onDelete: Cascade)
+
+  @@unique([creativeAssetId, evidenceRecordId])
+  @@index([creativeAssetId])
+  @@index([evidenceRecordId])
+}
+
+model AssetRecommendedAction {
+  id              String            @id @default(cuid())
+  creativeAssetId String
+  actionKey       String
+  title           String
+  rationale       String?
+  status          AssetActionStatus @default(OPEN)
+  dueAt           DateTime?
+  completedAt     DateTime?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  creativeAsset   CreativeAsset     @relation(fields: [creativeAssetId], references: [id], onDelete: Cascade)
+
+  @@index([creativeAssetId])
+  @@index([status])
+  @@index([dueAt])
 }

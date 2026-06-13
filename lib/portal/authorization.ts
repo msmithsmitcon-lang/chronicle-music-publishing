@@ -9,6 +9,9 @@ export const portalPermissions = {
   evidenceReview: "evidence:review",
   auditRead: "audit:read",
   eventsRead: "events:read",
+  catalogueRead: "catalogue:read",
+  catalogueManage: "catalogue:manage",
+  catalogueReview: "catalogue:review",
 } as const;
 
 export type PortalPermission = (typeof portalPermissions)[keyof typeof portalPermissions];
