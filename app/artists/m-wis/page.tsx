@@ -10,7 +10,7 @@ const artist = getArtistProfile("m-wis");
 export const metadata: Metadata = {
   title: "M-WIS",
   description:
-    "M-WIS is a represented artist and development catalogue example within Chronicle Music Publishing.",
+    "M-WIS is a represented artist within Chronicle Music Publishing.",
 };
 
 export default function MWisArtistPage() {
@@ -35,28 +35,22 @@ export default function MWisArtistPage() {
             <p className="mt-6 text-sm leading-7 text-[color:var(--text-secondary)]">
               {artist.biography}
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              {artist.streamingLinks.map((link) => (
-                <button
-                  key={link.label}
-                  type="button"
-                  className="border border-[color:var(--line)] px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--text-secondary)]"
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
+            <p className="mt-8 border border-[color:var(--line)] px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--text-secondary)]">
+              {artist.streamingNote}
+            </p>
           </div>
 
           <div className="cinematic-panel relative min-h-96 overflow-hidden">
             {artist.image ? (
-              <Image
-                src={artist.image}
-                alt={`${artist.name} profile image`}
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover"
-              />
+              <div className="grid h-full min-h-96 place-items-center bg-[radial-gradient(circle_at_50%_28%,rgba(212,175,55,0.22),transparent_18rem),#0A0A0A] p-10">
+                <Image
+                  src={artist.image}
+                  alt={`${artist.name} profile image`}
+                  width={280}
+                  height={280}
+                  className="h-44 w-44 object-contain opacity-95 md:h-56 md:w-56"
+                />
+              </div>
             ) : (
               <div className="grid h-full min-h-96 place-items-center bg-[radial-gradient(circle_at_50%_28%,rgba(212,175,55,0.22),transparent_18rem),#0A0A0A]">
                 <Image
@@ -86,7 +80,7 @@ export default function MWisArtistPage() {
               </div>
               <Link
                 href="/catalogue"
-                className="hidden border border-[color:var(--gold)] px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)] transition hover:bg-[color:var(--gold)] hover:text-black md:inline-flex"
+                className="hidden rounded-full border border-[color:var(--gold)] bg-[linear-gradient(135deg,rgba(212,175,55,0.1),rgba(0,0,0,0.24))] px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--gold-accent)] transition hover:border-[color:var(--gold-accent)] hover:bg-[linear-gradient(135deg,rgba(212,175,55,0.18),rgba(0,0,0,0.3))] hover:text-ivory md:inline-flex"
               >
                 View Catalogue
               </Link>
@@ -99,11 +93,11 @@ export default function MWisArtistPage() {
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src={item.artwork}
+                      src={item.coverImage ?? item.artwork}
                       alt={`${item.title} catalogue artwork`}
                       fill
                       sizes="(min-width: 768px) 35vw, 100vw"
-                      className="object-cover"
+                      className="object-contain p-8"
                     />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.05),rgba(10,10,10,0.78))]" />
                   </div>

@@ -1,0 +1,802 @@
+.mockupPage {
+  min-height: 100vh;
+  background: #020202;
+  color: #f8f1df;
+}
+
+.scene {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  border: 1px solid rgba(200, 169, 107, 0.18);
+  background: #020202;
+}
+
+.sceneImage {
+  object-fit: cover;
+  object-position: 50% 50%;
+  opacity: 0.76;
+  filter: saturate(1.12) contrast(1.22) brightness(0.9);
+  transform: scale(1.82) translate(-17%, -17%);
+  transform-origin: center center;
+}
+
+.sceneVeil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(2, 2, 2, 0.9) 0%, rgba(2, 2, 2, 0.55) 25%, rgba(2, 2, 2, 0.2) 45%, rgba(2, 2, 2, 0.62) 100%),
+    linear-gradient(180deg, rgba(2, 2, 2, 0.08) 0%, rgba(2, 2, 2, 0.02) 28%, rgba(2, 2, 2, 0.7) 78%, #020202 100%),
+    radial-gradient(circle at 41% 25%, rgba(255, 218, 143, 0.14), transparent 15rem),
+    radial-gradient(circle at 62% 36%, rgba(217, 170, 73, 0.18), transparent 22rem),
+    radial-gradient(circle at 4% 58%, rgba(217, 170, 73, 0.16), transparent 18rem);
+}
+
+.scene::before,
+.scene::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.scene::before {
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(217, 170, 73, 0.42) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-position:
+    0 0,
+    40px 80px;
+  background-size:
+    210px 180px,
+    290px 250px;
+  opacity: 0.22;
+}
+
+.scene::after {
+  inset: auto 0 0;
+  height: 10rem;
+  background: linear-gradient(180deg, transparent, rgba(2, 2, 2, 0.9));
+}
+
+.goldPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 2.5rem;
+  border: 1px solid rgba(217, 170, 73, 0.64);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(217, 170, 73, 0.1), rgba(0, 0, 0, 0.18));
+  color: #d9aa49;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 26px rgba(217, 170, 73, 0.07);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.67rem;
+  font-weight: 800;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.goldPill {
+  width: fit-content;
+  padding: 0 1.45rem;
+}
+
+.goldPill:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 220, 135, 0.96);
+  background: linear-gradient(135deg, rgba(217, 170, 73, 0.18), rgba(0, 0, 0, 0.28));
+  color: #fff1be;
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(20rem, 33rem) 1fr;
+  gap: 2rem;
+  min-height: 24.5rem;
+  padding: 5.2rem 2.3rem 2.2rem;
+}
+
+.heroCopy {
+  max-width: 32rem;
+}
+
+.eyebrow,
+.cardEyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(248, 241, 223, 0.72);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.69rem;
+  font-weight: 800;
+}
+
+.eyebrow::before,
+.cardEyebrow::before {
+  content: "";
+  width: 2.8rem;
+  height: 1px;
+  background: linear-gradient(90deg, #d9aa49, transparent);
+}
+
+.cardEyebrow {
+  color: #d9aa49;
+}
+
+.cardEyebrow::before {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, #f2d184, #b57d23 64%, transparent 70%);
+}
+
+.hero h1 {
+  margin-top: 1.7rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3.1rem, 5.3vw, 5.25rem);
+  line-height: 0.98;
+  color: #fff8e8;
+  text-transform: uppercase;
+  text-shadow: 0 12px 44px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.38rem;
+  color: #d9aa49;
+}
+
+.heroCopy > p:not(.eyebrow) {
+  margin-top: 1.2rem;
+  max-width: 26rem;
+  color: rgba(248, 241, 223, 0.72);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.heroCopy .goldPill {
+  margin-top: 1.55rem;
+}
+
+.established {
+  align-self: start;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: auto 8rem 8.7rem;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 1.3rem;
+  color: #d9aa49;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.established::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, rgba(217, 170, 73, 0.68), transparent);
+}
+
+.showcaseGrid {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.artistCard,
+.studioCard {
+  position: relative;
+  min-height: 23rem;
+  overflow: hidden;
+  border: 1px solid rgba(217, 170, 73, 0.44);
+  border-radius: 0.62rem;
+  background: rgba(3, 3, 3, 0.76);
+  box-shadow:
+    0 22px 70px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035),
+    inset 0 0 50px rgba(217, 170, 73, 0.035);
+}
+
+.artistVisual,
+.studioVisual {
+  position: absolute;
+  inset: 0;
+}
+
+.artistVisual {
+  left: 42%;
+}
+
+.artistVisualImage {
+  object-fit: cover;
+  object-position: 49% 22%;
+  filter: brightness(0.92) contrast(1.14) saturate(1.06);
+}
+
+.studioVisual {
+  left: 34%;
+}
+
+.studioVisualImage {
+  object-fit: cover;
+  object-position: 63% 45%;
+  filter: brightness(0.72) contrast(1.13) saturate(1.02);
+}
+
+.cardShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.98) 0%, rgba(5, 5, 5, 0.92) 28%, rgba(5, 5, 5, 0.48) 49%, rgba(5, 5, 5, 0.18) 70%, rgba(5, 5, 5, 0.5) 100%),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.08), rgba(5, 5, 5, 0.62));
+}
+
+.artistLogoOrb {
+  position: absolute;
+  right: 8.4%;
+  top: 44%;
+  z-index: 3;
+  display: grid;
+  width: 10.8rem;
+  height: 10.8rem;
+  place-items: center;
+  border: 1px solid rgba(217, 170, 73, 0.44);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(217, 170, 73, 0.12), rgba(0, 0, 0, 0.4) 57%, rgba(0, 0, 0, 0.64)),
+    rgba(0, 0, 0, 0.34);
+  box-shadow:
+    0 0 54px rgba(217, 170, 73, 0.18),
+    inset 0 0 34px rgba(217, 170, 73, 0.1);
+  transform: translateY(-50%);
+  backdrop-filter: blur(4px);
+}
+
+.artistLogoOrb img {
+  width: 7.8rem;
+  height: 7.8rem;
+  object-fit: contain;
+  opacity: 0.94;
+}
+
+.artistCopy,
+.studioCopy {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.artistCopy {
+  width: min(42%, 22rem);
+  padding: 2.25rem 0 0 2.55rem;
+}
+
+.studioCopy {
+  width: min(45%, 22rem);
+  padding: 2.45rem 0 0 2.35rem;
+}
+
+.artistCopy h2 {
+  margin-top: 1.05rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(4rem, 6.1vw, 5.55rem);
+  line-height: 0.9;
+  color: #fff8e8;
+  text-transform: uppercase;
+  text-shadow: 0 16px 42px rgba(0, 0, 0, 0.7);
+}
+
+.studioCopy h2 {
+  margin-top: 1.05rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.2rem, 3.6vw, 3.15rem);
+  line-height: 0.94;
+  color: #fff8e8;
+  text-transform: uppercase;
+  text-shadow: 0 16px 42px rgba(0, 0, 0, 0.7);
+}
+
+.studioCopy h2 span {
+  display: block;
+}
+
+.role {
+  margin-top: 0.85rem;
+  max-width: 18rem;
+  color: #d9aa49;
+  text-transform: uppercase;
+  letter-spacing: 0.21em;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.65;
+}
+
+.bodyText {
+  margin-top: 1.25rem;
+  max-width: 17.8rem;
+  color: rgba(248, 241, 223, 0.76);
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+.artistCopy .goldPill,
+.studioCopy .goldPill {
+  margin-top: 1.45rem;
+}
+
+.producerCopy .goldPill {
+  margin-top: 2rem;
+}
+
+.statsStrip {
+  position: absolute;
+  left: 2.1rem;
+  right: 2.1rem;
+  bottom: 1.18rem;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  padding: 1.05rem 1.1rem;
+  border: 1px solid rgba(217, 170, 73, 0.2);
+  border-radius: 0.34rem;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.76), rgba(8, 8, 8, 0.44));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 -16px 34px rgba(217, 170, 73, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.statItem,
+.featureItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.statItem svg,
+.featureItem svg {
+  width: 1.55rem;
+  height: 1.55rem;
+  fill: #d9aa49;
+  filter: drop-shadow(0 0 12px rgba(217, 170, 73, 0.22));
+}
+
+.statItem strong,
+.featureItem strong {
+  display: block;
+  color: #d9aa49;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  font-size: 0.73rem;
+  line-height: 1.2;
+}
+
+.statItem span,
+.featureItem span {
+  display: block;
+  margin-top: 0.28rem;
+  color: rgba(248, 241, 223, 0.68);
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.studioSignal {
+  position: absolute;
+  left: 1.45rem;
+  right: 1.45rem;
+  bottom: 0.35rem;
+  z-index: 2;
+  height: 3.2rem;
+  opacity: 0.64;
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+
+.waveform,
+.compactWave {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.waveform path,
+.compactWave path {
+  fill: none;
+  stroke: rgba(217, 170, 73, 0.8);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.1;
+  filter: drop-shadow(0 0 6px rgba(217, 170, 73, 0.28));
+  vector-effect: non-scaling-stroke;
+}
+
+.compactWave path {
+  stroke-width: 0.95;
+  opacity: 0.72;
+}
+
+.waveBase {
+  opacity: 0.28;
+  stroke-width: 0.65 !important;
+}
+
+.producerFeature {
+  position: relative;
+  z-index: 4;
+  min-height: 22rem;
+  margin: 0.95rem 2rem 0;
+  overflow: hidden;
+  border: 1px solid rgba(217, 170, 73, 0.42);
+  border-radius: 0.75rem;
+  background: rgba(3, 3, 3, 0.82);
+  box-shadow:
+    0 22px 70px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035);
+}
+
+.producerImage {
+  position: absolute;
+  inset: 0;
+  left: 38%;
+}
+
+.producerImageAsset {
+  object-fit: cover;
+  object-position: 60% 36%;
+  filter: brightness(0.9) contrast(1.12) saturate(0.95);
+}
+
+.producerShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.98) 0%, rgba(5, 5, 5, 0.9) 32%, rgba(5, 5, 5, 0.38) 58%, rgba(5, 5, 5, 0.62) 100%),
+    radial-gradient(circle at 72% 28%, rgba(99, 138, 255, 0.18), transparent 18rem),
+    radial-gradient(circle at 18% 90%, rgba(217, 170, 73, 0.14), transparent 16rem);
+}
+
+.producerCopy {
+  position: relative;
+  z-index: 4;
+  width: min(32rem, 44%);
+  padding: 2.55rem 0 0 2.55rem;
+}
+
+.producerCopy h2 {
+  margin-top: 1.05rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(3.3rem, 5vw, 4.8rem);
+  line-height: 0.9;
+  color: #fff8e8;
+  text-transform: uppercase;
+  text-shadow: 0 16px 42px rgba(0, 0, 0, 0.7);
+}
+
+.featureStrip {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 0.95rem 2rem 0;
+  padding: 1.35rem 1.65rem;
+  border: 1px solid rgba(217, 170, 73, 0.42);
+  border-radius: 0.56rem;
+  background:
+    linear-gradient(90deg, rgba(10, 10, 10, 0.86), rgba(39, 27, 10, 0.44), rgba(10, 10, 10, 0.86)),
+    radial-gradient(circle at 50% 100%, rgba(217, 170, 73, 0.2), transparent 22rem);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 18px 58px rgba(0, 0, 0, 0.45);
+}
+
+.featureItem {
+  min-height: 3.7rem;
+  padding: 0 1.7rem;
+  border-right: 1px solid rgba(248, 241, 223, 0.22);
+}
+
+.featureItem:last-child {
+  border-right: 0;
+}
+
+.featureItem svg {
+  width: 2rem;
+  height: 2rem;
+  fill: none;
+  stroke: #d9aa49;
+  stroke-width: 1.45;
+}
+
+.featureItem span {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.nowPlaying {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 21rem 1fr 28rem;
+  align-items: center;
+  gap: 2rem;
+  min-height: 5.8rem;
+  margin-top: 0.95rem;
+  padding: 0.75rem 3.2rem;
+  border-top: 1px solid rgba(217, 170, 73, 0.4);
+  background:
+    linear-gradient(180deg, rgba(12, 10, 7, 0.82), rgba(3, 3, 3, 0.92)),
+    radial-gradient(circle at 50% 0%, rgba(217, 170, 73, 0.13), transparent 26rem);
+}
+
+.trackInfo {
+  display: grid;
+  grid-template-columns: 3.65rem 1fr;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.trackInfo img {
+  border: 1px solid rgba(217, 170, 73, 0.32);
+  border-radius: 0.2rem;
+  object-fit: cover;
+}
+
+.trackInfo span {
+  color: #d9aa49;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.58rem;
+  font-weight: 800;
+}
+
+.trackInfo strong {
+  display: block;
+  margin-top: 0.2rem;
+  color: #fff8e8;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1rem;
+}
+
+.trackInfo p {
+  margin-top: 0.1rem;
+  color: rgba(248, 241, 223, 0.62);
+  font-size: 0.74rem;
+}
+
+.playerVisual {
+  display: grid;
+  grid-template-columns: minmax(8rem, 18rem) auto;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.3rem, 4vw, 4.4rem);
+}
+
+.playerVisual .compactWave {
+  height: 2.5rem;
+  max-width: 18rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.controls button {
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  place-items: center;
+  border: 1px solid rgba(217, 170, 73, 0.44);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.28);
+  color: #fff8e8;
+  font-size: 1.25rem;
+}
+
+.controls .playButton {
+  width: 4.1rem;
+  height: 4.1rem;
+  border-color: rgba(217, 170, 73, 0.82);
+  color: #d9aa49;
+  box-shadow:
+    0 0 28px rgba(217, 170, 73, 0.18),
+    inset 0 0 20px rgba(217, 170, 73, 0.08);
+}
+
+.quote {
+  justify-self: end;
+  max-width: 27rem;
+  color: #b9903f;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.72rem;
+  line-height: 1.75;
+}
+
+.quote span {
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  .showcaseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .artistCard,
+  .studioCard {
+    min-height: 24rem;
+  }
+
+  .nowPlaying {
+    grid-template-columns: 18rem 1fr;
+  }
+
+  .quote {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 3rem 1.1rem 1.5rem;
+  }
+
+  .established {
+    justify-self: start;
+    margin-top: 0;
+  }
+
+  .showcaseGrid,
+  .featureStrip {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .showcaseGrid {
+    padding: 0 1rem;
+  }
+
+  .featureStrip {
+    grid-template-columns: 1fr 1fr;
+    padding: 1.1rem;
+  }
+
+  .producerFeature {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .featureItem:nth-child(2) {
+    border-right: 0;
+  }
+
+  .featureItem {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(248, 241, 223, 0.16);
+  }
+
+  .featureItem:nth-child(3),
+  .featureItem:nth-child(4) {
+    border-bottom: 0;
+  }
+
+  .nowPlaying {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .playerVisual {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .artistCard,
+  .studioCard,
+  .producerFeature {
+    min-height: 34rem;
+  }
+
+  .artistVisual,
+  .studioVisual,
+  .producerImage {
+    inset: 0;
+    left: 0;
+  }
+
+  .artistVisual {
+    top: 9rem;
+  }
+
+  .studioVisual {
+    top: 10rem;
+  }
+
+  .producerImage {
+    top: 8rem;
+  }
+
+  .cardShade {
+    background:
+      linear-gradient(180deg, rgba(5, 5, 5, 0.98) 0%, rgba(5, 5, 5, 0.82) 42%, rgba(5, 5, 5, 0.42) 68%, rgba(5, 5, 5, 0.82) 100%),
+      linear-gradient(90deg, rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.36));
+  }
+
+  .artistCopy,
+  .studioCopy,
+  .producerCopy {
+    width: auto;
+    padding: 1.65rem;
+  }
+
+  .artistLogoOrb {
+    top: 53%;
+    right: 1.4rem;
+    width: 8.2rem;
+    height: 8.2rem;
+  }
+
+  .artistLogoOrb img {
+    width: 6.2rem;
+    height: 6.2rem;
+  }
+
+  .statsStrip {
+    left: 1rem;
+    right: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featureStrip {
+    grid-template-columns: 1fr;
+  }
+
+  .featureItem,
+  .featureItem:nth-child(2),
+  .featureItem:nth-child(3) {
+    border-right: 0;
+    border-bottom: 1px solid rgba(248, 241, 223, 0.16);
+  }
+
+  .featureItem:last-child {
+    border-bottom: 0;
+  }
+
+  .playerVisual {
+    grid-template-columns: 1fr;
+  }
+}

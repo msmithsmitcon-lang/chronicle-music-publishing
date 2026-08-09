@@ -6,6 +6,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/artists", label: "Artists" },
   { href: "/catalogue", label: "Catalogue" },
+  { href: "/capabilities", label: "Capabilities" },
   { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact" },
 ];
@@ -40,7 +41,7 @@ export function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <Link
             href="/contact"
-            className="border border-[color:var(--gold)] bg-[linear-gradient(135deg,rgba(212,175,55,0.16),rgba(200,169,107,0.05))] px-4 py-3 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[color:var(--gold)] transition duration-300 hover:bg-[color:var(--gold)] hover:text-black"
+            className="rounded-full border border-[rgba(200,169,107,0.62)] bg-[linear-gradient(135deg,rgba(212,175,55,0.12),rgba(200,169,107,0.04))] px-4 py-2.5 text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[color:var(--gold)] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition duration-300 hover:border-[color:var(--gold-accent)] hover:bg-[linear-gradient(135deg,rgba(212,175,55,0.22),rgba(200,169,107,0.08))] hover:text-ivory"
           >
             Rights Enquiry
           </Link>

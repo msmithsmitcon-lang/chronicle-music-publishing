@@ -1,13 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand } from "@/lib/brand";
 
 const heroFeatures = [
-  "Rights Support",
-  "Selected Works",
-  "Royalty Preparation",
-  "Sync Licensing",
-  "Creator First",
+  {
+    title: "Rights Support",
+    description:
+      "Practical publishing guidance, rights discussion, and catalogue administration support for represented works.",
+  },
+  {
+    title: "Selected Works",
+    description:
+      "A curated catalogue of selected songs, writers, and represented music publishing material.",
+  },
+  {
+    title: "Royalty Preparation",
+    description:
+      "Metadata awareness, publishing readiness, and structured preparation for royalty administration workflows.",
+  },
+  {
+    title: "Sync Licensing",
+    description:
+      "Support around licensing discussions for film, media, digital campaigns, and creative placements.",
+  },
+  {
+    title: "Creator First",
+    description:
+      "A creator-focused approach built around long-term catalogue value, ownership awareness, and representation.",
+  },
 ];
 
 export function Hero() {
@@ -53,27 +72,19 @@ export function Hero() {
               </Link>
             </div>
           </div>
-          <Image
-            src={brand.logoMark}
-            alt=""
-            width={220}
-            height={220}
-            className="pointer-events-none absolute right-[7%] top-24 hidden h-40 w-40 object-contain opacity-80 drop-shadow-[0_0_50px_rgba(212,175,55,0.42)] lg:block"
-          />
         </div>
 
         <div className="premium-panel relative z-10 mx-auto mb-[-3rem] grid max-w-7xl gap-0 overflow-hidden md:grid-cols-5">
           {heroFeatures.map((feature) => (
             <div
-              key={feature}
+              key={feature.title}
               className="border-b border-[color:var(--line)] p-5 md:border-b-0 md:border-r md:last:border-r-0"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[color:var(--gold-accent)]">
-                {feature}
+                {feature.title}
               </p>
               <p className="mt-2 text-sm leading-6 text-[color:var(--text-secondary)]">
-                Clear language for publishing support, licensing discussions,
-                and long-term catalogue value.
+                {feature.description}
               </p>
             </div>
           ))}
