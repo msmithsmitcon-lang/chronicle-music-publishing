@@ -16,6 +16,8 @@ import {
   FiUsers,
 } from "react-icons/fi";
 
+import { developmentPortalContext } from "@/lib/portal/development-auth";
+
 const portalLinks = [
   { href: "/portal", label: "Dashboard", icon: FiBarChart2 },
   { href: "/portal/catalogue", label: "Catalogue", icon: FiGrid },
@@ -30,6 +32,7 @@ const portalLinks = [
 
 export function PortalNavigation() {
   const pathname = usePathname();
+  const developmentUser = developmentPortalContext.user;
 
   return (
     <aside className="hidden border-r border-[#e4e8f1] bg-white lg:flex lg:min-h-screen lg:flex-col">
@@ -73,8 +76,8 @@ export function PortalNavigation() {
             MM
           </div>
           <div className="min-w-0 flex-1">
-            <p className="truncate text-sm font-semibold text-[#101a3d]">Mike Malak</p>
-            <p className="text-xs text-[#6d7799]">Owner</p>
+            <p className="truncate text-sm font-semibold text-[#101a3d]">{developmentUser.name}</p>
+            <p className="text-xs text-[#6d7799]">{developmentUser.role}</p>
           </div>
           <FiChevronDown className="h-4 w-4 text-[#6d7799]" aria-hidden="true" />
         </div>

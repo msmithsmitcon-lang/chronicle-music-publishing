@@ -15,155 +15,40 @@ import {
   FiUsers,
   FiZap,
 } from "react-icons/fi";
+import type { IconType } from "react-icons";
 
-const overviewCards = [
-  {
-    title: "Creative Asset Health",
-    value: "1,247",
-    label: "Total Assets",
-    icon: FiDatabase,
-    accent: "blue",
-    stats: [
-      { value: "892", label: "Healthy", tone: "green" },
-      { value: "198", label: "At Risk", tone: "orange" },
-      { value: "157", label: "Needs Attention", tone: "red" },
-    ],
-    link: "View full analysis",
-  },
-  {
-    title: "Evidence Readiness",
-    value: "76%",
-    label: "Evidence Complete",
-    icon: FiBriefcase,
-    accent: "purple",
-    stats: [
-      { value: "724", label: "Complete", tone: "green" },
-      { value: "231", label: "Missing", tone: "orange" },
-      { value: "292", label: "Ownership Gaps", tone: "red" },
-    ],
-    link: "View evidence report",
-  },
-  {
-    title: "Operational Actions",
-    value: "14",
-    label: "Urgent Actions",
-    icon: FiTarget,
-    accent: "blue",
-    stats: [
-      { value: "28", label: "Pending Reviews", tone: "orange" },
-      { value: "67", label: "Outstanding Tasks", tone: "orange" },
-      { value: "45", label: "Completed", tone: "green" },
-    ],
-    link: "View action centre",
-  },
-  {
-    title: "Opportunity Intelligence",
-    value: "$2.4M",
-    label: "Potential Value",
-    icon: FiStar,
-    accent: "purple",
-    stats: [
-      { value: "12", label: "Licensing", tone: "green" },
-      { value: "8", label: "Sync", tone: "orange" },
-      { value: "6", label: "Partnerships", tone: "purple" },
-    ],
-    link: "View opportunities",
-  },
-];
+import type {
+  AssistantPrompt,
+  IntelligenceOverviewCard,
+  IntelligencePanel as IntelligencePanelData,
+  IntelligenceTone,
+  OwnerCommandCentreData,
+} from "@/lib/portal/command-centre/types";
 
-const intelligencePanels = [
-  {
-    title: "Catalogue Intelligence",
-    icon: FiDatabase,
-    rows: [
-      ["Asset Readiness", "82%", "green"],
-      ["Missing Metadata", "156", "orange"],
-      ["Rights Status", "94% Clear", "green"],
-      ["Evidence Completeness", "76%", "orange"],
-      ["Latest Changes", "23 new", "blue"],
-    ],
-    link: "View catalogue intelligence",
-  },
-  {
-    title: "Creative Identity Intelligence",
-    icon: FiUsers,
-    rows: [
-      ["Artist Identity Status", "Strong", "green"],
-      ["Brand Development", "In Progress", "blue"],
-      ["Creative Positioning", "Differentiated", "green"],
-      ["Strategic Growth Areas", "3 Identified", "purple"],
-    ],
-    link: "View identity intelligence",
-  },
-  {
-    title: "Relationship Intelligence",
-    icon: FiUsers,
-    rows: [
-      ["Key Collaborators", "16", "green"],
-      ["Industry Relationships", "38", "blue"],
-      ["Relationship Health", "Good", "green"],
-      ["Important Follow-ups", "7", "orange"],
-    ],
-    link: "View relationships",
-  },
-  {
-    title: "Business Intelligence",
-    icon: FiBarIcon,
-    rows: [
-      ["Asset Growth (YTD)", "+18%", "green"],
-      ["Commercial Activity", "Strong", "green"],
-      ["Revenue Opportunity Pipeline", "$2.4M", "blue"],
-      ["Strategic Performance", "Above Target", "green"],
-    ],
-    link: "View business intelligence",
-  },
-  {
-    title: "Institutional Memory",
-    icon: FiBookOpen,
-    rows: [
-      ["Recent Lessons", "12", "green"],
-      ["Important Decisions", "8", "green"],
-      ["Historical Insights", "23", "blue"],
-      ["Knowledge Records", "156", "blue"],
-    ],
-    link: "View institutional memory",
-  },
-];
+const overviewIcons: Record<IntelligenceOverviewCard["icon"], IconType> = {
+  database: FiDatabase,
+  briefcase: FiBriefcase,
+  target: FiTarget,
+  star: FiStar,
+};
 
-const riskRows = [
-  ["Missing Documentation", "87", "red"],
-  ["Rights Expiry", "24", "orange"],
-  ["Ownership Gaps", "19", "orange"],
-  ["Unclear Licensing", "14", "yellow"],
-  ["Contract Expiry", "9", "yellow"],
-];
+const panelIcons: Record<IntelligencePanelData["icon"], IconType> = {
+  database: FiDatabase,
+  users: FiUsers,
+  briefcase: FiBriefcase,
+  book: FiBookOpen,
+};
 
-const alerts = [
-  ["3 contracts expiring within 30 days", "High", "Action Required"],
-  ["87 assets missing critical documentation", "High", "Action Required"],
-  ["19 ownership records need verification", "Medium", "Review Required"],
-];
+const assistantIcons: Record<AssistantPrompt["icon"], IconType> = {
+  shield: FiShield,
+  message: FiMessageSquare,
+  target: FiTarget,
+  search: FiSearch,
+  box: FiBox,
+};
 
-const priorities = [
-  ["Rights audit review", "16 May", "High Priority"],
-  ["Quarterly business review", "20 May", "Medium Priority"],
-  ["Partnership proposal follow-up", "23 May", "Medium Priority"],
-];
-
-const assistantPrompts = [
-  { title: "Explain the top risks", subtitle: "Get detailed risk analysis", icon: FiShield },
-  { title: "Summarise business health", subtitle: "Current status overview", icon: FiMessageSquare },
-  { title: "What needs my attention?", subtitle: "Priority actions summary", icon: FiTarget },
-  { title: "Find relevant knowledge", subtitle: "Search institutional memory", icon: FiSearch },
-  { title: "Recommend next steps", subtitle: "AI suggested actions", icon: FiBox },
-];
-
-function FiBarIcon(props: { className?: string; "aria-hidden"?: boolean }) {
-  return <FiBriefcase {...props} />;
-}
-
-function toneClass(tone: string) {
-  const classes: Record<string, string> = {
+function toneClass(tone: IntelligenceTone) {
+  const classes: Record<IntelligenceTone, string> = {
     blue: "text-[#2f52ff]",
     green: "text-[#00965f]",
     orange: "text-[#ff7a00]",
@@ -172,10 +57,23 @@ function toneClass(tone: string) {
     yellow: "text-[#f6a600]",
   };
 
-  return classes[tone] ?? "text-[#4f5a7a]";
+  return classes[tone];
 }
 
-function iconAccent(accent: string) {
+function backgroundTone(tone: IntelligenceTone) {
+  const classes: Record<IntelligenceTone, string> = {
+    blue: "bg-[#2f52ff]",
+    green: "bg-[#48bd83]",
+    orange: "bg-[#ff7a00]",
+    purple: "bg-[#6f3df5]",
+    red: "bg-[#ef3f35]",
+    yellow: "bg-[#f4c84d]",
+  };
+
+  return classes[tone];
+}
+
+function iconAccent(accent: IntelligenceOverviewCard["accent"]) {
   return accent === "purple"
     ? "bg-[#f3eaff] text-[#8738f4]"
     : "bg-[#edf3ff] text-[#245cff]";
@@ -188,12 +86,12 @@ function MiniTrend() {
         points="4,38 20,37 32,39 44,25 60,26 72,20 86,28 104,10 120,16 136,8 148,13"
         fill="none"
         stroke="#3f46ff"
-        strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
+        strokeWidth="3"
       />
       {[4, 44, 72, 104, 136].map((x, index) => (
-        <circle key={x} cx={x} cy={[38, 25, 20, 10, 8][index]} r="3" fill="#3f46ff" />
+        <circle key={x} cx={x} cy={[38, 25, 20, 10, 8][index]} fill="#3f46ff" r="3" />
       ))}
     </svg>
   );
@@ -206,19 +104,19 @@ function SparkLine() {
         points="0,58 24,48 48,45 72,38 96,35 120,28 144,34 168,43 192,33 216,36 240,31 260,22"
         fill="none"
         stroke="#2f52ff"
-        strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
+        strokeWidth="4"
       />
       {[0, 48, 96, 144, 192, 240].map((x, index) => (
-        <circle key={x} cx={x} cy={[58, 45, 35, 34, 33, 31][index]} r="4" fill="#2f52ff" />
+        <circle key={x} cx={x} cy={[58, 45, 35, 34, 33, 31][index]} fill="#2f52ff" r="4" />
       ))}
     </svg>
   );
 }
 
-function OverviewCard({ card }: { card: (typeof overviewCards)[number] }) {
-  const Icon = card.icon;
+function OverviewCard({ card }: { card: IntelligenceOverviewCard }) {
+  const Icon = overviewIcons[card.icon];
 
   return (
     <article className="rounded-lg border border-[#e1e6f1] bg-white p-5 shadow-[0_12px_30px_rgba(32,43,78,0.06)]">
@@ -248,8 +146,8 @@ function OverviewCard({ card }: { card: (typeof overviewCards)[number] }) {
   );
 }
 
-function IntelligencePanel({ panel }: { panel: (typeof intelligencePanels)[number] }) {
-  const Icon = panel.icon;
+function IntelligencePanel({ panel }: { panel: IntelligencePanelData }) {
+  const Icon = panelIcons[panel.icon];
 
   return (
     <article className="rounded-lg border border-[#e1e6f1] bg-white shadow-[0_12px_30px_rgba(32,43,78,0.05)]">
@@ -260,10 +158,10 @@ function IntelligencePanel({ panel }: { panel: (typeof intelligencePanels)[numbe
         <h3 className="text-sm font-semibold text-[#101a3d]">{panel.title}</h3>
       </header>
       <div className="divide-y divide-[#edf0f6] px-5">
-        {panel.rows.map(([label, value, tone]) => (
-          <div key={label} className="flex items-center justify-between gap-4 py-3 text-sm">
-            <span className="text-[#101a3d]">{label}</span>
-            <span className={`font-semibold ${toneClass(tone)}`}>{value}</span>
+        {panel.rows.map((row) => (
+          <div key={row.label} className="flex items-center justify-between gap-4 py-3 text-sm">
+            <span className="text-[#101a3d]">{row.label}</span>
+            <span className={`font-semibold ${toneClass(row.tone)}`}>{row.value}</span>
           </div>
         ))}
       </div>
@@ -275,7 +173,7 @@ function IntelligencePanel({ panel }: { panel: (typeof intelligencePanels)[numbe
   );
 }
 
-function RiskHealthPanel() {
+function RiskHealthPanel({ data }: { data: OwnerCommandCentreData["riskHealth"] }) {
   return (
     <article className="rounded-lg border border-[#e1e6f1] bg-white shadow-[0_12px_30px_rgba(32,43,78,0.05)] xl:col-span-2">
       <header className="flex items-center gap-3 border-b border-[#edf0f6] px-5 py-4">
@@ -288,40 +186,46 @@ function RiskHealthPanel() {
         <div className="border-b border-[#edf0f6] p-5 lg:border-b-0 lg:border-r">
           <h4 className="text-xs font-semibold text-[#101a3d]">Top Risks</h4>
           <div className="mt-4 space-y-3">
-            {riskRows.map(([label, value, tone]) => (
-              <div key={label} className="flex items-center justify-between text-sm">
-                <span className="flex items-center gap-2 text-[#4f5a7a]">
-                  <span className={`h-2 w-2 rounded-full bg-current ${toneClass(tone)}`} />
-                  {label}
-                </span>
-                <span className="font-medium text-[#101a3d]">{value}</span>
-              </div>
-            ))}
+            {data.topRisks.length === 0 ? (
+              <p className="text-sm text-[#4f5a7a]">No unresolved risks recorded.</p>
+            ) : (
+              data.topRisks.map((risk) => (
+                <div key={risk.label} className="flex items-center justify-between text-sm">
+                  <span className="flex items-center gap-2 text-[#4f5a7a]">
+                    <span className={`h-2 w-2 rounded-full bg-current ${toneClass(risk.tone)}`} />
+                    {risk.label}
+                  </span>
+                  <span className="font-medium text-[#101a3d]">{risk.value}</span>
+                </div>
+              ))
+            )}
           </div>
         </div>
         <div className="p-5">
           <div className="flex items-center justify-between">
             <h4 className="text-xs font-semibold text-[#101a3d]">Health Trend (30 Days)</h4>
-            <span className="text-xs font-semibold text-[#00965f]">+6% improvement</span>
+            <span className="text-xs font-semibold text-[#00965f]">{data.trendLabel}</span>
           </div>
           <SparkLine />
           <div className="mt-2 flex items-center justify-between border-t border-[#edf0f6] py-3 text-sm">
             <span className="font-medium text-[#101a3d]">Assets Requiring Intervention</span>
-            <span className="font-semibold text-[#101a3d]">42</span>
+            <span className="font-semibold text-[#101a3d]">{data.assetsRequiringIntervention}</span>
           </div>
           <div>
             <p className="text-sm font-medium text-[#101a3d]">Readiness Score Distribution</p>
             <div className="mt-3 flex h-4 overflow-hidden rounded-full">
-              <span className="w-[9%] bg-[#ef3f35]" />
-              <span className="w-[21%] bg-[#ff7a00]" />
-              <span className="w-[45%] bg-[#f4c84d]" />
-              <span className="w-[25%] bg-[#48bd83]" />
+              {data.readinessDistribution.map((segment) => (
+                <span
+                  key={segment.label}
+                  className={backgroundTone(segment.tone)}
+                  style={{ width: `${Math.max(segment.value, 1)}%` }}
+                />
+              ))}
             </div>
             <div className="mt-2 grid grid-cols-4 text-center text-xs text-[#4f5a7a]">
-              <span>9%</span>
-              <span>21%</span>
-              <span>45%</span>
-              <span>25%</span>
+              {data.readinessDistribution.map((segment) => (
+                <span key={segment.label}>{segment.value}%</span>
+              ))}
             </div>
           </div>
         </div>
@@ -330,7 +234,7 @@ function RiskHealthPanel() {
   );
 }
 
-function AlertsPanel() {
+function AlertsPanel({ alerts }: { alerts: OwnerCommandCentreData["alerts"] }) {
   return (
     <article className="rounded-lg border border-[#e1e6f1] bg-white shadow-[0_12px_30px_rgba(32,43,78,0.05)]">
       <header className="flex items-center gap-3 px-5 py-4">
@@ -338,18 +242,22 @@ function AlertsPanel() {
         <h3 className="text-sm font-semibold text-[#101a3d]">Critical Alerts</h3>
       </header>
       <div className="divide-y divide-[#edf0f6] px-5">
-        {alerts.map(([label, priority, status]) => (
-          <div key={label} className="grid gap-3 py-3 text-sm md:grid-cols-[1fr_90px_130px]">
-            <span className="flex items-center gap-2 text-[#101a3d]">
-              <span className="h-2 w-2 rounded-full bg-[#ef3f35]" />
-              {label}
-            </span>
-            <span className={priority === "High" ? "font-semibold text-[#ef3f35]" : "font-semibold text-[#ff7a00]"}>
-              {priority}
-            </span>
-            <span className="text-[#101a3d]">{status}</span>
-          </div>
-        ))}
+        {alerts.length === 0 ? (
+          <div className="py-3 text-sm text-[#4f5a7a]">No critical alerts recorded.</div>
+        ) : (
+          alerts.map((alert) => (
+            <div key={alert.label} className="grid gap-3 py-3 text-sm md:grid-cols-[1fr_90px_130px]">
+              <span className="flex items-center gap-2 text-[#101a3d]">
+                <span className="h-2 w-2 rounded-full bg-[#ef3f35]" />
+                {alert.label}
+              </span>
+              <span className={alert.priority === "High" ? "font-semibold text-[#ef3f35]" : "font-semibold text-[#ff7a00]"}>
+                {alert.priority}
+              </span>
+              <span className="text-[#101a3d]">{alert.status}</span>
+            </div>
+          ))
+        )}
       </div>
       <a className="inline-flex items-center gap-2 px-5 pb-4 pt-1 text-xs font-semibold text-[#3448ff]" href="#">
         View all alerts
@@ -359,7 +267,7 @@ function AlertsPanel() {
   );
 }
 
-function PriorityPanel() {
+function PriorityPanel({ priorities }: { priorities: OwnerCommandCentreData["priorities"] }) {
   return (
     <article className="rounded-lg border border-[#e1e6f1] bg-white shadow-[0_12px_30px_rgba(32,43,78,0.05)]">
       <header className="flex items-center gap-3 px-5 py-4">
@@ -367,18 +275,22 @@ function PriorityPanel() {
         <h3 className="text-sm font-semibold text-[#101a3d]">Upcoming Priority</h3>
       </header>
       <div className="divide-y divide-[#edf0f6] px-5">
-        {priorities.map(([label, date, priority]) => (
-          <div key={label} className="grid gap-3 py-3 text-sm md:grid-cols-[1fr_80px_130px]">
-            <span className="flex items-center gap-2 text-[#101a3d]">
-              <span className="h-2 w-2 rounded-full bg-[#8b93aa]" />
-              {label}
-            </span>
-            <span className="text-[#101a3d]">{date}</span>
-            <span className={priority === "High Priority" ? "font-semibold text-[#ef3f35]" : "font-semibold text-[#ff7a00]"}>
-              {priority}
-            </span>
-          </div>
-        ))}
+        {priorities.length === 0 ? (
+          <div className="py-3 text-sm text-[#4f5a7a]">No priority actions recorded.</div>
+        ) : (
+          priorities.map((priority) => (
+            <div key={priority.label} className="grid gap-3 py-3 text-sm md:grid-cols-[1fr_80px_130px]">
+              <span className="flex items-center gap-2 text-[#101a3d]">
+                <span className="h-2 w-2 rounded-full bg-[#8b93aa]" />
+                {priority.label}
+              </span>
+              <span className="text-[#101a3d]">{priority.date}</span>
+              <span className={priority.priority === "High Priority" ? "font-semibold text-[#ef3f35]" : "font-semibold text-[#ff7a00]"}>
+                {priority.priority}
+              </span>
+            </div>
+          ))
+        )}
       </div>
       <a className="inline-flex items-center gap-2 px-5 pb-4 pt-1 text-xs font-semibold text-[#3448ff]" href="#">
         View full calendar
@@ -388,7 +300,7 @@ function PriorityPanel() {
   );
 }
 
-function AssistantPanel() {
+function AssistantPanel({ prompts }: { prompts: OwnerCommandCentreData["assistantPrompts"] }) {
   return (
     <aside className="rounded-lg border border-[#e1e6f1] bg-white p-5 shadow-[0_12px_30px_rgba(32,43,78,0.05)] xl:sticky xl:top-8 xl:h-[calc(100vh-4rem)] xl:min-h-[820px]">
       <div className="flex items-center justify-between">
@@ -410,8 +322,8 @@ function AssistantPanel() {
       </div>
 
       <div className="mt-8 space-y-3">
-        {assistantPrompts.map((prompt) => {
-          const Icon = prompt.icon;
+        {prompts.map((prompt) => {
+          const Icon = assistantIcons[prompt.icon];
 
           return (
             <button
@@ -450,7 +362,10 @@ function AssistantPanel() {
   );
 }
 
-export function OwnerCommandCentre() {
+export function OwnerCommandCentre({ data }: { data: OwnerCommandCentreData }) {
+  const cataloguePanel = data.intelligencePanels[0];
+  const remainingPanels = data.intelligencePanels.slice(1);
+
   return (
     <div className="min-h-screen bg-[#f8faff] px-4 py-6 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-[1680px] gap-6 xl:grid-cols-[1fr_340px]">
@@ -472,58 +387,66 @@ export function OwnerCommandCentre() {
               <div className="border-b border-[#edf0f6] p-5 md:border-b-0 md:border-r">
                 <p className="text-xs font-semibold text-[#101a3d]">Overall Health Score</p>
                 <div className="mt-4 flex items-end gap-2">
-                  <span className="text-5xl font-semibold leading-none text-[#3f46ff]">87</span>
+                  <span className="text-5xl font-semibold leading-none text-[#3f46ff]">
+                    {data.statusStrip.overallHealthScore}
+                  </span>
                   <span className="pb-1 text-lg text-[#101a3d]">/100</span>
                   <MiniTrend />
                 </div>
-                <p className="mt-2 text-sm font-semibold text-[#00965f]">Strong</p>
+                <p className="mt-2 text-sm font-semibold text-[#00965f]">
+                  {data.statusStrip.overallHealthLabel}
+                </p>
               </div>
               <div className="border-b border-[#edf0f6] p-5 md:border-b-0 md:border-r">
                 <p className="text-xs font-semibold text-[#101a3d]">System Status</p>
                 <p className="mt-6 flex items-center gap-3 text-sm font-semibold text-[#101a3d]">
                   <span className="h-3 w-3 rounded-full bg-[#12aa69]" />
-                  All Systems Active
+                  {data.statusStrip.systemStatus}
                 </p>
-                <p className="mt-4 text-sm text-[#4f5a7a]">Operational</p>
+                <p className="mt-4 text-sm text-[#4f5a7a]">{data.statusStrip.systemStatusDetail}</p>
               </div>
               <div className="border-b border-[#edf0f6] p-5 md:border-b-0 md:border-r">
                 <p className="text-xs font-semibold text-[#101a3d]">Last Intelligence Refresh</p>
-                <p className="mt-6 text-base font-semibold text-[#101a3d]">15 May 2025, 8:42 AM</p>
-                <p className="mt-4 text-sm text-[#4f5a7a]">Auto-refresh: Enabled</p>
+                <p className="mt-6 text-base font-semibold text-[#101a3d]">
+                  {data.statusStrip.lastIntelligenceRefresh}
+                </p>
+                <p className="mt-4 text-sm text-[#4f5a7a]">{data.statusStrip.refreshDetail}</p>
               </div>
               <div className="p-5">
                 <p className="text-xs font-semibold text-[#101a3d]">Critical Alerts</p>
                 <div className="mt-5 flex items-center justify-between">
-                  <span className="text-4xl font-semibold text-[#ef3f35]">3</span>
+                  <span className="text-4xl font-semibold text-[#ef3f35]">
+                    {data.statusStrip.criticalAlertCount}
+                  </span>
                   <FiAlertTriangle className="h-7 w-7 text-[#ef3f35]" aria-hidden="true" />
                 </div>
-                <p className="mt-4 text-sm text-[#4f5a7a]">Require Attention</p>
+                <p className="mt-4 text-sm text-[#4f5a7a]">{data.statusStrip.criticalAlertDetail}</p>
               </div>
             </div>
           </div>
 
           <h2 className="mt-5 text-xl font-semibold text-[#101a3d]">Intelligence Overview</h2>
           <div className="mt-3 grid gap-4 md:grid-cols-2 2xl:grid-cols-4">
-            {overviewCards.map((card) => (
+            {data.overviewCards.map((card) => (
               <OverviewCard key={card.title} card={card} />
             ))}
           </div>
 
           <div className="mt-5 grid gap-4 xl:grid-cols-3">
-            <IntelligencePanel panel={intelligencePanels[0]} />
-            <RiskHealthPanel />
-            {intelligencePanels.slice(1).map((panel) => (
+            {cataloguePanel ? <IntelligencePanel panel={cataloguePanel} /> : null}
+            <RiskHealthPanel data={data.riskHealth} />
+            {remainingPanels.map((panel) => (
               <IntelligencePanel key={panel.title} panel={panel} />
             ))}
           </div>
 
           <div className="mt-5 grid gap-4 xl:grid-cols-[1fr_1.2fr]">
-            <AlertsPanel />
-            <PriorityPanel />
+            <AlertsPanel alerts={data.alerts} />
+            <PriorityPanel priorities={data.priorities} />
           </div>
         </section>
 
-        <AssistantPanel />
+        <AssistantPanel prompts={data.assistantPrompts} />
       </div>
     </div>
   );

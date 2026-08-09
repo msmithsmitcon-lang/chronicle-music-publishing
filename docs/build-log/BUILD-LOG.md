@@ -6,6 +6,49 @@ Created: 2026-06-07
 
 This build log records local repository work after Plexicon-consuming initialization. It does not replace historical website build memory in `docs/website/BUILD_LOG.md`.
 
+## 2026-06-14 - Portal Foundation Seed And Runtime Validation
+
+### Objective
+
+Create a minimal, idempotent Chronicle Portal operational foundation seed and validate the Owner Command Centre against the Supabase-backed database.
+
+### Implemented
+
+- Added `scripts/seed-portal-foundation.ts`.
+- Added `npm run seed:portal`.
+- Added `tsx` as a recorded development dependency for TypeScript operational scripts.
+- Seeded/upserted the Chronicle Music organization.
+- Seeded/upserted the Chronicle Music workspace with slug `chronicle-music`.
+- Corrected ignored local development environment alignment so `DATABASE_URL` points at the Supabase PostgreSQL connection rather than the Supabase API URL.
+
+### Seed Records
+
+- Organization:
+  - Name: Chronicle Music
+  - Slug: `chronicle-music`
+  - Ownership type: INTERNAL
+- Workspace:
+  - Name: Chronicle Music
+  - Slug: `chronicle-music`
+  - Lifecycle state: ACTIVE
+
+### Validation
+
+- Prisma schema validation passed.
+- `npm run seed:portal` passed.
+- Workspace lookup by slug `chronicle-music` passed.
+- Local `/portal` returned HTTP 200 and rendered Owner Command Centre content.
+- Local `/` returned HTTP 200.
+- `npm run build` passed.
+
+### Not Changed
+
+- No public website routes changed.
+- No public website UI changed.
+- No Prisma schema changes made.
+- No catalogue asset seed data created.
+- No deployment run.
+
 ## 2026-06-07 - Plexicon-Consuming System Initialization
 
 ### Objective
@@ -352,6 +395,103 @@ Implement the approved Owner Command Centre V1 UI at `/portal` using the locked 
 - No public catalogue browsing experience changed.
 - No public artist, marketing, resource, contact, capability, or shared public styling changes were made.
 - No backend data wiring added.
+- No schema changes made.
+- No deployment run.
+
+## 2026-06-13 - Local Portal Development Auth Bypass Added
+
+### Objective
+
+Allow local development access to `/portal` before Clerk keys are available, without changing the approved production authentication architecture.
+
+### Updated
+
+- `.env.example`
+- `app/portal/layout.tsx`
+- `components/portal/PortalClerkProvider.tsx`
+- `components/portal/PortalNavigation.tsx`
+- `lib/portal/development-auth.ts`
+- `proxy.ts`
+
+### Behaviour
+
+- `DEV_AUTH_BYPASS=true` enables a local-only development portal auth bypass.
+- The bypass only activates when `NODE_ENV=development`.
+- Production and preview continue to use Clerk and `auth.protect()`.
+- A mock development user/workspace context is available for local portal rendering.
+
+### Not Changed
+
+- Clerk remains the production authentication provider.
+- No public website routes changed.
+- No public navigation changed.
+- No public catalogue browsing changed.
+- No schema changes made.
+- No deployment run.
+
+## 2026-06-13 - Milestone 5B Owner Command Centre Intelligence Integration Implemented
+
+### Objective
+
+Replace Owner Command Centre placeholder intelligence with real Creative Operations Intelligence from the existing backend foundations while preserving the locked dashboard visual contract.
+
+### Created
+
+- `docs/build-log/MILESTONE-5B-OWNER-COMMAND-CENTRE-INTELLIGENCE-INTEGRATION-RECORD.md`
+- `lib/portal/command-centre/intelligence.ts`
+- `lib/portal/command-centre/types.ts`
+
+### Updated
+
+- `app/portal/page.tsx`
+- `components/portal/OwnerCommandCentre.tsx`
+
+### Intelligence Connections
+
+- Catalogue asset counts.
+- Asset readiness health scores.
+- Evidence completeness.
+- Ownership evidence gaps.
+- Required and priority actions.
+- Risk indicators.
+- Intervention counts.
+- Domain event activity.
+- Audit event activity.
+
+### Architecture Result
+
+`/portal` now follows:
+
+```text
+Portal Route
+-> Command Centre Intelligence Aggregation
+-> Existing Creative Operations Intelligence
+-> Prisma-backed operational data
+-> Locked Owner Command Centre UI
+```
+
+### Preserved Placeholders
+
+The following domains remain placeholder-backed until their backend foundations are implemented:
+
+- Creative Identity Intelligence.
+- Relationship Intelligence.
+- Business Intelligence.
+- Institutional Memory.
+- AI Chronicle Intelligence.
+
+### Validation
+
+- Application build passed.
+- `/portal` is server-rendered dynamically.
+- Public routes still build.
+
+### Not Changed
+
+- No public website routes changed.
+- No public navigation changed.
+- No public catalogue browsing changed.
+- No Owner Command Centre redesign.
 - No schema changes made.
 - No deployment run.
 

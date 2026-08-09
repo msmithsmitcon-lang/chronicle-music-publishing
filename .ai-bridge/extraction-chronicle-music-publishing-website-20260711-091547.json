@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Catalogue readiness score weighting",
+    "evidenceSource": "lib/portal/catalogue/evaluation.ts:40-45,136-138",
+    "description": "Asset readiness is calculated as a rounded weighted score: metadata 25%, evidence 30%, ownership 25%, and risk 20%; component completion ratios are rounded to percentages, with empty checklists scoring 100.",
+    "scope": "product_specific",
+    "knowledgeType": "procedural",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.readiness.formula.weighted_readiness_score",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Catalogue metadata completeness criteria",
+    "evidenceSource": "lib/portal/catalogue/evaluation.ts:55-75",
+    "description": "Metadata readiness requires genre, mood, duration, and either a registration code or publishing identifier; missing criteria are recorded as missing information and the metadata score is the completed-check ratio.",
+    "scope": "product_specific",
+    "knowledgeType": "decision",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.readiness.criteria.metadata_completeness",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Evidence and ownership completion criteria",
+    "evidenceSource": "lib/portal/catalogue/evaluation.ts:77-100",
+    "description": "Evidence requirements count as present only when their status is ATTACHED, VERIFIED, or WAIVED; ownership readiness is 100 only when at least one ownership record has ATTACHED or VERIFIED evidence, otherwise it is 0 and an ownership-evidence gap is recorded.",
+    "scope": "product_specific",
+    "knowledgeType": "decision",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.readiness.criteria.evidence_ownership_completion",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Catalogue risk score penalty",
+    "evidenceSource": "lib/portal/catalogue/evaluation.ts:99-110",
+    "description": "Risk score starts at 100 and subtracts 25 points for each unresolved existing risk plus 25 points for each newly generated readiness risk, floored at 0; unverified ownership creates a high-severity ownership risk.",
+    "scope": "product_specific",
+    "knowledgeType": "procedural",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.readiness.formula.risk_penalty",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Catalogue readiness state gates",
+    "evidenceSource": "lib/portal/catalogue/evaluation.ts:140-152",
+    "description": "Default readiness is NEEDS_REVIEW; any missing information sets MISSING_EVIDENCE, risk score below 75 sets ACTION_REQUIRED, and READY_FOR_ACTIVATION requires readiness score at least 85, evidence score 100, ownership score 100, and risk score at least 75.",
+    "scope": "product_specific",
+    "knowledgeType": "decision",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.readiness.thresholds.activation_gate",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Catalogue opportunity score rule",
+    "evidenceSource": "lib/portal/catalogue/evaluation.ts:154-161",
+    "description": "Opportunity score is assigned as 75 when the asset is READY_FOR_ACTIVATION and 25 otherwise.",
+    "scope": "product_specific",
+    "knowledgeType": "heuristic",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.opportunity.heuristics.activation_readiness_score",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Default catalogue evidence requirements",
+    "evidenceSource": "lib/portal/catalogue/readiness.ts:38-54,lib/portal/catalogue/service.ts:88-105",
+    "description": "New creative assets are seeded with three evidence requirements: ownership or contributor context as a supporting record, metadata source or catalogue record as a document, and asset file/reference/storage location as a link.",
+    "scope": "product_specific",
+    "knowledgeType": "reference",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.evidence.requirements.default_asset_evidence",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Creative asset lifecycle transition map",
+    "evidenceSource": "lib/portal/catalogue/service.ts:22-37,206-222",
+    "description": "Allowed lifecycle transitions are constrained: DRAFT to IN_PROGRESS or ARCHIVED; IN_PROGRESS to REGISTERED, PUBLISHED, or ARCHIVED; REGISTERED to PUBLISHED, ACTIVE, or ARCHIVED; PUBLISHED to ACTIVE or ARCHIVED; ACTIVE to ARCHIVED; ARCHIVED to ACTIVE.",
+    "scope": "product_specific",
+    "knowledgeType": "procedural",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.workflow.transitions.asset_lifecycle",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Command centre health bands",
+    "evidenceSource": "lib/portal/command-centre/intelligence.ts:53-67,124-136",
+    "description": "Health scores are labelled Strong at 85 or above, Stable from 65 to 84, Needs Attention from 40 to 64, and Critical below 40; readiness distribution uses the same score bands.",
+    "scope": "product_specific",
+    "knowledgeType": "decision",
+    "confidence": "high",
+    "namespace": "production_publishing.operations.health.thresholds.score_bands",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Operational priority due-date rule",
+    "evidenceSource": "lib/portal/command-centre/intelligence.ts:104-122",
+    "description": "Actions with no due date default to Medium Priority; due dates within 7 days are High Priority, within 30 days are Medium Priority, and later dates are Low Priority.",
+    "scope": "product_specific",
+    "knowledgeType": "decision",
+    "confidence": "high",
+    "namespace": "production_publishing.operations.actions.thresholds.due_date_priority",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "At-risk and critical alert classification",
+    "evidenceSource": "lib/portal/command-centre/intelligence.ts:451-461",
+    "description": "An asset is counted at risk when risk score is below 75 or readiness score is below 65; critical alert count is unresolved HIGH or CRITICAL risks plus blocked actions.",
+    "scope": "product_specific",
+    "knowledgeType": "decision",
+    "confidence": "high",
+    "namespace": "production_publishing.operations.risk.criteria.asset_and_alert_classification",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  },
+  {
+    "name": "Public catalogue inclusion and ordering rule",
+    "evidenceSource": "scripts/generate-catalogue-browse.cjs:31-48,50-88",
+    "description": "Only spreadsheet rows with Website Visible equal to yes are published; mood falls back from Website Mood to Mood / Theme to a default request message, and catalogue rows are sorted by a fixed genre priority before title.",
+    "scope": "product_specific",
+    "knowledgeType": "procedural",
+    "confidence": "high",
+    "namespace": "production_publishing.catalogue.publication.rules.website_catalogue_generation",
+    "domain": "Plexicon Production/Publishing Intelligence"
+  }
+]
